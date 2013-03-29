@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8" />
+  <title>Pinnacle Bank Community Matters Prototype</title>
+  
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/bootstrap-responsive.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/modernizr.custom.57275.js"></script>
+     
+  <!-- scripts at bottom of page -->
+
+</head>
+<body class="demo">
+
+<nav class="top_nav">
+	<div class="nav_interior">
+		<img class="main_logo" src="../img/community_matters_logo.png" />
+		<ul class="main_nav">
+			<li><a href="#" class="about_link nav_link">About</a></li>
+			<li><a href="#" class="btn-slide nav_link">Stories near you</a></li>
+		</ul>
+	</div>
+	<div id="slide_panel">
+	  <div id="filters_panel">
+		<section id="options" class="clearfix">
+			<ul class="option-set clearfix">
+		      <li><a href="#filter=*">view all</a></li>
+		      <li><a href="#filter=.pinnbank">Nebraska</a></li>
+		      <li><a href="#filter=.bankofcolorado">Colorado</a></li>
+		      <li><a href="#filter=.pinnbanktx">Texas</a></li>
+		      <li><a href="#filter=.pinnbank">Wyoming</a></li>
+		      <li><a href="#filter=.bankofcolorado">Missouri</a></li>
+		      <li><a href="#filter=.pinnbanktx">New Mexico</a></li>
+		      <li><a href="#filter=.pinnbank">Iowa</a></li>
+		      <li><a href="#filter=.bankofcolorado">Kansas</a></li>
+		    </ul>
+  		</section> <!-- #options -->
+	  </div>
+	 </div>
+</nav>
+
+
+<div class="right_cta">
+	<img src="../img/bank_with_us.png" />
+</div>
+
+<section id="content">
+	<section class="header_about">
+		<h1>Life is all about community</h1>
+		<p>Family. Friends. Neighbors and the people we meet along the way. There’s power in community and in the stories that help shape each of them. We invite you to watch the stories of the people who live in the communities we serve. And join us in celebrating the power of community.</p>
+		<img src="../img/about_banner.jpg" alt="Community Matters Stories" />
+	</section>
+	<section class="about_map">
+		<div class="row-fluid">
+			<div class="span12">
+				<h3>Select your state to <br /><span>Connect with your community bank</span></h3>
+			</div>
+		</div>
+		<div class="row-fluid map_row">
+			<div class="span3 pb_map">
+				<a href="#"></a>
+			</div>
+			<div class="span3 pb_map">
+				<a href="#"></a>
+			</div>
+			<div class="span3 pb_map">
+				<a href="#"></a>
+			</div>
+			<div class="span3 pb_map">
+				<a href="#"></a>
+			</div>
+		</div>
+		<div class="row-fluid map_row">
+			<div class="span3 pb_map">
+				<a href="#"></a>
+			</div>
+			<div class="span3 pb_map">
+				<a href="#"></a>
+			</div>
+			<div class="span3 pb_map">
+				<a href="#"></a>
+			</div>
+			<div class="span3 pb_map">
+				<a href="#"></a>
+			</div>
+		</div>
+	</section>
+	
+</section><!-- END CONTENT -->
+  
+  
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
+	<script src="../js/jquery.isotope.min.js"></script>
+	<script src="../js/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script src="../js/pinned.jQuery.js"></script>
+
+<script type="text/javascript">
+$(document).ready( function() {
+    // STICKY NAV JAVASCRIPT
+      
+	       // PINNED
+	      $(".top_nav").pinned({
+	        bounds: 1,
+	        scrolling:0,
+	        mobile: true
+	      },function(){
+	        $(".top_nav").css({'height':'100px'});
+	        $(".top_nav img").css({'width':'140px'});
+	      },function(){
+	        $(".top_nav").css({'height':'175px'});
+	        $(".top_nav img").css({'width':'277px'});
+	      });
+	      
+	      $(".right_cta").pinned({
+	        bounds: 1,
+	        scrolling:0,
+	        mobile: true
+	      });
+	      
+	      
+	      // SLIDE DOWN FILTERS FROM NAV
+	      
+	     $(".btn-slide").click(function(){
+	  		$("#filters_panel").slideToggle("fast");
+	  		$(this).toggleClass("arrow_top");
+	  		$(this).toggleClass("active"); return false;
+	  	});
+});
+
+</script>
+ 
+    
+  </section> <!-- #content -->
+  
+
+</body>
+</html>

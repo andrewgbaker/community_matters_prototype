@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8" />
+  <title>Filtering &middot; Isotope Demo</title>
+  
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+  <link rel="stylesheet" href="css/style.css" />
+     
+  <!-- scripts at bottom of page -->
+
+</head>
+<body class="demo">
+
+<nav class="top_nav">
+	<div class="nav_interior">
+		<img class="main_logo" src="img/community_matters_logo.png" />
+		<p class="slide"><a href="#" class="btn-slide">FILTERS</a></p>
+	</div>
+	<div id="slide_panel">
+	  <div id="events_panel">
+		<section id="options" class="clearfix">
+			<ul class="option-set clearfix">
+		      <li><a href="#filter=*">show all</a></li>
+		      <li><a href="#filter=.pinnbank">filter1</a></li>
+		      <li><a href="#filter=.bankofcolorado">filter2</a></li>
+		      <li><a href="#filter=.pinnbanktx">filter3</a></li>
+		    </ul>
+  		</section> <!-- #options -->
+	  </div>
+	 </div>
+</nav>
+
+
+<div class="left_cta">
+	<img src="img/left_cta.jpg" />
+</div>
+
+<section id="content">
+	<section class="header">
+		<img src="img/banner_demo.jpg" />
+	</section>
+  
+  <div class="bbq" id="bbq1">
+	  
+	  <div id="container" class="clearfix">
+	    
+	          
+	    <div class="element bankofcolorado">
+	      	<div class="thumb_content">
+				<img src="img/thumb2.jpg" />
+				<p class="title">Farm Stand</p>
+	      	</div>
+	    </div>
+	      
+	          
+	    <div class="element pinnbanktx pinnbank">
+	      <div class="thumb_content">
+				<img src="img/thumb3.jpg" />
+				<p class="title">Farm Stand</p>
+	      	</div>
+	    </div>
+	    
+	      
+	          
+	    <div class="element bankofcolorado pinnbank">
+	      <div class="thumb_content">
+				<img src="img/thumb4.jpg" />
+				<p class="title">Farm Stand</p>
+	      	</div>
+	    </div>
+	    
+	      
+	    <div class="element pinnbank">
+	      <div class="thumb_content">
+				<img src="img/thumb5.jpg" />
+				<p class="title">Farm Stand</p>
+	      	</div>
+	    </div>
+	      
+	          
+	    <div class="element bankofcolorado pinnbank">
+	      <div class="thumb_content">
+				<img src="img/thumb6.jpg" />
+				<p class="title">Farm Stand</p>
+	      	</div>
+	    </div>
+	    
+	    <div class="element bankofcolorado pinnbank">
+	    	<div class="bbq-content">
+	      
+					<!-- This will be shown while loading AJAX content. You'll want to get an image that suits your design at http://ajaxload.info/ -->
+					<div class="bbq-loading" style="display:none;">
+					  <img src="img/ajaxload-15-white.gif" alt="Loading"/> Loading content...
+					</div>
+					
+					<!-- This content will be shown if no path is specified in the URL fragment. -->
+					<div class="bbq-default bbq-item">
+						<a href="#video1.html" class="vid_link">
+				    		<div class="thumb_content">
+				    			<img src="img/thumb1.jpg" />
+								<p class="title">Farm Stand</p>
+					      	</div>
+						</a>
+					</div>
+				
+				</div>
+	    </div>
+	    
+	      
+	          
+	    <div class="element pinnbanktx pinnbank">
+	      <div class="thumb_content">
+				<img src="img/thumb7.jpg" />
+				<p class="title">Farm Stand</p>
+	      	</div>
+	    </div>
+	    
+	      
+	          
+	    <div class="element bankofcolorado">
+	      <div class="thumb_content">
+				<img src="img/thumb8.jpg" />
+				<p class="title">Farm Stand</p>
+	      	</div>
+	    </div>
+	    
+	      
+	          
+	    <div class="element bankofcolorado pinnbank">
+	     	<div class="thumb_content">
+				<img src="img/thumb9.jpg" />
+				<p class="title">Farm Stand</p>
+	      	</div>
+	    </div>
+	    
+	      
+	          
+	    <div class="element pinnbank pinnbanktx">
+	      <div class="thumb_content">
+				<img src="img/thumb10.jpg" />
+				<p class="title">Farm Stand</p>
+	      	</div>
+	    </div>
+	    
+	      
+	          
+	    <div class="element pinnbanktx nonmetal">
+	      <div class="thumb_content">
+				<img src="img/thumb11.jpg" />
+				<p class="title">Farm Stand</p>
+	      	</div>
+	    </div>
+	    
+	      
+	          
+	    <div class="element pinnbank">
+	      <div class="thumb_content">
+				<img src="img/thumb12.jpg" />
+				<p class="title">Farm Stand</p>
+	      	</div>
+	    </div>
+	      	    
+	  </div> <!-- #container -->
+	</div><!-- END BBQ WRAPPER -->
+	
+</section><!-- END CONTENT -->
+  
+  
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="http://benalman.com/code/projects/jquery-bbq/jquery.ba-bbq.js"></script>
+	<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script src="js/pinned.jQuery.js"></script>
+
+<!-- SCROLL TO
+<script type="text/javascript">
+$(document).ready( function() {
+    $("a.vid_link").click( function(e) {
+        e.preventDefault();
+        $.scrollTo('.bbq-item', {duration: 1000});
+    });
+});
+
+</script>
+-->
+  <script type="text/javascript">
+    $(function(){
+    
+    // For each .bbq widget, keep a data object containing a mapping of
+  // url-to-container for caching purposes.
+  $('.bbq').each(function(){
+    $(this).data( 'bbq', {
+      cache: {
+        // If url is '' (no fragment), display this div's content.
+        '': $(this).find('.bbq-default')
+      }
+    });
+  });
+  
+  // For all links inside a .bbq widget, push the appropriate state onto the
+  // history when clicked.
+  $('.bbq a[href^=#]').live( 'click', function(e){
+    var state = {},
+      
+      // Get the id of this .bbq widget.
+      id = $(this).closest( '.bbq' ).attr( 'id' ),
+      
+      // Get the url from the link's href attribute, stripping any leading #.
+      url = $(this).attr( 'href' ).replace( /^#/, '' );
+    
+    // Set the state!
+    state[ id ] = url;
+    $.bbq.pushState( state );
+    
+    // And finally, prevent the default link click behavior by returning false.
+    return false;
+  });
+  
+  // Bind an event to window.onhashchange that, when the history state changes,
+  // iterates over all .bbq widgets, getting their appropriate url from the
+  // current state. If that .bbq widget's url has changed, display either our
+  // cached content or fetch new content to be displayed.
+  $(window).bind( 'hashchange', function(e) {
+    
+    // Iterate over all .bbq widgets.
+    $('.bbq').each(function(){
+      var that = $(this),
+        
+        // Get the stored data for this .bbq widget.
+        data = that.data( 'bbq' ),
+        
+        // Get the url for this .bbq widget from the hash, based on the
+        // appropriate id property. In jQuery 1.4, you should use e.getState()
+        // instead of $.bbq.getState().
+        url = $.bbq.getState( that.attr( 'id' ) ) || '';
+      
+      // If the url hasn't changed, do nothing and skip to the next .bbq widget.
+      if ( data.url === url ) { return; }
+      
+      // Store the url for the next time around.
+      data.url = url;
+      
+      // Remove .bbq-current class from any previously "current" link(s).
+      that.find( 'a.bbq-current' ).removeClass( 'bbq-current' );
+       
+      // Hide any visible ajax content.
+      that.find( '.bbq-content' ).children( ':visible' ).hide();
+      
+      // Add .bbq-current class to "current" nav link(s), only if url isn't empty.
+      url && that.find( 'a[href="#' + url + '"]' ).addClass( 'bbq-current' );
+      
+      if ( data.cache[ url ] ) {
+        // Since the widget is already in the cache, it doesn't need to be
+        // created, so instead of creating it again, let's just show it!
+        data.cache[ url ].show();
+        
+      } else {
+        // Show "loading" content while AJAX content loads.
+        that.find( '.bbq-loading' ).show();
+        
+        // Create container for this url's content and store a reference to it in
+        // the cache.
+        data.cache[ url ] = $( '<div class="bbq-item"/>' )
+          
+          // Append the content container to the parent container.
+          .appendTo( that.find( '.bbq-content' ) )
+          
+          // Load external content via AJAX. Note that in order to keep this
+          // example streamlined, only the content in .infobox is shown. You'll
+          // want to change this based on your needs.
+          .load( url, function(){
+            // Content loaded, hide "loading" content.
+            that.find( '.bbq-loading' ).hide();
+            that.find( '.bbq-content' ).parent( '.element' ).addClass( 'story_width' );
+            that.find( '.bbq-content' ).children( ':visible' ).addClass( 'expanded_item' );
+	        setTimeout(function(){ 
+		         $container.isotope('reLayout');
+		          $.scrollTo('.story_copy', 1000, {offset:-90});
+			}, 500 ); 
+          });
+ 
+      }
+    });
+  })
+  
+  // Since the event is only triggered when the hash changes, we need to trigger
+  // the event now, to handle the hash the page may have loaded with.
+  $(window).trigger( 'hashchange' );
+  
+  
+  // BEGIN ISOTOPE JS
+  
+  
+      var $container = $('#container'),
+          // object that will keep track of options
+          isotopeOptions = {},
+          // defaults, used if not explicitly set in hash
+          defaultOptions = {
+            filter: '*',
+            sortBy: 'original-order',
+            sortAscending: true,
+            layoutMode: 'masonry'
+          };
+      
+       // add randomish size classes
+      $container.find('.element').each(function(){
+        var $this = $(this),
+            number = parseInt( $this.find('.number').text(), 10 );
+        if ( number % 7 % 2 === 1 ) {
+          $this.addClass('width2');
+        }
+        if ( number % 3 === 0 ) {
+          $this.addClass('height2');
+        }
+      });
+		        
+      var setupOptions = $.extend( {}, defaultOptions, {
+        itemSelector : '.element',
+        masonry: {
+		    columnWidth: 320
+		  },
+        getSortData : {
+          selected: function ($item) {
+                return ($item.hasClass('story_width') ? -1000 : 0) + $item.index();
+          }
+        },
+        sortBy: 'selected' 
+        
+      });	    
+	    
+  
+      // set up Isotope
+      $container.isotope( setupOptions );
+	        
+      
+      // EXPAND STORY ON CLICK
+      
+	      $(".element").on("click", ".bbq-default", function(){
+	      
+		            $(this).parent('.element').addClass('story_width');
+		            $(this).hide();
+		            $(this).closest('.bbq-content').show();
+	   				$(this).height( $(this).height() + 5);
+	   				
+	   				setTimeout(function(){ 
+			         $container.isotope('reLayout');
+					  }, 2500 ); 
+					 
+					 $.scrollTo('.story_copy', 1000, {offset:-90});
+					 
+					 $('.bbq-default').unbind('click');
+		        
+		    });
+		    
+		    
+		      // CLOSE EXPANDED STORY ON CLICK
+	      
+	      $(".element").on("click", "#close_btn", function(){
+	      
+	       var home = "#home";
+	      
+		            $.bbq.pushState( home );
+		            $(this).closest('.element').removeClass('story_width');
+		            $(this).find( ".bbq-content" ).children( ':visible' ).hide();
+			        $(this).closest(".bbq-default").show();
+	   				
+	   				setTimeout(function(){ 
+			         $container.isotope('reLayout');
+					  }, 2500 ); 
+					  
+					$('#close_btn').unbind('click');
+					  		        
+		   });
+		    
+	    
+	 
+	 /*  EXAMPLE WITH ELEMENT AS JQUERY SELECTOR
+      
+      $('.element').click(function () {
+      
+      	var home = "#home";
+            
+	        if ($(this).hasClass('story_width')) {
+	            $(this).removeClass('story_width');
+	            $.bbq.pushState( home );
+	            $(this).find( '.bbq-content' ).children( ':visible' ).hide();
+	            $(this).children('.bbq-default').show();
+	        } else { 
+	            $(this).addClass('story_width');
+	            $(this).children('.bbq-default').hide();
+	            $(this).closest('.bbq-content').show();
+   				$(this).height( $(this).height() + 5);
+   				
+   				setTimeout(function(){ 
+		         $container.isotope('reLayout');
+				  }, 2500 ); 
+				 
+				 $.scrollTo('.story_copy', 1000, {offset:-90});
+	       }
+	        
+	    });
+	  
+	  */
+
+  
+      var $optionSets = $('#options').find('.option-set'),
+          isOptionLinkClicked = false;
+  
+      // switches selected class on buttons
+      function changeSelectedLink( $elem ) {
+        // remove selected class on previous item
+        $elem.parents('.option-set').find('.selected').removeClass('selected');
+        // set selected class on new item
+        $elem.addClass('selected');
+      }
+  
+  
+      $optionSets.find('a').click(function(){
+        var $this = $(this);
+        // don't proceed if already selected
+        if ( $this.hasClass('selected') ) {
+          return;
+        }
+        changeSelectedLink( $this );
+            // get href attr, remove leading #
+        var href = $this.attr('href').replace( /^#/, '' ),
+            // convert href into object
+            // i.e. 'filter=.inner-transition' -> { filter: '.inner-transition' }
+            option = $.deparam( href, true );
+        // apply new option to previous
+        $.extend( isotopeOptions, option );
+        // set hash, triggers hashchange on window
+        $.bbq.pushState( isotopeOptions );
+        isOptionLinkClicked = true;
+        return false;
+      });
+
+      var hashChanged = false;
+
+      $(window).bind( 'hashchange', function( event ){
+        // get options object from hash
+        var hashOptions = window.location.hash ? $.deparam.fragment( window.location.hash, true ) : {},
+            // do not animate first call
+            aniEngine = hashChanged ? 'best-available' : 'none',
+            // apply defaults where no option was specified
+            options = $.extend( {}, defaultOptions, hashOptions, { animationEngine: aniEngine } );
+        // apply options from hash
+        $container.isotope( options );
+        // save options
+        isotopeOptions = hashOptions;
+    
+        // if option link was not clicked
+        // then we'll need to update selected links
+        if ( !isOptionLinkClicked ) {
+          // iterate over options
+          var hrefObj, hrefValue, $selectedLink;
+          for ( var key in options ) {
+            hrefObj = {};
+            hrefObj[ key ] = options[ key ];
+            // convert object into parameter string
+            // i.e. { filter: '.inner-transition' } -> 'filter=.inner-transition'
+            hrefValue = $.param( hrefObj );
+            // get matching link
+            $selectedLink = $optionSets.find('a[href="#' + hrefValue + '"]');
+            changeSelectedLink( $selectedLink );
+          }
+        }
+    
+        isOptionLinkClicked = false;
+        hashChanged = true;
+      })
+        // trigger hashchange to capture any hash data on init
+        .trigger('hashchange');
+        
+        
+        
+        // STICKY NAV JAVASCRIPT
+      
+	       // PINNED
+	      $(".top_nav").pinned({
+	        bounds: 5,
+	        scrolling:0,
+	        mobile: true
+	      },function(){
+	        $(".top_nav").css({'height':'90px'});
+	        $(".top_nav img").css({'width':'140px'});
+	      },function(){
+	        $(".top_nav").css({'height':'175px'});
+	        $(".top_nav img").css({'width':'277px'});
+	      });
+	      
+	      $(".left_cta").pinned({
+	        bounds: 5,
+	        scrolling:0,
+	        mobile: true
+	      });
+	      
+	      
+	      // SLIDE DOWN FILTERS FROM NAV
+	      
+	     $(".btn-slide").click(function(){
+	  		$("#events_panel").slideToggle("slow");
+	  		$(this).toggleClass("active"); return false;
+	  	});
+	    
+     });
+  </script>  
+
+    
+  </section> <!-- #content -->
+  
+
+</body>
+</html>
