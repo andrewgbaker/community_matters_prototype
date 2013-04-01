@@ -18,6 +18,9 @@
 
 <nav class="top_nav">
 	<div class="nav_interior">
+		<!-- AddThis Button BEGIN -->
+		<a class="addthis_button add_this" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=ra-4d80efce2fb49656">Share<img src="img/social_share.png" width="30" height="30" border="0" alt="Share" /></a>
+		<!-- AddThis Button END -->
 		<img class="main_logo" src="img/community_matters_logo.png" />
 		<ul class="main_nav">
 			<li><a href="about/index.html" class="about_link nav_link">About</a></li>
@@ -95,7 +98,7 @@
 							<a href="#video1.html" class="vid_link">
 					    		<div class="thumb_content">
 					    			<img src="img/thumb4.jpg" />
-									<p class="title">Farm Stand</p>
+									<p class="title">link1</p>
 						      	</div>
 							</a>
 						</div>
@@ -133,7 +136,7 @@
 							<a href="#video2.html" class="vid_link">
 					    		<div class="thumb_content">
 					    			<img src="img/thumb1.jpg" />
-									<p class="title">Farm Stand</p>
+									<p class="title">link2</p>
 						      	</div>
 							</a>
 						</div>
@@ -199,7 +202,7 @@
 	
 </section><!-- END CONTENT -->
   
-  
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4d80efce2fb49656"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
 	<script src="js/jquery.isotope.min.js"></script>
@@ -218,10 +221,10 @@ $(document).ready( function() {
 	        mobile: true
 	      },function(){
 	        $(".top_nav").css({'height':'100px'});
-	        $(".top_nav img").css({'width':'140px'});
+	        $(".top_nav .main_logo").css({'width':'140px'});
 	      },function(){
 	        $(".top_nav").css({'height':'175px'});
-	        $(".top_nav img").css({'width':'277px'});
+	        $(".top_nav .main_logo").css({'width':'277px'});
 	      });
 	      
 	      $(".right_cta").pinned({
@@ -321,7 +324,7 @@ $(document).ready( function() {
   
   // For all links inside a .bbq widget, push the appropriate state onto the
   // history when clicked.
-  $('.story a[href^=#]').live( 'click', function(e){
+  $('.story a[href^=#]').on( 'click', function(e){
     var state = {},
       
       // Get the id of this .bbq widget.
@@ -363,13 +366,13 @@ $(document).ready( function() {
       data.url = url;
       
       // Remove .bbq-current class from any previously "current" link(s).
-      that.find( 'a.story-current' ).removeClass( 'story-current' );
+      that.find( 'a.story-current' ).toggleClass( 'story-current' );
        
       // Hide any visible ajax content.
       that.find( '.story-content' ).children( ':visible' ).hide();
       
       // Add .bbq-current class to "current" nav link(s), only if url isn't empty.
-      url && that.find( 'a[href="#' + url + '"]' ).addClass( 'story-current' );
+      url && that.find( 'a[href="#' + url + '"]' ).toggleClass( 'story-current' );
       
       if ( data.cache[ url ] ) {
         // Since the widget is already in the cache, it doesn't need to be
@@ -398,7 +401,7 @@ $(document).ready( function() {
 	        setTimeout(function(){ 
 		         $container.isotope('reLayout');
 		          $.scrollTo('.story_title', 500);
-			}, 500 );
+			}, 600 );
           }); 
  
       }

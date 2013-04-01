@@ -12,9 +12,11 @@
 </head>
 <body>
 	<section class="story_copy">
-		<h1 class="story_title">DEMO VIDEO 1</h1>
-		<div class="close_btn">X</div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat ligula, vel consectetur mi ornare non. Ut purus dolor, ultricies at commodo in, tincidunt et erat. Suspendisse volutpat, erat et posuere accumsan, eros velit consectetur est, id facilisis turpis magna et eros. Nullam sit amet purus augue. Maecenas non enim metus, sit amet consectetur felis.</p>
+		<div class="title_and_close clearfix">
+			<h1 class="story_title">OGALLALA LIVESTOCK AUCTION</h1>
+			<div class="close_btn">X</div>
+		</div>
+		<p class="clearfix">Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.</p>
   </section>
 	<section class="story_vid_wrap">  
 		<div class="flexslider">
@@ -29,8 +31,9 @@
 		</div>
 	</section>
 
-<!--	
-<script src="js/jquery-1.7.1.min.js"></script>
+<!--
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
 <script src="js/jquery.ba-bbq.js"></script>
 <script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
 -->
@@ -38,13 +41,15 @@
 <script src="js/jquery.flexslider-min.js"></script>
 <script>
   $(document).ready(function(){
-    $(".flexslider")
-	    .fitVids()
-	    .flexslider({
-	      	animation: 'slide',
-			slideshow: false,
-			controlNav: false
-      });
+  	setTimeout(function(){ 
+         $(".flexslider")
+		    .fitVids()
+		    .flexslider({
+		      	animation: 'slide',
+				slideshow: false,
+				controlNav: false
+	      });
+	}, 100 );
   });
 </script>
 </body>
