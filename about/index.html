@@ -14,7 +14,7 @@
   <!-- scripts at bottom of page -->
 
 </head>
-<body class="demo">
+<body>
 
 <nav class="top_nav">
 	<div class="nav_interior">
@@ -64,31 +64,39 @@
 			</div>
 		</div>
 		<div class="row-fluid map_row">
-			<div class="span3 pb_map">
-				<a href="#"></a>
-			</div>
-			<div class="span3 pb_map">
-				<a href="#"></a>
-			</div>
-			<div class="span3 pb_map">
-				<a href="#"></a>
-			</div>
-			<div class="span3 pb_map">
-				<a href="#"></a>
-			</div>
-		</div>
-		<div class="row-fluid map_row">
-			<div class="span3 pb_map">
-				<a href="#"></a>
-			</div>
-			<div class="span3 pb_map">
-				<a href="#"></a>
-			</div>
-			<div class="span3 pb_map">
-				<a href="#"></a>
-			</div>
-			<div class="span3 pb_map">
-				<a href="#"></a>
+			<div id="container">
+				<div class="map_item pb_map">
+					<div class="map_bg"><img src="../img/pb_map.png" /></div>
+					<a href="#"></a>
+				</div>
+				<div class="map_item pb_map">
+					<div class="map_bg"><img src="../img/pb_map.png" /></div>
+					<a href="#"></a>
+				</div>
+				<div class="map_item pb_map">
+					<div class="map_bg"><img src="../img/pb_map.png" /></div>
+					<a href="#"></a>
+				</div>
+				<div class="map_item pb_map">
+					<div class="map_bg"><img src="../img/pb_map.png" /></div>
+					<a href="#"></a>
+				</div>
+				<div class="map_item pb_map">
+					<div class="map_bg"><img src="../img/pb_map.png" /></div>
+					<a href="#"></a>
+				</div>
+				<div class="map_item pb_map">
+					<div class="map_bg"><img src="../img/pb_map.png" /></div>
+					<a href="#"></a>
+				</div>
+				<div class="map_item pb_map">
+					<div class="map_bg"><img src="../img/pb_map.png" /></div>
+					<a href="#"></a>
+				</div>
+				<div class="map_item pb_map">
+					<div class="map_bg"><img src="../img/pb_map.png" /></div>
+					<a href="#"></a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -136,6 +144,102 @@ $(document).ready( function() {
 });
 
 </script>
+
+<script type="text/javascript">
+  
+// SET UP CENTERED MASONRY FUNCTION
+
+
+  $.Isotope.prototype._getCenteredMasonryColumns = function() {
+    this.width = this.element.width();
+    
+    var parentWidth = this.element.parent().width();
+    
+                  // i.e. options.masonry && options.masonry.columnWidth
+    var colW = this.options.masonry && this.options.masonry.columnWidth ||
+                  // or use the size of the first item
+                  this.$filteredAtoms.outerWidth(true) ||
+                  // if there's no items, use size of container
+                  parentWidth;
+    
+    var cols = Math.floor( parentWidth / colW );
+    cols = Math.max( cols, 1 );
+
+    // i.e. this.masonry.cols = ....
+    this.masonry.cols = cols;
+    // i.e. this.masonry.columnWidth = ...
+    this.masonry.columnWidth = colW;
+  };
+  
+  $.Isotope.prototype._masonryReset = function() {
+    // layout-specific props
+    this.masonry = {};
+    // FIXME shouldn't have to call this again
+    this._getCenteredMasonryColumns();
+    var i = this.masonry.cols;
+    this.masonry.colYs = [];
+    while (i--) {
+      this.masonry.colYs.push( 0 );
+    }
+  };
+
+  $.Isotope.prototype._masonryResizeChanged = function() {
+    var prevColCount = this.masonry.cols;
+    // get updated colCount
+    this._getCenteredMasonryColumns();
+    return ( this.masonry.cols !== prevColCount );
+  };
+  
+  $.Isotope.prototype._masonryGetContainerSize = function() {
+    var unusedCols = 0,
+        i = this.masonry.cols;
+    // count unused columns
+    while ( --i ) {
+      if ( this.masonry.colYs[i] !== 0 ) {
+        break;
+      }
+      unusedCols++;
+    }
+    
+    return {
+          height : Math.max.apply( Math, this.masonry.colYs ),
+          // fit container to columns that have been used;
+          width : (this.masonry.cols - unusedCols) * this.masonry.columnWidth
+        };
+  };
+
+
+  $(function(){
+    
+    var $container = $('#container');
+    
+    
+      // add randomish size classes
+      $container.find('.map_item').each(function(){
+        var $this = $(this),
+            number = parseInt( $this.find('.number').text(), 10 );
+        if ( number % 7 % 2 === 1 ) {
+          $this.addClass('width2');
+        }
+        if ( number % 3 === 0 ) {
+          $this.addClass('height2');
+        }
+      });
+    
+    $container.isotope({
+      itemSelector : '.map_item',
+      masonry : {
+        columnWidth : 250
+      }
+    });
+      
+    
+  });   
+
+        
+        
+        
+  </script>  
  
     
   </section> <!-- #content -->

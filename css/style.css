@@ -689,7 +689,7 @@ h1.story_title {
 }
 .close_btn {
 	float: right;
-	font-size: 60px;
+	font-size: 50px;
 	font-weight: 100;
 	line-height: 60px;
 }
@@ -747,9 +747,11 @@ h1.story_title {
 .map_row {
 	margin: 30px 0;
 }
-
+.pb_map {
+	position: relative;
+}
 .pb_map a {
-	background: url(../img/pb_map_sprite.png) no-repeat 0 -135px;
+	background: url(../img/pb_map_sprite2.png) no-repeat 0 -135px;
 	width: 270px;
 	height: 135px;
 	display: block;
@@ -758,9 +760,11 @@ h1.story_title {
 	-ms-transition: all .5s;
 	transition: all .5s;
 	transform: translate3d(0,0,0);
+	position: absolute;
+	top: 0;
 }
 .pb_map a:hover {
-	background: url(../img/pb_map_sprite.png) no-repeat 0 0;
+	background: url(../img/pb_map_sprite2.png) no-repeat 0 0;
 }
 
 
