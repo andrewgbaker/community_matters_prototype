@@ -86,7 +86,7 @@ body {
 }
 
 #container {
-  margin: 30px auto;
+  margin: 5px auto 30px;
   padding: 0;
 }
 
@@ -131,7 +131,7 @@ img.main_logo {
 }
 #slide_panel{
 	position: relative;
-	top: 0px;
+	top: -1px;
 	width: 100%;
 	z-index: 999;
 	text-align: center;
@@ -139,7 +139,6 @@ img.main_logo {
 	margin-right: auto;
 }
 #filters_panel {
-	/* background: #fffcf4; */
 	background: #fff;
 	height: 50px;
 	display: none;
@@ -173,7 +172,7 @@ ul.main_nav {
 .add_this {
 	position: absolute;
 	left: 3%;
-	bottom: 35%;
+	bottom: 34%;
 	text-transform: uppercase;
 	list-style: none;
 	margin-bottom: 0;
@@ -182,20 +181,21 @@ ul.main_nav {
 	font-size: 16px;
 	vertical-align: middle;
 }
+.add_this span {vertical-align: middle;}
 .add_this img {
 	vertical-align: middle;
 	padding-left: 10px;
 }
 .btn-slide {
 	padding-right: 35px;
-	background: url(../img/arrow_sprite2.png) no-repeat;
+	background: url(../img/sprite.svg) no-repeat;
 	background-position: bottom right;
 	height: 24px;
 	
 }
 
 .arrow_top {
-	background: url(../img/arrow_sprite2.png) no-repeat;
+	background: url(../img/sprite.svg) no-repeat;
 	background-position: top right;
 }
 
@@ -399,7 +399,12 @@ ul.main_nav {
 
 /* The Magnificent Clearfix: nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
+.clearfix:after { 
+	content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+ }
 .clearfix { zoom: 1; }
 
 
@@ -509,6 +514,7 @@ html[xmlns] .slides {display: block;}
 	width: 94%;
 	position: relative;
 	margin: 15px 3%;
+	text-align: center;
 }
 .charter_logos p {
 	font-size: 18px;
@@ -516,24 +522,30 @@ html[xmlns] .slides {display: block;}
 	margin: 15px 0;
 	font-weight: 700;
 	text-transform: uppercase;
-	float: right;
 }
-
-.charter_logos img {
-	max-width: 100%;
-	width: 100%;
+.logo_wrap {
+	display: inline-block;
+	margin: 0 auto;
+}
+.brought {
+	float: left;
 }
 
 .logos {
 	max-width: 900px;
 	max-height: 44px;
 	display: block;
+	background-size: 100%;
+	float: left;
 }
 figure.fixed_ratio {
 	display: block;
 	margin: 0;
-	background-image: url(../img/pinnacle_logos_small.png) no-repeat;
+	background: url(../img/pinnacle_logos_small.png) no-repeat;
 	background-size: 100%;
+	float: left;
+	width: 900px;
+	height: 44px;
 }
 
 .pinnbank_logo {
@@ -701,11 +713,25 @@ h1.story_title {
 	font-family: 'wisdom_script_airegular';
 	text-align: center;
 	display: table;
+	position: relative;
 	margin: 10px auto;
 	font-size: 28px;
 	line-height: 38px;
 	margin-bottom: 20px;
+	border-bottom:2px solid #767676; 
+	padding-bottom: 20px;
 }
+#about_map h3:before {
+	content:""; 
+    display:block; 
+    position:absolute; 
+    left:0; 
+    bottom:5px; 
+    width:100%; 
+    height:2px;                          
+    background:#767676;
+}
+    
 #about_map span {
 	text-transform: uppercase;
 	font-family: 'Open Sans', sans-serif;
@@ -748,6 +774,26 @@ h1.story_title {
 /* MEDIA QUERIES START HERE */
 
 @media only screen 
+and (max-width : 1300px) {
+
+
+#content {
+  margin: 0 3%;
+  max-width: 1400px;
+  padding-top: 160px;
+  /* background: #fffcf4; */
+	background: #fff;
+}
+figure.fixed_ratio {
+	width: 700px;
+}
+.charter_logos p {
+font-size: 14px;
+margin: 7px 0;
+}
+}
+
+@media only screen 
 and (max-width : 1200px) {
 
 
@@ -767,10 +813,35 @@ nav.top_nav {
 }
 
 }
+
 @media only screen 
 and (max-width : 480px) {
 
 .about_link {display: none;}
 .btn-slide span {display: none;}
+.add_this span {display: none;}
+.btn-slide {
+	padding-right: 35px;
+	background: url(../img/sprite_mobile.svg) no-repeat;
+	background-position: bottom right;
+	height: 24px;
+	
+}
+.arrow_top {
+	background: url(../img/sprite_mobile.png) no-repeat;
+	background-position: top right;
+}
+nav.top_nav {
+	background: #fff;
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	z-index: 101;
+	margin: 0;
+	
+}
+nav.top_nav .main_logo {
+	width: 140px;
+}
 
 }
