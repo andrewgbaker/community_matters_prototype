@@ -14,7 +14,7 @@
   <!-- scripts at bottom of page -->
 
 </head>
-<body class="demo">
+<body>
 
 <nav class="top_nav">
 	<div class="nav_interior">
@@ -24,7 +24,7 @@
 		<img class="main_logo" src="img/community_matters_logo.png" />
 		<ul class="main_nav">
 			<li><a href="about/index.html" class="about_link nav_link">About</a></li>
-			<li><a href="#" class="btn-slide nav_link">Stories near you</a></li>
+			<li><a href="#" class="btn-slide nav_link"><span>Stories near you</span></a></li>
 		</ul>
 	</div>
 	<div id="slide_panel">
@@ -48,20 +48,21 @@
 
 
 <div class="right_cta">
-	<img src="img/bank_with_us.png" />
+	<a href="about/#about_map"><img src="img/bank_with_us.png" /></a>
 </div>
 
 <section id="content">
 	<section class="header">
-		<img src="img/banner_demo.jpg" />
+		<div id="about_video" style="display:none;">
+		</div>
+		
+		<img src="img/video3c.jpg" id="imageID" />
 	</section>
-	<section class="charter_logos row-fluid">
-		<div class="span3">
+	<section class="charter_logos">
+		<div class="brought">
 			<p>Brought to you by:</p>
 		</div>
-		<div class="span3"><img src="img/pinnbank_logo.png" /></div>
-		<div class="span3"><img src="img/pinnbank_tx_logo.png" /></div>
-		<div class="span3"><img src="img/boc_logo.png" /></div>
+		<div class="logos"><figure class="fixed_ratio"></figure></div>
 	</section>
   
 	  
@@ -90,7 +91,7 @@
 		      
 						<!-- This will be shown while loading AJAX content. You'll want to get an image that suits your design at http://ajaxload.info/ -->
 						<div class="story-loading" style="display:none;">
-						  <img src="img/ajaxload-15-white.gif" alt="Loading"/> Loading content...
+						  <img src="img/loading.gif" alt="Loading"/> 
 						</div>
 						
 						<!-- This content will be shown if no path is specified in the URL fragment. -->
@@ -128,7 +129,7 @@
 		      
 						<!-- This will be shown while loading AJAX content. You'll want to get an image that suits your design at http://ajaxload.info/ -->
 						<div class="story-loading" style="display:none;">
-						  <img src="img/ajaxload-15-white.gif" alt="Loading"/> Loading content...
+						  <img src="img/loading.gif" alt="Loading"/>
 						</div>
 						
 						<!-- This content will be shown if no path is specified in the URL fragment. -->
@@ -209,6 +210,7 @@
 	<script src="js/jquery.ba-bbq.js"></script>
 	<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
 	<script src="js/pinned.jQuery.js"></script>
+	<script src="js/jquery.fitvids.min.js"></script>
 	<script src="js/main.js"></script>
 
 <script type="text/javascript">
@@ -231,10 +233,10 @@ $(document).ready( function() {
 	        scrolling:0,
 	        mobile: true
 	      },function(){
-	        $(".top_nav").css({'height':'100px'});
+	        $(".top_nav").css({'height':'100px'}).addClass('nav_shadow');
 	        $(".top_nav .main_logo").css({'width':'140px'});
 	      },function(){
-	        $(".top_nav").css({'height':'175px'});
+	        $(".top_nav").css({'height':'160px'}).removeClass('nav_shadow');
 	        $(".top_nav .main_logo").css({'width':'277px'});
 	      });
 	      
@@ -252,6 +254,18 @@ $(document).ready( function() {
 	  		$(this).toggleClass("arrow_top");
 	  		$(this).toggleClass("active"); return false;
 	  	});
+	  	
+	  	// VIDEO IMAGE OVERLAY POSTER
+	  	
+	  	$('#imageID').click(function() {
+			$('#about_video').show();
+			$('#about_video').append('<iframe src="http://player.vimeo.com/video/22015764?title=0&amp;byline=0&amp;portrait=0" width="1300" height="593" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>');
+			$('#imageID').hide();
+		});
+		
+		// FITVIDS
+		
+		$("#about_video").fitVids();
 });
 
 </script>

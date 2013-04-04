@@ -21,7 +21,7 @@
 		<!-- AddThis Button BEGIN -->
 		<a class="addthis_button add_this" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=ra-4d80efce2fb49656">Share<img src="../img/social_share.png" width="30" height="30" border="0" alt="Share" /></a>
 		<!-- AddThis Button END -->
-		<img class="main_logo" src="../img/community_matters_logo.png" />
+		<a href="../"><img class="main_logo" src="../img/community_matters_logo.png" /></a>
 		<ul class="main_nav">
 			<li><a href="#" class="about_link nav_link">About</a></li>
 			<li><a href="#" class="btn-slide nav_link">Stories near you</a></li>
@@ -48,7 +48,7 @@
 
 
 <div class="right_cta">
-	<img src="../img/bank_with_us.png" />
+	<a href="#about_map"><img src="../img/bank_with_us.png" /></a>
 </div>
 
 <section id="content">
@@ -57,46 +57,46 @@
 		<p>Family. Friends. Neighbors and the people we meet along the way. There’s power in community and in the stories that help shape each of them. We invite you to watch the stories of the people who live in the communities we serve. And join us in celebrating the power of community.</p>
 		<img src="../img/about_banner.jpg" alt="Community Matters Stories" />
 	</section>
-	<section class="about_map">
+	<section id="about_map">
 		<div class="row-fluid">
 			<div class="span12">
-				<h3>Select your state to <br /><span>Connect with your community bank</span></h3>
+				<h3 id="map_select">Select your state to <br /><span>Connect with your community bank</span></h3>
 			</div>
 		</div>
 	</section>
 	
-	<section class="map_row clickable clearfix" id="map_container">
+	<section class="map_row clickable clearfix" id="container">
 		<div class="map_item pb_map">
 			<div class="map_bg"><img src="../img/pb_map.png" /></div>
-			<a href="#"></a>
+			<a href="http://pinnbank.com/"></a>
 		</div>
 		<div class="map_item pb_map">
 			<div class="map_bg"><img src="../img/pb_map.png" /></div>
-			<a href="#"></a>
+			<a href="http://pinnbank.com/"></a>
 		</div>
 		<div class="map_item pb_map">
 			<div class="map_bg"><img src="../img/pb_map.png" /></div>
-			<a href="#"></a>
+			<a href="http://pinnbank.com/"></a>
 		</div>
 		<div class="map_item pb_map">
 			<div class="map_bg"><img src="../img/pb_map.png" /></div>
-			<a href="#"></a>
+			<a href="http://pinnbank.com/"></a>
 		</div>
 		<div class="map_item pb_map">
 			<div class="map_bg"><img src="../img/pb_map.png" /></div>
-			<a href="#"></a>
+			<a href="http://pinnbank.com/"></a>
 		</div>
 		<div class="map_item pb_map">
 			<div class="map_bg"><img src="../img/pb_map.png" /></div>
-			<a href="#"></a>
+			<a href="http://pinnbank.com/"></a>
 		</div>
 		<div class="map_item pb_map">
 			<div class="map_bg"><img src="../img/pb_map.png" /></div>
-			<a href="#"></a>
+			<a href="http://pinnbank.com/"></a>
 		</div>
 		<div class="map_item pb_map">
 			<div class="map_bg"><img src="../img/pb_map.png" /></div>
-			<a href="#"></a>
+			<a href="http://pinnbank.com/"></a>
 		</div>
 	</section>
 	
@@ -122,10 +122,10 @@ $(document).ready( function() {
 	        scrolling:0,
 	        mobile: true
 	      },function(){
-	        $(".top_nav").css({'height':'100px'});
+	        $(".top_nav").css({'height':'100px'}).addClass('nav_shadow');
 	        $(".top_nav .main_logo").css({'width':'140px'});
 	      },function(){
-	        $(".top_nav").css({'height':'175px'});
+	        $(".top_nav").css({'height':'160px'}).removeClass('nav_shadow');
 	        $(".top_nav .main_logo").css({'width':'277px'});
 	      });
 	      

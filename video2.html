@@ -13,17 +13,40 @@
 
 </head>
 <body>
-  <h1 class="story_title">DEMO VIDEO 1</h1>
-  <div class="close_btn">X</div>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum volutpat ligula, vel consectetur mi ornare non. Ut purus dolor, ultricies at commodo in, tincidunt et erat. Suspendisse volutpat, erat et posuere accumsan, eros velit consectetur est, id facilisis turpis magna et eros. Nullam sit amet purus augue. Maecenas non enim metus, sit amet consectetur felis. Donec molestie sagittis ipsum, nec elementum libero porta in. Suspendisse malesuada auctor orci, in aliquet elit congue iaculis. Mauris lobortis aliquam eros sit amet dictum. Cras varius turpis quis nulla pulvinar malesuada. Donec elementum venenatis ultricies. Cras auctor tristique est ut convallis. Aenean pretium aliquet leo a porta.</p>
- 	<section class="story_vid_wrap"> 
-		<iframe src="http://player.vimeo.com/video/35328420?title=0&amp;byline=0&amp;portrait=0" width="1000" height="562" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  	<section class="story_copy">
+		<div class="title_and_close clearfix">
+			<h1 class="story_title">OGALLALA LIVESTOCK AUCTION</h1>
+			<div class="close_btn">x</div>
+		</div>
+		<p class="clearfix">Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.</p>
+  </section>
+	<section class="story_vid_wrap">  
+		<div class="flexslider">
+			<ul class="slides">
+				<li>
+					<iframe width="1280" height="720" src="http://www.youtube.com/embed/Qc75tXGQB_0" frameborder="0" allowfullscreen></iframe>
+				</li>
+				<li>
+					<img src="img/slider_test.jpg" />
+				</li>
+			</ul>
+		</div>
 	</section>
 
+
 <script src="js/jquery.fitvids.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
 <script>
   $(document).ready(function(){
-    $(".story_vid_wrap").fitVids();
+  	setTimeout(function(){ 
+         $(".flexslider")
+		    .fitVids()
+		    .flexslider({
+		      	animation: 'slide',
+				slideshow: false,
+				controlNav: false
+	      });
+	}, 100 );
   });
 </script>
 </body>
