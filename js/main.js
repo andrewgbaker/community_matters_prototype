@@ -159,14 +159,13 @@ var $container = $('#container')
 		            // Content loaded, hide "loading" content.
 		            that.find( '.story-loading' ).hide();
 		          	that.find( '.story-content' ).parent('.element').toggleClass( 'story_width' );
-		            that.find( '.story-content' ).children( ':visible' ).toggleClass( 'expanded_item' );
 			        setTimeout(function(){ 
 				         $container.isotope('reLayout', function(){
 				         	var closestTitle = that.find('.story_title');
 				         
-					        $('html,body').animate({scrollTop:$(closestTitle).offset().top - 95}, 500);
+					        $('html,body').animate({scrollTop:$(closestTitle).offset().top - 95}, 300);
 					     });
-					}, 500 );
+					}, 600 );
 
 		          }); 
 		 

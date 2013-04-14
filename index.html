@@ -4,6 +4,7 @@
   
   <meta charset="utf-8" />
   <title>Pinnacle Bank Community Matters Prototype</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -16,12 +17,12 @@
 </head>
 <body>
 
-<nav class="top_nav">
+<nav class="top_nav nav_tall">
 	<div class="nav_interior">
 		<!-- AddThis Button BEGIN -->
 		<a class="addthis_button add_this" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=ra-4d80efce2fb49656"><span>Share</span><img src="img/social_share.png" width="30" height="30" border="0" alt="Share" /></a>
 		<!-- AddThis Button END -->
-		<img class="main_logo" src="img/community_matters_logo.png" />
+		<img class="main_logo logo_large" src="img/community_matters_logo.png" />
 		<ul class="main_nav">
 			<li><a href="about/index.html" class="about_link nav_link">About</a></li>
 			<li><a href="#" class="btn-slide nav_link"><span>Stories near you</span></a></li>
@@ -29,6 +30,7 @@
 	</div>
 	<div id="slide_panel">
 	  <div id="filters_panel">
+	  	<a href="about/index.html" class="about_link_mobile">About</a>
 		<section id="options" class="clearfix">
 			<ul class="option-set clearfix">
 		      <li><a href="#filter=*">view all</a></li>
@@ -53,10 +55,11 @@
 
 <section id="content">
 	<section class="header">
-		<div id="about_video" style="display:none;">
-		</div>
-		
-		<img src="img/video3c.jpg" id="imageID" />
+		<video id="header_video" class="video-js vjs-default-skin" poster="img/header_poster.png" autoplay preload="auto" loop data-setup="{}">
+		  <source type="video/mp4" src="video/pnbnk_header2NM_3000Kbps_720p.mp4">
+		  <source type="video/ogv" src="video/pnbnk_header2NM.ogv">
+		  <source type="video/webm" src="video/pnbnk_header2NM_WebM_3000Kbps_720p.webm">
+		</video>
 	</section>
 	<section class="charter_logos">
 		<div class="logo_wrap clearfix">
@@ -65,6 +68,9 @@
 			</div>
 			<div class="logos"><figure class="fixed_ratio"></figure></div>
 		</div>
+	</section>
+	<section class="mobile_cta">
+		<a href="about/#about_map"><img src="img/bank_with_us_mobile.svg" /></a>
 	</section>
   
 	  
@@ -93,7 +99,7 @@
 		      
 						<!-- This will be shown while loading AJAX content. You'll want to get an image that suits your design at http://ajaxload.info/ -->
 						<div class="story-loading" style="display:none;">
-						  <img src="img/loading.gif" alt="Loading"/> 
+						  <img src="img/ajaxload-15-white.gif" alt="Loading" class="loading"/> 
 						</div>
 						
 						<!-- This content will be shown if no path is specified in the URL fragment. -->
@@ -131,7 +137,7 @@
 		      
 						<!-- This will be shown while loading AJAX content. You'll want to get an image that suits your design at http://ajaxload.info/ -->
 						<div class="story-loading" style="display:none;">
-						  <img src="img/loading.gif" alt="Loading"/>
+						  <img src="img/ajaxload-15-white.gif" alt="Loading" class="loading"/>
 						</div>
 						
 						<!-- This content will be shown if no path is specified in the URL fragment. -->
@@ -213,6 +219,7 @@
 	<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
 	<script src="js/pinned.jQuery.js"></script>
 	<script src="js/jquery.fitvids.min.js"></script>
+	<script src="js/video.min.js"></script>
 	<script src="js/main.js"></script>
 
 <script type="text/javascript">
@@ -235,11 +242,11 @@ $(document).ready( function() {
 	        scrolling:0,
 	        mobile: true
 	      },function(){
-	        $(".top_nav").css({'height':'100px'}).addClass('nav_shadow');
-	        $(".top_nav .main_logo").css({'width':'140px'});
+	        $(".top_nav").removeClass('nav_tall').addClass('nav_shadow small_nav');
+	        $(".top_nav .main_logo").removeClass('logo_large').addClass('logo_small');
 	      },function(){
-	        $(".top_nav").css({'height':'160px'}).removeClass('nav_shadow');
-	        $(".top_nav .main_logo").css({'width':'277px'});
+	        $(".top_nav").removeClass('nav_shadow small_nav').addClass('nav_tall');
+	        $(".top_nav .main_logo").removeClass('logo_small').addClass('logo_large');
 	      });
 	      
 	      $(".right_cta").pinned({
@@ -265,9 +272,29 @@ $(document).ready( function() {
 			$('#imageID').hide();
 		});
 		
-		// FITVIDS
+		// FITVIDS 
 		
 		$("#about_video").fitVids();
+		
+		// HTML5 VIDEO
+		
+		_V_("header_video").ready(function(){
+
+		    var myPlayer = this;    // Store the video object
+		    var aspectRatio = 16/47; // Make up an aspect ratio
+		
+		    function resizeVideoJS(){
+		      // Get the parent element's actual width
+		      var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
+		      // Set width to fill parent element, Set height
+		      myPlayer.width(width).height( width * aspectRatio );
+		    }
+		
+		    resizeVideoJS(); // Initialize the function
+		    window.onresize = resizeVideoJS; // Call the function on resize
+		  });
+		
+	
 });
 
 </script>
