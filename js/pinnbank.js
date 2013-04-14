@@ -1,0 +1,135 @@
+(function(){
+	app = function(){
+		var self = this;
+			self.templates = [];
+			self._thumbs = thumbs.thumbs;
+			self._detail = detail.detail;
+			self._container = $("#container");
+			self.init = function(){
+				// SETUP PINNED ELEMENTS
+			      $(".top_nav").pinned({
+			        bounds: 1,
+			        scrolling:0,
+			        mobile: true
+			      },function(){
+			        $(".top_nav").removeClass('nav_tall').addClass('nav_shadow small_nav');
+			        $(".top_nav .main_logo").removeClass('logo_large').addClass('logo_small');
+			      },function(){
+			        $(".top_nav").removeClass('nav_shadow small_nav').addClass('nav_tall');
+			        $(".top_nav .main_logo").removeClass('logo_small').addClass('logo_large');
+			      });
+			      
+			      $(".right_cta").pinned({
+			        bounds: 1,
+			        scrolling:0,
+			        mobile: true
+			      });
+			      
+			      // FILTERS COLLAPSE JS
+			      	      
+				     $(".btn-slide").click(function(){
+				  		$("#filters_panel").slideToggle("fast");
+				  		$(this).toggleClass("arrow_top");
+				  		$(this).toggleClass("active"); return false;
+				  	});
+				  	
+				  // HTML5 HEADER VIDEO
+		
+					_V_("header_video").ready(function(){
+			
+					    var myPlayer = this;    // Store the video object
+					    var aspectRatio = 16/47; // Make up an aspect ratio
+					
+					    function resizeVideoJS(){
+					      // Get the parent element's actual width
+					      var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
+					      // Set width to fill parent element, Set height
+					      myPlayer.width(width).height( width * aspectRatio );
+					    }
+					
+					    resizeVideoJS(); // Initialize the function
+					    window.onresize = resizeVideoJS; // Call the function on resize
+					  });
+				
+				self.init_data();
+			      
+				}
+				
+				self.init_data = function(){
+					// SETUP THUMBS
+					var thumbs = self._thumbs;
+					_.each(thumbs, function(thumbnail){
+						var _id = thumbnail.id,
+							_title = thumbnail.title,
+							_filters = thumbnail.filters,
+							_thumb = thumbnail.image
+						
+						var new_thumbnail = new thumb(_id,_title,_filters,_thumb);
+						new_thumbnail.init();
+					
+					});
+					self.init_display();
+				}
+				
+				// INIT NAV 
+				
+				self.init_nav = function(){
+					$('.option-set a').click(function(){
+					      // get href attr, remove leading #
+					  var href = $(this).attr('href').replace( /^#/, '' ),
+					      // convert href into object
+					      // i.e. 'filter=.inner-transition' -> { filter: '.inner-transition' }
+					      option = $.deparam( href, true );
+					  // set hash, triggers hashchange on window
+					  $.bbq.pushState( option );
+					  return false;
+					});
+					
+					$(window).bind( 'hashchange', function( event ){
+					  // get options object from hash
+					  var hashOptions = $.deparam.fragment();
+					  // apply options from hash
+					  self._container.isotope( hashOptions );
+					})
+					  // trigger hashchange to capture any hash data on init
+					  .trigger('hashchange');
+				}
+				
+				// INIT DISPLAY 
+				
+				self.init_display = function(){
+				
+					// object that will keep track of options
+			          isotopeOptions = {},
+			          // defaults, used if not explicitly set in hash
+			          defaultOptions = {
+			            filter: '*',
+			            sortBy: 'original-order',
+			            sortAscending: true,
+			            layoutMode: 'masonry'
+			          };
+		
+			      var setupOptions = $.extend( {}, defaultOptions, {
+			        itemSelector : '.element',
+			        masonry: {
+					    columnWidth: 320
+					  },
+			        getSortData : {
+			          selected: function ($item) {
+			                return ($item.hasClass('story_width') ? -1000 : 0) + $item.index();
+			          }
+			        },
+			        sortBy: 'selected' 
+		
+			      });	
+		
+			      // set up Isotope
+			      self._container.isotope( setupOptions );
+			      
+			      self.init_nav();
+					
+				}
+			
+		return self;
+	}
+})();
