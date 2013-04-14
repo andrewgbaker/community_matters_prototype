@@ -1,8 +1,8 @@
 var $container = $('#container')
 
 // SET UP CENTERED MASONRY FUNCTION
-
-  $.Isotope.prototype._getCenteredMasonryColumns = function() {
+					
+	  $.Isotope.prototype._getCenteredMasonryColumns = function() {
     this.width = this.element.width();
     
     var parentWidth = this.element.parent().width();
@@ -59,7 +59,6 @@ var $container = $('#container')
           width : (this.masonry.cols - unusedCols) * this.masonry.columnWidth
         };
   };
-  
 
 // INITIATE JQUERY BBQ HASH HISTORY AND ISOTOPE
   
@@ -160,10 +159,11 @@ var $container = $('#container')
 		            // Content loaded, hide "loading" content.
 		            that.find( '.story-loading' ).hide();
 		          	that.find( '.story-content' ).parent('.element').toggleClass( 'story_width' );
-		            that.find( '.story-content' ).children( ':visible' ).toggleClass( 'expanded_item' );
 			        setTimeout(function(){ 
 				         $container.isotope('reLayout', function(){
-					        $('html,body').animate({scrollTop:$('.story_title').offset().top -100}, 500);
+				         	var closestTitle = that.find('.story_title');
+				         
+					        $('html,body').animate({scrollTop:$(closestTitle).offset().top - 95}, 300);
 					     });
 					}, 600 );
 
@@ -186,8 +186,8 @@ var $container = $('#container')
 	  // BEGIN ISOTOPE JS
 	  
 	  gridSetup:function(){
-	  
-	  
+
+
 	          // object that will keep track of options
 	          isotopeOptions = {},
 	          // defaults, used if not explicitly set in hash
@@ -197,7 +197,7 @@ var $container = $('#container')
 	            sortAscending: true,
 	            layoutMode: 'masonry'
 	          };
-			        
+
 	      var setupOptions = $.extend( {}, defaultOptions, {
 	        itemSelector : '.element',
 	        masonry: {
@@ -209,15 +209,15 @@ var $container = $('#container')
 	          }
 	        },
 	        sortBy: 'selected' 
-	        
+
 	      });	
-	      
+
 	      // set up Isotope
 	      $container.isotope( setupOptions );
-	  
+
 	      var $optionSets = $('#options').find('.option-set'),
 	          isOptionLinkClicked = false;
-	  
+
 	      // switches selected class on buttons
 	      function changeSelectedLink( $elem ) {
 	        // remove selected class on previous item
@@ -225,8 +225,8 @@ var $container = $('#container')
 	        // set selected class on new item
 	        $elem.addClass('selected');
 	      }
-	  
-	  
+
+
 	      $optionSets.find('a').click(function(){
 	        var $this = $(this);
 	        // don't proceed if already selected
@@ -246,9 +246,9 @@ var $container = $('#container')
 	        isOptionLinkClicked = true;
 	        return false;
 	      });
-	
+
 	      var hashChanged = false;
-	
+
 	      $(window).bind( 'hashchange', function( event ){
 	        // get options object from hash
 	        var hashOptions = window.location.hash ? $.deparam.fragment( window.location.hash, true ) : {},
@@ -260,7 +260,7 @@ var $container = $('#container')
 	        $container.isotope( options );
 	        // save options
 	        isotopeOptions = hashOptions;
-	    
+
 	        // if option link was not clicked
 	        // then we'll need to update selected links
 	        if ( !isOptionLinkClicked ) {
@@ -277,16 +277,16 @@ var $container = $('#container')
 	            changeSelectedLink( $selectedLink );
 	          }
 	        }
-	    
+
 	        isOptionLinkClicked = false;
 	        hashChanged = true;
 	      })
 	        // trigger hashchange to capture any hash data on init
 	        .trigger('hashchange');
-	        
+
 	  },
 	  
-	  // END FILTER SETUP   
+	  // END GRID SETUP   
 	        
 	        /* SHOW HIDE FULL STORY FUNCTIONS
 	      
@@ -308,23 +308,6 @@ var $container = $('#container')
 			    });
 	
 			    */
-			
-		openStory:function(){
-			    
-			    
-			    $(".element").on("click", ".vid_link", function(){
-		      
-			            $(this).closest('.element').toggleClass('story_width');
-			            $(this).find( ".story-content" ).children( ':visible' ).hide();
-				        $(this).closest(".story-default").show();
-		   				
-		   				setTimeout(function(){ 
-				         $container.isotope('reLayout');
-						  }, 500 ); 
-						  
-						  		        
-			   });
-		},
 		
 		closeStory:function(){
 			    
@@ -347,7 +330,49 @@ var $container = $('#container')
 						  		        
 			   });
 	        
-	    }    
+	    },
+	    
+	    openStory:function(){
+			    
+			    
+			    $(".element").on("click", ".vid_link", function(){
+		      
+			            $(this).closest('.element').toggleClass('story_width');
+			            $(this).find( ".story-content" ).children( ':visible' ).hide();
+				        $(this).closest(".story-default").show();
+		   				
+		   				setTimeout(function(){ 
+				         $container.isotope('reLayout');
+						  }, 500 ); 
+						  
+						  		        
+			   });
+		},
+	  
+	  aboutGrid:function(){	
+			      
+			      // object that will keep track of options
+			          isotopeOptions = {},
+			          // defaults, used if not explicitly set in hash
+			          defaultOptions = {
+			            filter: '*',
+			            sortBy: 'original-order',
+			            sortAscending: true,
+			            layoutMode: 'masonry'
+			          };
+		
+			      var setupOptions = $.extend( {}, defaultOptions, {
+			        itemSelector : '.map_item',
+			        masonry: {
+					    columnWidth: 300
+					  }
+		
+			      });	
+		
+			      // set up Isotope
+			      $container.isotope( setupOptions );
+			      
+			}
 	        
 };	  
 
