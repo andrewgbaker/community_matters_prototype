@@ -55,10 +55,70 @@ var thumbs = {
     ]
 }
 
-var detail = {
-    "detail": [
+var details = {
+    "details": [
         {
             "id": "1",
+            "title": "OGALLALA LIVESTOCK AUCTION",
+            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
+            "video": "Qc75tXGQB_0",
+            "images": [
+                "img/ogallala1.jpg",
+                "img/ogallala3.jpg",
+                "img/ogallala2.jpg",
+                "img/ogallala4.jpg"
+            ]
+        },
+        {
+            "id": "2",
+            "title": "OGALLALA LIVESTOCK AUCTION",
+            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
+            "video": "Qc75tXGQB_0",
+            "images": [
+                "img/ogallala1.jpg",
+                "img/ogallala3.jpg",
+                "img/ogallala2.jpg",
+                "img/ogallala4.jpg"
+            ]
+        },
+        {
+            "id": "3",
+            "title": "OGALLALA LIVESTOCK AUCTION",
+            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
+            "video": "Qc75tXGQB_0",
+            "images": [
+                "img/ogallala1.jpg",
+                "img/ogallala3.jpg",
+                "img/ogallala2.jpg",
+                "img/ogallala4.jpg"
+            ]
+        },
+        {
+            "id": "4",
+            "title": "OGALLALA LIVESTOCK AUCTION",
+            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
+            "video": "Qc75tXGQB_0",
+            "images": [
+                "img/ogallala1.jpg",
+                "img/ogallala3.jpg",
+                "img/ogallala2.jpg",
+                "img/ogallala4.jpg"
+            ]
+        },
+        {
+            "id": "5",
+            "title": "OGALLALA LIVESTOCK AUCTION",
+            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
+            "video": "Qc75tXGQB_0",
+            "images": [
+                "img/ogallala1.jpg",
+                "img/ogallala3.jpg",
+                "img/ogallala2.jpg",
+                "img/ogallala4.jpg"
+            ]
+        },
+        {
+            "id": "6",
             "title": "OGALLALA LIVESTOCK AUCTION",
             "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
             "video": "Qc75tXGQB_0",

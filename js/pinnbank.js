@@ -3,7 +3,7 @@
 		var self = this;
 			self.templates = [];
 			self._thumbs = thumbs.thumbs;
-			self._detail = detail.detail;
+			self._details = details.details;
 			self._container = $("#container");
 			self.init = function(){
 				// SETUP PINNED ELEMENTS
@@ -30,7 +30,8 @@
 				     $(".btn-slide").click(function(){
 				  		$("#filters_panel").slideToggle("fast");
 				  		$(this).toggleClass("arrow_top");
-				  		$(this).toggleClass("active"); return false;
+				  		$(this).toggleClass("active"); 
+				  		return false;
 				  	});
 				  	
 				  // HTML5 HEADER VIDEO
@@ -74,7 +75,13 @@
 				// INIT NAV 
 				
 				self.init_nav = function(){
+				
+				// LISTEN TO NAV
 					$('.option-set a').click(function(){
+					$('html,body').animate({
+						'scrollTop':$('#container').offset().top - 130
+					});
+					$('.active').removeClass('active');
 					      // get href attr, remove leading #
 					  var href = $(this).attr('href').replace( /^#/, '' ),
 					      // convert href into object
@@ -84,15 +91,80 @@
 					  $.bbq.pushState( option );
 					  return false;
 					});
-					
+				
+				// LISTEN TO HASHCHANGE	
 					$(window).bind( 'hashchange', function( event ){
 					  // get options object from hash
 					  var hashOptions = $.deparam.fragment();
+					  
+					  var active_nav = hashOptions.filter;
+					  
+					  if(active_nav){
+					  	$('html,body').animate({
+							'scrollTop':$('#container').offset().top - 130
+						});
+					  }
+					  
+					  $('.option-set a[href="#filter='+active_nav+'"]').addClass('active')
+					  
+					  // CHECK STORIES AND ACTIVATE IF NEEDED 
+					  var url = hashOptions.story;
+					  
+					  if(url){
+					  	if(self.active_detail){
+					  		self.active_detail.kill(function(){
+					  			_.find(self._details, function(list, iterator){
+								  	if(list.id == url){
+								  		var _id = list.id,
+								  			_title = list.title,
+								  			_copy = list.copy,
+								  			_video = list.video,
+								  			_images = list.images;
+								  			
+								  		var new_detail = new detail(_id,_title,_copy,_video,_images);
+								  		new_detail.init();
+								  		
+								  		self.active_detail = new_detail;
+								  	}
+								});
+					  		});
+					  	}
+					  	else{
+						  _.find(self._details, function(list, iterator){
+						  	if(list.id == url){
+						  		var _id = list.id,
+						  			_title = list.title,
+						  			_copy = list.copy,
+						  			_video = list.video,
+						  			_images = list.images;
+						  			
+						  		var new_detail = new detail(_id,_title,_copy,_video,_images);
+						  		new_detail.init();
+						  		
+						  		self.active_detail = new_detail;
+						  	}
+						  });
+						}
+					  }
+					  else{
+					  	if(self.active_detail){
+					  		self.active_detail.kill();
+					  	}
+					  }
 					  // apply options from hash
 					  self._container.isotope( hashOptions );
-					})
-					  // trigger hashchange to capture any hash data on init
-					  .trigger('hashchange');
+					}).trigger('hashchange');
+					  
+				// LISTEN TO THUMB LINKS
+					$('.vid_link').click(function(){
+						var state = {},
+						url = $(this).attr('href');
+						
+						state['story'] = url;
+						$.bbq.pushState(state);
+						
+						return false;
+					});
 				}
 				
 				// INIT DISPLAY 

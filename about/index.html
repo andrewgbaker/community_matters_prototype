@@ -31,15 +31,15 @@
 	  <div id="filters_panel">
 		<section id="options" class="clearfix">
 			<ul class="option-set clearfix">
-		      <li><a href="http://clients.karshhagan.com/pinnbank/microsite_demo/">view all</a></li>
-		      <li><a href="http://clients.karshhagan.com/pinnbank/microsite_demo/#filter=.pinnbank">Nebraska</a></li>
-		      <li><a href="http://clients.karshhagan.com/pinnbank/microsite_demo/#filter=.bankofcolorado">Colorado</a></li>
-		      <li><a href="http://clients.karshhagan.com/pinnbank/microsite_demo/#filter=.pinnbanktx">Texas</a></li>
-		      <li><a href="http://clients.karshhagan.com/pinnbank/microsite_demo/#filter=.pinnbank">Wyoming</a></li>
-		      <li><a href="http://clients.karshhagan.com/pinnbank/microsite_demo/#filter=.pinnbank">Missouri</a></li>
-		      <li><a href="http://clients.karshhagan.com/pinnbank/microsite_demo/#filter=.pinnbank">New Mexico</a></li>
-		      <li><a href="http://clients.karshhagan.com/pinnbank/microsite_demo/#filter=.pinnbank">Iowa</a></li>
-		      <li><a href="http://clients.karshhagan.com/pinnbank/microsite_demo/#filter=.pinnbank">Kansas</a></li>
+		      <li><a href="../">view all</a></li>
+		      <li><a href="../#filter=.pinnbank">Nebraska</a></li>
+		      <li><a href="../#filter=.bankofcolorado">Colorado</a></li>
+		      <li><a href="../#filter=.pinnbanktx">Texas</a></li>
+		      <li><a href="../#filter=.pinnbank">Wyoming</a></li>
+		      <li><a href="../#filter=.pinnbank">Missouri</a></li>
+		      <li><a href="../#filter=.pinnbank">New Mexico</a></li>
+		      <li><a href="../#filter=.pinnbank">Iowa</a></li>
+		      <li><a href="../#filter=.pinnbank">Kansas</a></li>
 		    </ul>
   		</section> <!-- #options -->
 	  </div>
@@ -105,13 +105,10 @@
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4d80efce2fb49656"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
-	<script src="../js/jquery.isotope.min.js"></script>
-	<script src="../js/pinned.jQuery.js"></script>
-	<script src="../js/main.js"></script>
+	<script src="../js/libs/jquery.isotope.min.js"></script>
+	<script src="../js/libs/pinned.jQuery.js"></script>
+	<script src="../js/resources/isotope_setup.js"></script>
 
-<script type="text/javascript">
-	history.aboutGrid();
-</script>
 <script type="text/javascript">
 $(document).ready( function() {
     // STICKY NAV JAVASCRIPT
@@ -143,6 +140,27 @@ $(document).ready( function() {
 	  		$(this).toggleClass("arrow_top");
 	  		$(this).toggleClass("active"); return false;
 	  	});
+	  	
+	  	// object that will keep track of options
+          isotopeOptions = {},
+          // defaults, used if not explicitly set in hash
+          defaultOptions = {
+            filter: '*',
+            sortBy: 'original-order',
+            sortAscending: true,
+            layoutMode: 'masonry'
+          };
+
+      var setupOptions = $.extend( {}, defaultOptions, {
+        itemSelector : '.map_item',
+        masonry: {
+		    columnWidth: 300
+		  }
+
+      });	
+
+      // set up Isotope
+      $('#container').isotope( setupOptions );
 });
 
 </script>

@@ -357,6 +357,9 @@ ul.main_nav {
 #options li a:active {
   color: #ba6451;
 }
+#options li a.active {
+  color: #ba6451;
+}
 
 #options li a.selected {
   color: #ba6451;

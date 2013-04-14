@@ -12,6 +12,11 @@
 				self._thumb = $(_thumbnail);
 				
 				_app._container.append(self._thumb);
+				
+				self._thumb.children('.vid_link').click(function(event){
+					console.log('click');
+					return false;
+				});
 			}
 		return self;
 	}

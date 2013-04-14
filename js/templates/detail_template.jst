@@ -1,44 +1,23 @@
-<section class="story_copy">
-	<div class="title_and_close clearfix">
-		<h1 class="story_title">OGALLALA LIVESTOCK AUCTION</h1>
-		<div class="close_btn">x</div>
-	</div>
-	<p class="clearfix">Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.</p>
+<section class="story_wrapper">
+	<section class="story_copy">
+		<div class="title_and_close clearfix">
+			<h1 class="story_title"><%= title %></h1>
+			<div class="close_btn">x</div>
+		</div>
+		<p class="clearfix"><%= copy %></p>
+	</section>
+	<section class="story_vid_wrap">  
+		<div class="flexslider">
+			<ul class="slides">
+				<li>
+					<iframe width="1280" height="720" src="http://www.youtube.com/embed/<%= video %>" frameborder="0" allowfullscreen></iframe>
+				</li>
+				<% _.each(images, function(image){ %> 
+					<li>
+					<img src="<%= image %>" />
+				</li>
+				<% }) %>
+			</ul>
+		</div>
+	</section>
 </section>
-<section class="story_vid_wrap">  
-	<div class="flexslider">
-		<ul class="slides">
-			<li>
-				<iframe width="1280" height="720" src="http://www.youtube.com/embed/Qc75tXGQB_0" frameborder="0" allowfullscreen></iframe>
-			</li>
-			<li>
-				<img src="img/ogallala1.jpg" />
-			</li>
-			<li>
-				<img src="img/ogallala3.jpg" />
-			</li>
-			<li>
-				<img src="img/ogallala2.jpg" />
-			</li>
-			<li>
-				<img src="img/ogallala4.jpg" />
-			</li>
-		</ul>
-	</div>
-</section>
-
-
-
-<script>
-  $(document).ready(function(){
-  	setTimeout(function(){ 
-         $(".flexslider")
-		    .fitVids()
-		    .flexslider({
-		      	animation: 'slide',
-				slideshow: false,
-				controlNav: false
-	      });
-	}, 100 );
-  });
-</script>
