@@ -7,7 +7,7 @@ var thumbs = {
                 "pinnbank",
                 "bankofcolorado",
             ],
-            "image": "img/thumb4.jpg"
+            "image": "img/thumb1.jpg"
         },
         {
             "id": "2",
@@ -15,7 +15,7 @@ var thumbs = {
             "filters": [
                 "pinnbank"
             ],
-            "image": "img/thumb4.jpg"
+            "image": "img/thumb2.jpg"
         },
         {
             "id": "3",
@@ -24,7 +24,7 @@ var thumbs = {
                 "pinnbank",
                 "bankofcolorado",
             ],
-            "image": "img/thumb4.jpg"
+            "image": "img/thumb3.jpg"
         },
         {
             "id": "4",
@@ -40,7 +40,7 @@ var thumbs = {
             "filters": [
                 "pinnbank"
             ],
-            "image": "img/thumb4.jpg"
+            "image": "img/thumb5.jpg"
         },
         {
             "id": "6",
@@ -49,7 +49,58 @@ var thumbs = {
                 "pinnbank",
                 "bankofcolorado",
             ],
-            "image": "img/thumb4.jpg"
+            "image": "img/thumb6.jpg"
+        },
+        {
+            "id": "7",
+            "title": "link 1",
+            "filters": [
+                "pinnbank",
+                "bankofcolorado",
+            ],
+            "image": "img/thumb7.jpg"
+        },
+        {
+            "id": "8",
+            "title": "link 2",
+            "filters": [
+                "pinnbank"
+            ],
+            "image": "img/thumb8.jpg"
+        },
+        {
+            "id": "9",
+            "title": "link 3",
+            "filters": [
+                "pinnbank",
+                "bankofcolorado",
+            ],
+            "image": "img/thumb9.jpg"
+        },
+        {
+            "id": "10",
+            "title": "link 4",
+            "filters": [
+                "pinnbank"
+            ],
+            "image": "img/thumb10.jpg"
+        },
+        {
+            "id": "11",
+            "title": "link 5",
+            "filters": [
+                "pinnbank"
+            ],
+            "image": "img/thumb11.jpg"
+        },
+        {
+            "id": "12",
+            "title": "link 6",
+            "filters": [
+                "pinnbank",
+                "bankofcolorado",
+            ],
+            "image": "img/thumb12.jpg"
         }
         
     ]
@@ -119,6 +170,78 @@ var details = {
         },
         {
             "id": "6",
+            "title": "OGALLALA LIVESTOCK AUCTION",
+            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
+            "video": "Qc75tXGQB_0",
+            "images": [
+                "img/ogallala1.jpg",
+                "img/ogallala3.jpg",
+                "img/ogallala2.jpg",
+                "img/ogallala4.jpg"
+            ]
+        },
+        {
+            "id": "7",
+            "title": "OGALLALA LIVESTOCK AUCTION",
+            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
+            "video": "Qc75tXGQB_0",
+            "images": [
+                "img/ogallala1.jpg",
+                "img/ogallala3.jpg",
+                "img/ogallala2.jpg",
+                "img/ogallala4.jpg"
+            ]
+        },
+        {
+            "id": "8",
+            "title": "OGALLALA LIVESTOCK AUCTION",
+            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
+            "video": "Qc75tXGQB_0",
+            "images": [
+                "img/ogallala1.jpg",
+                "img/ogallala3.jpg",
+                "img/ogallala2.jpg",
+                "img/ogallala4.jpg"
+            ]
+        },
+        {
+            "id": "9",
+            "title": "OGALLALA LIVESTOCK AUCTION",
+            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
+            "video": "Qc75tXGQB_0",
+            "images": [
+                "img/ogallala1.jpg",
+                "img/ogallala3.jpg",
+                "img/ogallala2.jpg",
+                "img/ogallala4.jpg"
+            ]
+        },
+        {
+            "id": "10",
+            "title": "OGALLALA LIVESTOCK AUCTION",
+            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
+            "video": "Qc75tXGQB_0",
+            "images": [
+                "img/ogallala1.jpg",
+                "img/ogallala3.jpg",
+                "img/ogallala2.jpg",
+                "img/ogallala4.jpg"
+            ]
+        },
+        {
+            "id": "11",
+            "title": "OGALLALA LIVESTOCK AUCTION",
+            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
+            "video": "Qc75tXGQB_0",
+            "images": [
+                "img/ogallala1.jpg",
+                "img/ogallala3.jpg",
+                "img/ogallala2.jpg",
+                "img/ogallala4.jpg"
+            ]
+        },
+        {
+            "id": "12",
             "title": "OGALLALA LIVESTOCK AUCTION",
             "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
             "video": "Qc75tXGQB_0",

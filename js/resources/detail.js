@@ -21,14 +21,17 @@
 			$('#story' + self.options.id).children('.story-content').hide();
 			
 			_.delay(function(){
+				_app._container.isotope('reLayout');
+			}, 500);
+			
+			_.delay(function(){
+			
 				var closestTitle = $('#story' + self.options.id).find('.story_title')
 				
 				$('html, body').animate({
 					'scrollTop': (closestTitle.offset().top - 100)
 				});
-				_app._container.isotope('reLayout');
-			}, 500);
-			
+			}, 800);
 			
 		
 			$(".flexslider").fitVids().flexslider({

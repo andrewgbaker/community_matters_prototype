@@ -36,6 +36,10 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+html, body {
+	height: 100%;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
@@ -107,9 +111,10 @@ nav.top_nav {
 	transition: all .5s;
 }
 .nav_shadow {
-	box-shadow: 0 6px 6px -3px rgb(192, 192, 192);
     -moz-box-shadow: 0 6px 6px -3px rgb(192, 192, 192);
     -webkit-box-shadow: 0 6px 6px -3px rgb(192, 192, 192);
+    box-shadow: 0 6px 6px -3px rgb(192, 192, 192);
+
 }
 .nav_tall {height: 160px;}
 .small_nav {height: 100px;}
@@ -132,11 +137,17 @@ img.main_logo {
 }
 .logo_large {width: 247px;}
 .logo_small {width: 140px;}
-.right_cta {
+.right_cta a {
 	position: fixed;
 	right: 0;
 	top: 40% !important;
 	z-index: 102;
+	background: url(../img/bank_with_us.svg);
+	width: 40px;
+	height: 185px;
+}
+.no-svg .right_cta a {
+	background: url(../img/bank_with_us.png);
 }
 #slide_panel{
 	position: relative;
@@ -210,6 +221,10 @@ ul.main_nav {
 .arrow_top {
 	background: url(../img/sprite.svg) no-repeat;
 	background-position: top right;
+}
+.no-svg .btn-slide, 
+.no-svg .arrow_top {
+	background-image: url('images/arrow_sprite2.png');
 }
 
 
@@ -519,7 +534,7 @@ REQUIRED STYLES (be careful overriding)
    Otherwise you risk messing up control positioning and full window mode. **
 */
 .video-js {
-  background-color: #000; position: relative; padding: 0;
+  background-color: #fff; position: relative; padding: 0;
 
   /* Start with 10px for base font size so other dimensions can be em based and easily calculable. */
   font-size: 10px;
@@ -530,7 +545,7 @@ REQUIRED STYLES (be careful overriding)
 }
 
 /* Playback technology elements expand to the width/height of the containing div. <video> or <object> */
-.video-js .vjs-tech { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.video-js .vjs-tech { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
 
 /* Fix for Firefox 9 fullscreen (only if it is enabled). Not needed when checking fullScreenEnabled. */
 .video-js:-moz-full-screen { position: absolute; }
@@ -632,8 +647,7 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
   margin: 0 5%;
   max-width: 1400px;
   padding-top: 160px;
-  /* background: #fffcf4; */
-	background: #fff;
+  background: #fff;
 }
 
 .header {
@@ -644,6 +658,7 @@ video {
     width: 100%;
     max-width: 100%;
     height: auto;
+    border: none;
 }
 
 .header img {
@@ -785,6 +800,8 @@ a.story-current {
 	font-size: 18px;
 	font-weight: bold;
 	text-align: center;
+	top: 20px;
+	position: relative;
 }
 .story-loading {
 	width: 300px;
@@ -819,13 +836,35 @@ h1.story_title {
 	font-weight: 700;
 }
 .close_btn {
-	float: right;
-	font-size: 50px;
-	font-weight: 100;
-	line-height: 60px;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
 }
-.close_btn:hover {
-	color: #ba6451;
+
+.close_btn::before,
+.close_btn::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	height: 1px;
+	background: #888;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.close_btn::after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.close_btn:hover::before,
+.close_btn:hover::after {
+	background: #ba6451;
 }
 .title_and_close {
 	margin-bottom: 15px;
@@ -898,7 +937,7 @@ h1.story_title {
 }
 .map_item {
 	width: 270px;
-	height: 300px;
+	height: 250px;
 	margin: 10px 0px;
 	float: left;
 	overflow: hidden;
@@ -982,6 +1021,23 @@ h1.story_title {
 	background: url(../img/il_sprite.png) no-repeat 0 0;
 }
 
+/* FOOTER STYLES HERE */
+
+footer {
+	background: #767676;
+	padding: 40px 0 10px;
+}
+.footer_interior {
+	margin: 0 auto;
+	max-width: 350px;
+}
+.footer_component {
+	display: inline-block;
+	vertical-align: bottom;
+	margin: 0 10px;
+	color: #fff;
+}
+
 /* MEDIA QUERIES START HERE */
 
 @media only screen 
@@ -1002,13 +1058,7 @@ figure.fixed_ratio {
 font-size: 14px;
 margin: 7px 0;
 }
-.header {
-	margin: 0 auto;
-	position: relative;
-	width: 940px;
-	height: 320px;
-	display: block;
-}
+
 }
 
 @media only screen 
@@ -1050,6 +1100,9 @@ nav.top_nav {
 	height: 100px;
 	z-index: 101;
 	margin: 0;
+	-moz-box-shadow: 0 6px 6px -3px rgb(192, 192, 192);
+    -webkit-box-shadow: 0 6px 6px -3px rgb(192, 192, 192);
+    box-shadow: 0 6px 6px -3px rgb(192, 192, 192);
 	
 }
 nav.top_nav .main_logo {
@@ -1066,7 +1119,7 @@ nav.top_nav .main_logo {
 }
 
 @media only screen 
-and (max-width : 480px) {
+and (max-width : 540px) {
 
 .about_link {display: none;}
 .btn-slide span {display: none;}
@@ -1090,6 +1143,10 @@ and (max-width : 480px) {
 	background: url(../img/sprite_mobile.svg) no-repeat;
 	background-position: top right;
 }
+.no-svg .btn-slide, 
+.no-svg .arrow_top {
+	background-image: url('images/sprite_mobile.png');
+}
 
 #options li a {
   display: inline-block;
@@ -1111,9 +1168,15 @@ width: 100%;
 .mobile_cta {
 	display: block;
 }
-.mobile_cta img {
+.mobile_cta a {
 	display: block;
 	margin: 0 auto;
+	background: url(..img/bank_with_us_mobile.svg);
+	width: 185px;
+	height: 40px;
+}
+.no-svg .mobile_cta a {
+	background: url(..img/bank_with_us_mobile.png);
 }
 .right_cta {display: none;}
 

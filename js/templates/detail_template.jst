@@ -2,7 +2,7 @@
 	<section class="story_copy">
 		<div class="title_and_close clearfix">
 			<h1 class="story_title"><%= title %></h1>
-			<div class="close_btn">x</div>
+			<div class="close_btn"></div>
 		</div>
 		<p class="clearfix"><%= copy %></p>
 	</section>
@@ -13,7 +13,7 @@
 					<iframe width="1280" height="720" src="http://www.youtube.com/embed/<%= video %>" frameborder="0" allowfullscreen></iframe>
 				</li>
 				<% _.each(images, function(image){ %> 
-					<li>
+				<li>
 					<img src="<%= image %>" />
 				</li>
 				<% }) %>

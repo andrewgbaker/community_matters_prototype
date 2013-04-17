@@ -8,7 +8,7 @@
 			self.init = function(){
 				// SETUP PINNED ELEMENTS
 			      $(".top_nav").pinned({
-			        bounds: 1,
+			        bounds: 0,
 			        scrolling:0,
 			        mobile: true
 			      },function(){
