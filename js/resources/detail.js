@@ -25,7 +25,6 @@
 			}, 500);
 			
 			_.delay(function(){
-			
 				var closestTitle = $('#story' + self.options.id).find('.story_title')
 				
 				$('html, body').animate({
