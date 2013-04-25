@@ -209,13 +209,19 @@ ul.main_nav {
 	color: #b29b72;
 	font-weight: 700;
 	vertical-align: middle;
+	height: 30px;
+	padding-right: 35px;
 }
-.add_this span {vertical-align: middle; display: inline-block;}
-.add_this img {
-	vertical-align: middle;
-	padding-left: 10px;
-	display: inline-block;
+.svg .add_this {
+	background: url(../img/social_share.svg) no-repeat;
+	background-position: right;
 }
+.no-svg .add_this {
+	background: url(../img/social_share.png) no-repeat;
+	background-position: right;
+}
+.add_this span {vertical-align: middle; display: inline-block; line-height: 30px;}
+
 .btn-slide {
 	padding-right: 35px;
 	background: url(../img/sprite.svg) no-repeat;
@@ -492,8 +498,8 @@ html[xmlns] .slides {display: block;}
 .flex-direction-nav a {
 	margin-top: -16px;
 	outline: 0;
-	width: 32px;
-	height: 62px;
+	width: 24px;
+	height: 52px;
 	display: block;
 	position: absolute;
 	top: 50%;
@@ -501,8 +507,10 @@ html[xmlns] .slides {display: block;}
 	cursor: pointer;
 	text-indent: -9999px;
 	}
-.flex-direction-nav .flex-next {right: -50px; background: url(../img/slider_arrows3.png) no-repeat -43px 0; }
-.flex-direction-nav .flex-prev {left: -50px; background: url(../img/slider_arrows3.png) no-repeat 0 0;}
+.flex-direction-nav .flex-next {right: -50px; background: url(../img/slider_arrows3.svg) no-repeat -43px 0; }
+.flex-direction-nav .flex-prev {left: -50px; background: url(../img/slider_arrows3.svg) no-repeat 0 0;}
+.no-svg .flex-direction-nav .flex-next {background: url(../img/slider_arrows3.png) no-repeat -43px 0; }
+.no-svg .flex-direction-nav .flex-prev {background: url(../img/slider_arrows3.png) no-repeat 0 0;}
 .flexslider .flex-next:hover {background-position: -43px -61px;}
 .flexslider .flex-prev:hover {background-position: 0 -61px;}
 .flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
@@ -1179,6 +1187,18 @@ and (max-width : 540px) {
 .no-svg .arrow_top {
 	background-image: url(../img/sprite_mobile.png);
 }
+h1.story_title {
+	font-size: 20px;
+	line-height: 30px;
+	border-bottom: 1px solid #767676;
+	border-top: 1px solid #767676;
+	float: left;
+	font-weight: 700;
+	margin-right: 100px;
+}
+.flexslider {margin: 30px 0px 40px; background: #fff; position: relative; zoom: 1;}
+.flex-direction-nav .flex-next {right: 0px; background: url(../img/slider_arrows3.svg) no-repeat rgba(255,255,255, .5) -43px 0; }
+.flex-direction-nav .flex-prev {left: 0px; background: url(../img/slider_arrows3.svg) no-repeat rgba(255,255,255, .5) 0 0;}
 
 #options li a {
   display: inline-block;
