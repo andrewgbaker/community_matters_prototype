@@ -35,12 +35,15 @@
 		
 			$(".flexslider").fitVids().flexslider({
 		      	animation: 'slide',
-				slideshow: false,
-				controlNav: false
+				slideshow: false
 	      	});
 	      	
-	      	$('.close_btn').click(self.kill);
 	      	
+	      	$('.close_btn').click(function() {
+		        $("iframe").hide();
+		        self.kill();
+		    });
+	      	 
 	      	self.options.active = true;
 		}
 		

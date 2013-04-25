@@ -54,7 +54,7 @@
 				
 				self.init_data();
 			      
-				}
+				} 
 				
 				self.init_data = function(){
 					// SETUP THUMBS
@@ -91,6 +91,7 @@
 					  $.bbq.pushState( option );
 					  return false;
 					});
+				      
 				
 				// LISTEN TO HASHCHANGE	
 					$(window).bind( 'hashchange', function( event ){
@@ -185,13 +186,7 @@
 			        itemSelector : '.element',
 			        masonry: {
 					    columnWidth: 320
-					  },
-			        getSortData : {
-			          selected: function ($item) {
-			                return ($item.hasClass('story_width') ? -1000 : 0) + $item.index();
-			          }
-			        },
-			        sortBy: 'selected' 
+					  }
 		
 			      });	
 		

@@ -124,6 +124,12 @@ nav.top_nav {
 	position: relative;
 	font-size: 16px;
 }
+.ie7 .nav_interior {
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	font-size: 14px;
+}
 
 img.main_logo {
 	margin: 10px auto;
@@ -202,20 +208,20 @@ ul.main_nav {
 	margin-bottom: 0;
 	color: #b29b72;
 	font-weight: 700;
-	font-size: 16px;
 	vertical-align: middle;
 }
-.add_this span {vertical-align: middle;}
+.add_this span {vertical-align: middle; display: inline-block;}
 .add_this img {
 	vertical-align: middle;
 	padding-left: 10px;
+	display: inline-block;
 }
 .btn-slide {
 	padding-right: 35px;
 	background: url(../img/sprite.svg) no-repeat;
 	background-position: bottom right;
 	height: 24px;
-	
+
 }
 
 .arrow_top {
@@ -224,7 +230,7 @@ ul.main_nav {
 }
 .no-svg .btn-slide, 
 .no-svg .arrow_top {
-	background-image: url('images/arrow_sprite2.png');
+	background-image: url(../img/arrow_sprite2.png);
 }
 
 
@@ -473,7 +479,7 @@ html[xmlns] .slides {display: block;}
 
 /* FlexSlider Default Theme
 *********************************/
-.flexslider {margin: 30px 50px; background: #fff; position: relative; zoom: 1;}
+.flexslider {margin: 30px 50px 40px; background: #fff; position: relative; zoom: 1;}
 .flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
 .loading .flex-viewport {max-height: 300px;}
 .flexslider .slides {zoom: 1;}
@@ -504,9 +510,9 @@ html[xmlns] .slides {display: block;}
 /* Control Nav */
 .flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
 .flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
-.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px;}
-.flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
-.flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; cursor: pointer; text-indent: -9999px;}
+.flex-control-paging li a:hover { background: #ba6451; }
+.flex-control-paging li a.flex-active { background: #ba6451; cursor: default; }
 
 /* END SLIDER STYLES */
 
@@ -674,6 +680,13 @@ header img {
 	font-weight: 700;
 	text-transform: uppercase;
 }
+.ie7 .charter_logos p {
+	font-size: 14px;
+	vertical-align: bottom;
+	margin: 15px 0;
+	font-weight: 700;
+	text-transform: uppercase;
+}
 .logo_wrap {
 	display: inline-block;
 	margin: 0 auto;
@@ -687,37 +700,13 @@ header img {
 	max-width: 900px;
 	max-height: 44px;
 	display: block;
-	background-size: 100%;
+	width: 80%;
 	float: left;
 }
-figure.fixed_ratio {
-	display: block;
-	margin: 0;
-	background: url(../img/pinnacle_logos_small.png) no-repeat;
-	background-size: 100%;
-	float: left;
-	width: 900px;
-	height: 44px;
+.logos img {
+	max-width: 100%;
 }
 
-.pinnbank_logo {
-	background: url(../img/pinnbank_logo.png) no-repeat;
-	background-size: 250px 50px;
-	width: 250px;
-	height: 50px;
-}
-.pinnbank_tx_logo {
-	background: url(../img/pinnbank_tx_logo.png) no-repeat;
-	background-size: 250px 44px;
-	width: 250px;
-	height: 44px;
-}
-.boc_logo {
-	background: url(../img/boc_logo.png) no-repeat;
-	background-size: 250px 44px;
-	width: 250px;
-	height: 44px;
-}
 .element {
   width: 300px;
   height: 300px;
@@ -767,15 +756,19 @@ figure.fixed_ratio {
     overflow: hidden;
     top: 0;
     left: 0;
-    opacity: 0;
-    background: url(../img/thumb_mask.png);
+    -moz-opacity: 0;
+	opacity:0;
+	filter: alpha(opacity=0);
+    background: url(../img/thumb_mask2.png);
     -moz-transition: all 0.4s ease-in-out;
   	-webkit-transition: all 0.4s ease-in-out;
   	-o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
 a.vid_link:hover .thumb_mask { 
-    opacity: 1;
+    -moz-opacity: 1.0;
+	opacity:1.0;
+	filter: alpha(opacity=60);
 }
 .thumb_content h3 {
 	font-size: 18px;
@@ -874,6 +867,19 @@ h1.story_title {
 .close_btn:hover::after {
 	background: #ba6451;
 }
+.no-csstransforms .close_btn {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+	background-image: url('../img/close.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+
 .title_and_close {
 	margin-bottom: 15px;
 }
@@ -945,7 +951,7 @@ h1.story_title {
 }
 .map_item {
 	width: 270px;
-	height: 250px;
+	height: 230px;
 	margin: 10px 0px;
 	float: left;
 	overflow: hidden;
@@ -1005,12 +1011,12 @@ h1.story_title {
 	background: url(../img/nm_sprite.png) no-repeat 0 30px;
 }
 .tx_map a {
-	background: url(../img/tx_sprite3.png) no-repeat 0 -135px;
+	background: url(../img/tx_sprite3.png) no-repeat 0 -145px;
 	width: 270px;
 	height: 260px;
 }
 .tx_map a:hover {
-	background: url(../img/tx_sprite3.png) no-repeat 0 0;
+	background: url(../img/tx_sprite3.png) no-repeat 0 -10px;
 }
 .mo_map a {
 	background: url(../img/mo_sprite.png) no-repeat 0 -120px;
@@ -1020,13 +1026,13 @@ h1.story_title {
 .mo_map a:hover {
 	background: url(../img/mo_sprite.png) no-repeat 0 0;
 }
-.il_map a {
-	background: url(../img/il_sprite.png) no-repeat 0 -135px;
+.ia_map a {
+	background: url(../img/ia_sprite.png) no-repeat 0 -115px;
 	width: 270px;
 	height: 170px;
 }
-.il_map a:hover {
-	background: url(../img/il_sprite.png) no-repeat 0 0;
+.ia_map a:hover {
+	background: url(../img/ia_sprite.png) no-repeat 0 20px;
 }
 
 /* FOOTER STYLES HERE */
@@ -1116,6 +1122,20 @@ nav.top_nav {
 nav.top_nav .main_logo {
 	width: 140px;
 }
+.brought {
+	float: none;
+	text-align: center;
+	width: 100%;
+}
+
+.logos {
+	max-width: 900px;
+	max-height: 44px;
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	float: none;
+}
 
 .nav_tall {height: 100px;}
 .small_nav {height: 100px;}
@@ -1157,7 +1177,7 @@ and (max-width : 540px) {
 }
 .no-svg .btn-slide, 
 .no-svg .arrow_top {
-	background-image: url('images/sprite_mobile.png');
+	background-image: url(../img/sprite_mobile.png);
 }
 
 #options li a {
@@ -1168,15 +1188,15 @@ and (max-width : 540px) {
   text-transform: uppercase;
   font-size: 12px;
 }
-figure.fixed_ratio {
-width: 300px;
-height: 20px;
+.logos {
+	max-width: 900px;
+	max-height: 44px;
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	float: none;
 }
-.brought {
-float: none;
-text-align: center;
-width: 100%;
-}
+
 .mobile_cta {
 	display: block;
 }
@@ -1184,8 +1204,9 @@ width: 100%;
 	display: block;
 	margin: 0 auto;
 	background: url(../img/bank_with_us_mobile.svg);
-	width: 185px;
-	height: 40px;
+	background-size: 100px 22px;
+	width: 100px;
+	height: 22px;
 }
 .no-svg .mobile_cta a {
 	background: url(../img/bank_with_us_mobile.png);

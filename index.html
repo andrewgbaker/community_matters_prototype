@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+<!--[if lte IE 8]> <html class="ie7"> <![endif]-->
+<!--[if !IE]><!--><html lang="en"> <!--<![endif]-->
 <head>
   
   <meta charset="utf-8" />
@@ -33,7 +34,7 @@
 	  	<a href="about/index.html" class="about_link_mobile">About</a>
 		<section id="options" class="clearfix">
 			<ul class="option-set clearfix">
-		      <li><a href="#filter=*">view all</a></li>
+		      <li><a href="#filter=*" class="active">view all</a></li>
 		      <li><a href="#filter=.pinnbank">Nebraska</a></li>
 		      <li><a href="#filter=.bankofcolorado">Colorado</a></li>
 		      <li><a href="#filter=.pinnbanktx">Texas</a></li>
@@ -55,10 +56,10 @@
 
 <section id="content">
 	<header>
-		<video id="header_video" class="video-js vjs-default-skin" poster="img/header_poster.png" autoplay preload="auto" loop data-setup="{}">
-		  <source type="video/mp4" src="video/pnbnk_header2NM_3000Kbps_720p.mp4">
-		  <source type="video/ogv" src="video/pnbnk_header2NM.ogv">
-		  <source type="video/webm" src="video/pnbnk_header2NM_WebM_3000Kbps_720p.webm">
+		<video id="header_video" class="video-js vjs-default-skin" poster="img/header_poster.png" autoplay preload="auto" data-setup="{}">
+		  <source type="video/mp4" src="video/PnBnkHdrVideo_V3C_3000Kbps_720p.mp4">
+		  <source type="video/ogv" src="video/PnBnkHdrVideo_V3C.ogv">
+		  <source type="video/webm" src="video/PnBnkHdrVideo_V3C_3000Kbps_720p.webm">
 		</video>
 	</header>
 	<section class="charter_logos">
@@ -66,7 +67,7 @@
 			<div class="brought">
 				<p>Brought to you by:</p>
 			</div>
-			<div class="logos"><figure class="fixed_ratio"></figure></div>
+			<div class="logos"><img src="img/pinnacle_logos_small.png" /></div>
 		</div>
 	</section>
 	<section class="mobile_cta">
