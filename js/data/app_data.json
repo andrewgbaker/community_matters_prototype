@@ -4,8 +4,7 @@ var thumbs = {
             "id": "1",
             "title": "link 1",
             "filters": [
-                "pinnbank",
-                "bankofcolorado",
+                "nebraska",
             ],
             "image": "img/thumb1.jpg"
         },
@@ -13,7 +12,7 @@ var thumbs = {
             "id": "2",
             "title": "link 2",
             "filters": [
-                "pinnbank"
+                "nebraska"
             ],
             "image": "img/thumb2.jpg"
         },
@@ -21,8 +20,7 @@ var thumbs = {
             "id": "3",
             "title": "link 3",
             "filters": [
-                "pinnbank",
-                "bankofcolorado",
+                "colorado",
             ],
             "image": "img/thumb3.jpg"
         },
@@ -30,7 +28,7 @@ var thumbs = {
             "id": "4",
             "title": "Petrified Wood Museum",
             "filters": [
-                "bankofcolorado"
+                "colorado"
             ],
             "image": "img/thumb4.jpg"
         },
@@ -38,7 +36,7 @@ var thumbs = {
             "id": "5",
             "title": "link 5",
             "filters": [
-                "pinnbank"
+                "texas"
             ],
             "image": "img/thumb5.jpg"
         },
@@ -46,8 +44,7 @@ var thumbs = {
             "id": "6",
             "title": "link 6",
             "filters": [
-                "pinnbank",
-                "bankofcolorado",
+                "texas",
             ],
             "image": "img/thumb6.jpg"
         },
@@ -55,8 +52,7 @@ var thumbs = {
             "id": "7",
             "title": "link 1",
             "filters": [
-                "pinnbank",
-                "bankofcolorado",
+                "texas",
             ],
             "image": "img/thumb7.jpg"
         },
@@ -64,7 +60,7 @@ var thumbs = {
             "id": "8",
             "title": "link 2",
             "filters": [
-                "pinnbank"
+                "colorado"
             ],
             "image": "img/thumb8.jpg"
         },
@@ -72,8 +68,7 @@ var thumbs = {
             "id": "9",
             "title": "link 3",
             "filters": [
-                "pinnbank",
-                "bankofcolorado",
+                "nebraska",
             ],
             "image": "img/thumb9.jpg"
         },
@@ -81,7 +76,7 @@ var thumbs = {
             "id": "10",
             "title": "link 4",
             "filters": [
-                "pinnbank"
+                "nebraska"
             ],
             "image": "img/thumb10.jpg"
         },
@@ -89,7 +84,7 @@ var thumbs = {
             "id": "11",
             "title": "link 5",
             "filters": [
-                "pinnbank"
+                "colorado"
             ],
             "image": "img/thumb11.jpg"
         },
@@ -97,8 +92,7 @@ var thumbs = {
             "id": "12",
             "title": "link 6",
             "filters": [
-                "pinnbank",
-                "bankofcolorado",
+                "nebraska",
             ],
             "image": "img/thumb12.jpg"
         }

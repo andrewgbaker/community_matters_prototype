@@ -22,7 +22,7 @@
 			
 			_.delay(function(){
 				_app._container.isotope('reLayout');
-			}, 500);
+			}, 700);
 			
 			_.delay(function(){
 				var closestTitle = $('#story' + self.options.id).find('.story_title')
@@ -30,7 +30,7 @@
 				$('html, body').animate({
 					'scrollTop': (closestTitle.offset().top - 100)
 				});
-			}, 800);
+			}, 900);
 			
 		
 			$(".flexslider").fitVids().flexslider({

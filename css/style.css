@@ -131,7 +131,7 @@ nav.top_nav {
 	font-size: 14px;
 }
 
-img.main_logo {
+a.main_logo {
 	margin: 10px auto;
 	display: block;
 	-webkit-transition: all .5s;
@@ -141,8 +141,8 @@ img.main_logo {
 	transition: all .5s;
 	position: relative;
 }
-.logo_large {width: 247px;}
-.logo_small {width: 140px;}
+.logo_large {width: 247px; height: 141px;}
+.logo_small {width: 140px; height: 80px;}
 .right_cta a {
 	position: fixed;
 	right: 0;
@@ -518,7 +518,7 @@ html[xmlns] .slides {display: block;}
 /* Control Nav */
 .flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
 .flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
-.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; cursor: pointer; text-indent: -9999px;}
+.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #999; cursor: pointer; text-indent: -9999px;}
 .flex-control-paging li a:hover { background: #ba6451; }
 .flex-control-paging li a.flex-active { background: #ba6451; cursor: default; }
 
@@ -667,6 +667,7 @@ video {
     height: auto;
     border: none;
 }
+img.mobile_header {display: none;}
 
 header img {
 	max-width: 100%;
@@ -843,6 +844,7 @@ h1.story_title {
 	border-top: 1px solid #767676;
 	float: left;
 	font-weight: 700;
+	max-width: 85%;
 }
 .close_btn {
 	position: absolute;
@@ -1172,6 +1174,10 @@ and (max-width : 540px) {
 	border-bottom: 1px solid rgb(201, 201, 201);
 	padding: 10px 0;
 }
+#header_video {
+	display: none;
+}
+img.mobile_header {display: block; max-width: 100%;}
 .btn-slide {
 	padding-right: 35px;
 	background: url(../img/sprite_mobile.svg) no-repeat;
@@ -1188,13 +1194,9 @@ and (max-width : 540px) {
 	background-image: url(../img/sprite_mobile.png);
 }
 h1.story_title {
-	font-size: 20px;
-	line-height: 30px;
-	border-bottom: 1px solid #767676;
-	border-top: 1px solid #767676;
-	float: left;
-	font-weight: 700;
 	margin-right: 100px;
+	font-size: 20px;
+	line-height: 28px;
 }
 .flexslider {margin: 30px 0px 40px; background: #fff; position: relative; zoom: 1;}
 .flex-direction-nav .flex-next {right: 0px; background: url(../img/slider_arrows3.svg) no-repeat rgba(255,255,255, .5) -43px 0; }
@@ -1232,8 +1234,6 @@ h1.story_title {
 	background: url(../img/bank_with_us_mobile.png);
 }
 .right_cta {display: none;}
-
-.header_video {width: 300px;}
 
 #options li a {
 padding: 0.1em .7em;

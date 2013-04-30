@@ -78,9 +78,11 @@
 				
 				// LISTEN TO NAV
 					$('.option-set a').click(function(){
-					$('html,body').animate({
-						'scrollTop':$('#container').offset().top - 130
-					});
+					_.delay(function() {
+						$('html,body').animate({
+							'scrollTop':$('#container').offset().top - 130
+						});
+					}, 700);
 					$('.active').removeClass('active');
 					      // get href attr, remove leading #
 					  var href = $(this).attr('href').replace( /^#/, '' ),
@@ -101,9 +103,11 @@
 					  var active_nav = hashOptions.filter;
 					  
 					  if(active_nav){
-					  	$('html,body').animate({
-							'scrollTop':$('#container').offset().top - 130
-						});
+					  _.delay(function() {
+						  	$('html,body').animate({
+								'scrollTop':$('#container').offset().top - 130
+							});
+						}, 700);
 					  }
 					  
 					  $('.option-set a[href="#filter='+active_nav+'"]').addClass('active')
