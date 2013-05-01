@@ -10,7 +10,7 @@
 			      $(".top_nav").pinned({
 			        bounds: 0,
 			        scrolling:0,
-			        mobile: true
+			        mobile: false
 			      },function(){
 			        $(".top_nav").removeClass('nav_tall').addClass('nav_shadow small_nav');
 			        $(".top_nav .main_logo").removeClass('logo_large').addClass('logo_small');

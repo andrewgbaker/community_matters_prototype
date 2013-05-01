@@ -1053,7 +1053,7 @@ footer {
 }
 .footer_interior {
 	margin: 0 auto;
-	max-width: 350px;
+	text-align: center;
 }
 .footer_component {
 	display: inline-block;
@@ -1131,6 +1131,7 @@ nav.top_nav {
 }
 nav.top_nav .main_logo {
 	width: 140px;
+	height: 80px;
 }
 .brought {
 	float: none;
@@ -1149,8 +1150,8 @@ nav.top_nav .main_logo {
 
 .nav_tall {height: 100px;}
 .small_nav {height: 100px;}
-.logo_large {width: 140px;}
-.logo_small {width: 140px;}
+.logo_large {width: 140px; height: 80px;}
+.logo_small {width: 140px; height: 80px;}
 #content {padding-top: 100px;}
 
 
