@@ -24,7 +24,7 @@
 			        scrolling:0,
 			        mobile: true
 			      });
-			      
+			      			      
 			      // FILTERS COLLAPSE JS
 			      	      
 				     $(".btn-slide").click(function(){

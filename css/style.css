@@ -1178,6 +1178,9 @@ and (max-width : 540px) {
 #header_video {
 	display: none;
 }
+.header_about h1 {
+	font-size: 18px;
+}
 img.mobile_header {display: block; max-width: 100%;}
 .btn-slide {
 	padding-right: 35px;

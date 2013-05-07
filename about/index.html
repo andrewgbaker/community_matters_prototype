@@ -55,11 +55,11 @@
 
 <section id="content">
 	<header class="header_about">
-		<h1>Life is all about community</h1>
-		<p>Family. Friends. Neighbors and the people we meet along the way. There’s power in community and in the stories that help shape each of them. We invite you to watch the stories of the people who live in the communities we serve. And join us in celebrating the power of community.</p>
+		<h1>If it matters to you, it matters to us</h1>
+		<p>As a community bank there’s one simple philosophy that has guided us throughout our 70 plus years in the business, ‘Hire good people, to run good banks, in good towns.’ Even today, each market has it’s own President and team to manage their community bank. This autonomy gives each market a bank that’s responsive to the needs of the community. A focus on what the community wants. Not on what we want to give them. That’s our heritage. That’s our path to the future. And that’s the way banking should be.</p>
 		<img src="../img/about_banner.jpg" alt="Community Matters Stories" />
 	</header>
-	<section id="about_map">
+	<section name="about_map" id="about_map">
 		<div class="row-fluid">
 			<div class="span12">
 				<h3 id="map_select">Select your state to <br /><span>Connect with your community bank</span></h3>
@@ -141,7 +141,17 @@ $(document).ready( function() {
 	        scrolling:0,
 	        mobile: true
 	      });
-	      
+         
+         if(window.location.hash) {
+         	setTimeout(function(){ 
+			  $('html, body').animate({
+		           'scrollTop':  $('#about_map').offset().top
+		         }, 300);
+		    }, 100 );
+			} else {
+			  // Fragment doesn't exist
+			}
+	      	      
 	      
 	      // SLIDE DOWN FILTERS FROM NAV
 	      
