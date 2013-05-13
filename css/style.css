@@ -39,7 +39,7 @@ footer, header, hgroup, menu, nav, section {
 html, body {
 	height: 100%;
 }
-
+img {max-width: 100%;}
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
@@ -116,6 +116,7 @@ nav.top_nav {
     box-shadow: 0 6px 6px -3px rgb(192, 192, 192);
 
 }
+.ie7 #slide_panel {border-bottom: 1px solid #767676;}
 .nav_tall {height: 160px;}
 .small_nav {height: 100px;}
 .nav_interior {
@@ -153,7 +154,10 @@ a.main_logo {
 	height: 185px;
 }
 .no-svg .right_cta a {
-	background: url(../img/bank_with_us.png);
+	background: url(../img/app_sprite.png);
+	background-position: 0 -92px ;
+	width: 40px;
+	height: 185px;
 }
 #slide_panel{
 	position: relative;
@@ -171,6 +175,7 @@ a.main_logo {
 	background: #fff;
 	display: none;
 	padding: 10px 0 0;
+	border-top: 1px solid #767676;
 }
 ul.main_nav {
 	position: absolute;
@@ -236,7 +241,10 @@ ul.main_nav {
 }
 .no-svg .btn-slide, 
 .no-svg .arrow_top {
-	background-image: url(../img/arrow_sprite2.png);
+	background-image: url(../img/app_sprite2.png);
+	background-position: 0 0;
+	width: 31px;
+	height: 24px;
 }
 
 
@@ -673,14 +681,11 @@ header img {
 	max-width: 100%;
 	width: 100%;
 }
-#about_video iframe {
-	width: 100%;
-}
+
 .charter_logos {
 	width: 94%;
 	position: relative;
 	margin: 15px 3%;
-	text-align: center;
 }
 .charter_logos p {
 	font-size: 18px;
@@ -688,6 +693,7 @@ header img {
 	margin: 15px 0;
 	font-weight: 700;
 	text-transform: uppercase;
+	color: #b4b3b3;
 }
 .ie7 .charter_logos p {
 	font-size: 14px;
@@ -697,8 +703,9 @@ header img {
 	text-transform: uppercase;
 }
 .logo_wrap {
-	display: inline-block;
+	display: block;
 	margin: 0 auto;
+	max-width: 90%;
 }
 .brought {
 	float: left;
@@ -879,12 +886,15 @@ h1.story_title {
 }
 .no-csstransforms .close_btn {
 	position: absolute;
-	width: 50px;
-	height: 50px;
 	top: 5px;
 	right: 5px;
 	cursor: pointer;
-	background-image: url('../img/close.png');
+	
+	/* TEST SPRITE REPLACEMENT */
+	background-image: url('../img/app_sprite2.png');
+	background-position: -2px -280px ;
+	width: 36px;
+	height: 36px;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
@@ -981,68 +991,72 @@ h1.story_title {
 	position: relative;
 } */
 .pb_map a {
-	background: url(../img/pb_map_sprite2.png) no-repeat 0 -135px;
+	background: url(../img/app_sprite2.png) no-repeat 0 -2132px;
 	width: 270px;
 	height: 135px;
 }
 .pb_map a:hover {
-	background: url(../img/pb_map_sprite2.png) no-repeat 0 0;
+	background: url(../img/app_sprite2.png) no-repeat 0 -1998px;
 }
 .wy_map a {
-	background: url(../img/wy_sprite.png) no-repeat 0 -135px;
+	background: url(../img/app_sprite2.png) no-repeat 0 -2424px;
 	width: 270px;
 	height: 160px;
 }
 .wy_map a:hover {
-	background: url(../img/wy_sprite.png) no-repeat 0 0;
+	background: url(../img/app_sprite2.png) no-repeat 0 -2289px;
 }
 .co_map a {
-	background: url(../img/co_sprite.png) no-repeat 0 -135px;
+	background: url(../img/app_sprite2.png) no-repeat 0 -1019px;
 	width: 270px;
 	height: 160px;
 }
 .co_map a:hover {
-	background: url(../img/co_sprite.png) no-repeat 0 0;
+	background: url(../img/app_sprite2.png) no-repeat 0 -884px;
 }
 .kansas_map a {
-	background: url(../img/kansas_sprite.png) no-repeat 0 -135px;
+	background: url(../img/app_sprite2.png) no-repeat 0 -740px;
 	width: 270px;
 	height: 160px;
 }
 .kansas_map a:hover {
-	background: url(../img/kansas_sprite.png) no-repeat 0 0;
+	background: url(../img/app_sprite2.png) no-repeat 0 -606px;
 }
 .nm_map a {
-	background: url(../img/nm_sprite.png) no-repeat 0 -100px;
+	background: url(../img/app_sprite2.png) no-repeat 0 -1578px;
 	width: 270px;
 	height: 200px;
 }
 .nm_map a:hover {
-	background: url(../img/nm_sprite.png) no-repeat 0 30px;
+	background: url(../img/app_sprite2.png) no-repeat 0 -1432px;
 }
 .tx_map a {
-	background: url(../img/tx_sprite3.png) no-repeat 0 -145px;
+	background: url(../img/app_sprite2.png) no-repeat 0 -2845px;
 	width: 270px;
 	height: 260px;
 }
 .tx_map a:hover {
-	background: url(../img/tx_sprite3.png) no-repeat 0 -10px;
+	background: url(../img/app_sprite2.png) no-repeat 0 -2710px;
 }
 .mo_map a {
-	background: url(../img/mo_sprite.png) no-repeat 0 -120px;
+	background: url(../img/app_sprite2.png) no-repeat 0 -1295px;
 	width: 270px;
 	height: 200px;
 }
 .mo_map a:hover {
-	background: url(../img/mo_sprite.png) no-repeat 0 0;
+	background: url(../img/app_sprite2.png) no-repeat 0 -1160px;
 }
 .ia_map a {
-	background: url(../img/ia_sprite.png) no-repeat 0 -115px;
+	background: url(../img/app_sprite2.png) no-repeat 0 -470px;
 	width: 270px;
 	height: 170px;
 }
 .ia_map a:hover {
-	background: url(../img/ia_sprite.png) no-repeat 0 20px;
+	background: url(../img/app_sprite2.png) no-repeat 0 -321px;
+}
+
+.maps_legal {
+	font-size: 14px;
 }
 
 /* FOOTER STYLES HERE */
@@ -1051,15 +1065,16 @@ footer {
 	background: #767676;
 	padding: 40px 0 10px;
 }
-.footer_interior {
+ul.footer_interior {
 	margin: 0 auto;
 	text-align: center;
 }
-.footer_component {
-	display: inline-block;
+li.footer_component {
+	list-style: none;
 	vertical-align: bottom;
 	margin: 0 10px;
 	color: #fff;
+	display: inline;
 }
 
 /* MEDIA QUERIES START HERE */
