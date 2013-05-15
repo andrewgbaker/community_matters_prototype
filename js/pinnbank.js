@@ -50,11 +50,11 @@
 					
 					    resizeVideoJS(); // Initialize the function
 					    window.onresize = resizeVideoJS; // Call the function on resize
-					  });
+					});
 				
-				self.init_data();
-			      
-				} 
+			self.init_data();
+		      
+			} 
 				
 				self.init_data = function(){
 					// SETUP THUMBS

@@ -227,25 +227,46 @@ ul.main_nav {
 }
 .add_this span {vertical-align: middle; display: inline-block; line-height: 30px;}
 
-.btn-slide {
-	padding-right: 35px;
+
+.btn-slide .arrow {
 	background: url(../img/sprite.svg) no-repeat;
 	background-position: bottom right;
 	height: 24px;
+	width: 31px;
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: middle;
 
 }
 
-.arrow_top {
+.arrow_top .arrow {
 	background: url(../img/sprite.svg) no-repeat;
 	background-position: top right;
+	height: 24px;
+	width: 31px;
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: middle;
 }
-.no-svg .btn-slide, 
-.no-svg .arrow_top {
-	background-image: url(../img/app_sprite2.png);
+
+.no-svg .btn-slide .arrow {
+	background: url(../img/app_sprite2.png) no-repeat;
 	background-position: 0 0;
+}
+
+.no-svg .arrow_top .arrow {
+	background: url(../img/app_sprite2.png) no-repeat;
+	background-position: 0 -24px;
+}
+/*
+.no-svg .btn-slide .arrow, 
+.no-svg .arrow_top .arrow {
+	background-image: url(../img/app_sprite2.png);
+	background-position: top right;
 	width: 31px;
 	height: 24px;
 }
+*/
 
 
 /* Start: Recommended Isotope styles */
@@ -669,6 +690,7 @@ header {
 	margin: 0 auto;
 	width: 94%;
 }
+img.main {background: url(../img/ajaxload-15-white.gif) no-repeat #000;}
 video {
     width: 100%;
     max-width: 100%;
@@ -680,6 +702,13 @@ img.mobile_header {display: none;}
 header img {
 	max-width: 100%;
 	width: 100%;
+}
+.ie_header {display: none;}
+.ie7 #header_video {
+	display: none;
+}
+.ie7 .ie_header {
+	display: block;
 }
 
 .charter_logos {
@@ -889,14 +918,11 @@ h1.story_title {
 	top: 5px;
 	right: 5px;
 	cursor: pointer;
-	
-	/* TEST SPRITE REPLACEMENT */
 	background-image: url('../img/app_sprite2.png');
 	background-position: -2px -280px ;
 	width: 36px;
 	height: 36px;
 	background-repeat: no-repeat;
-	background-position: center center;
 }
 
 
@@ -1023,20 +1049,20 @@ h1.story_title {
 	background: url(../img/app_sprite2.png) no-repeat 0 -606px;
 }
 .nm_map a {
-	background: url(../img/app_sprite2.png) no-repeat 0 -1578px;
+	background: url(../img/app_sprite2.png) no-repeat 0 -1558px;
 	width: 270px;
 	height: 200px;
 }
 .nm_map a:hover {
-	background: url(../img/app_sprite2.png) no-repeat 0 -1432px;
+	background: url(../img/app_sprite2.png) no-repeat 0 -1412px;
 }
 .tx_map a {
-	background: url(../img/app_sprite2.png) no-repeat 0 -2845px;
+	background: url(../img/app_sprite2.png) no-repeat 0 -2865px;
 	width: 270px;
 	height: 260px;
 }
 .tx_map a:hover {
-	background: url(../img/app_sprite2.png) no-repeat 0 -2710px;
+	background: url(../img/app_sprite2.png) no-repeat 0 -2720px;
 }
 .mo_map a {
 	background: url(../img/app_sprite2.png) no-repeat 0 -1295px;
@@ -1047,12 +1073,12 @@ h1.story_title {
 	background: url(../img/app_sprite2.png) no-repeat 0 -1160px;
 }
 .ia_map a {
-	background: url(../img/app_sprite2.png) no-repeat 0 -470px;
+	background: url(../img/app_sprite2.png) no-repeat 0 -450px;
 	width: 270px;
 	height: 170px;
 }
 .ia_map a:hover {
-	background: url(../img/app_sprite2.png) no-repeat 0 -321px;
+	background: url(../img/app_sprite2.png) no-repeat 0 -311px;
 }
 
 .maps_legal {
@@ -1176,7 +1202,7 @@ nav.top_nav .main_logo {
 and (max-width : 540px) {
 
 .about_link {display: none;}
-.btn-slide span {display: none;}
+.btn-slide .title {display: none;}
 .add_this span {display: none;}
 .about_link_mobile {
 	display: block;
@@ -1193,23 +1219,25 @@ and (max-width : 540px) {
 #header_video {
 	display: none;
 }
+#filters_panel {border: none;}
 .header_about h1 {
 	font-size: 18px;
 }
 img.mobile_header {display: block; max-width: 100%;}
-.btn-slide {
+.btn-slide .arrow {
 	padding-right: 35px;
 	background: url(../img/sprite_mobile.svg) no-repeat;
 	background-position: bottom right;
 	height: 24px;
-	
+	display: inline;
 }
-.arrow_top {
+.arrow_top .arrow {
 	background: url(../img/sprite_mobile.svg) no-repeat;
 	background-position: top right;
+	display: inline;
 }
-.no-svg .btn-slide, 
-.no-svg .arrow_top {
+.no-svg .btn-slide .arrow, 
+.no-svg .arrow_top .arrow {
 	background-image: url(../img/sprite_mobile.png);
 }
 h1.story_title {
