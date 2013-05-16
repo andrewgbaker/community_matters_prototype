@@ -163,7 +163,7 @@
 				// LISTEN TO THUMB LINKS
 					$('.vid_link').click(function(){
 						var state = {},
-						url = $(this).attr('href');
+						url = $(this).attr('data-href');
 						
 						state['story'] = url;
 						$.bbq.pushState(state);
