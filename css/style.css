@@ -103,7 +103,8 @@ nav.top_nav {
 	z-index: 101;
 	padding: 0;
 	max-width: 1400px;
-	margin: 0 5%;
+	margin-left: -700px;
+	left: 50%;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-ms-transition: all .5s;
@@ -251,18 +252,18 @@ ul.main_nav {
 }
 
 .no-svg .btn-slide .arrow {
-	background: url(../img/app_sprite2.png) no-repeat;
+	background: url(../img/app_sprite3.png) no-repeat;
 	background-position: 0 0;
 }
 
 .no-svg .arrow_top .arrow {
-	background: url(../img/app_sprite2.png) no-repeat;
+	background: url(../img/app_sprite3.png) no-repeat;
 	background-position: 0 -24px;
 }
 /*
 .no-svg .btn-slide .arrow, 
 .no-svg .arrow_top .arrow {
-	background-image: url(../img/app_sprite2.png);
+	background-image: url(../img/app_sprite3.png);
 	background-position: top right;
 	width: 31px;
 	height: 24px;
@@ -414,31 +415,6 @@ ul.main_nav {
 #options li a.selected {
   color: #ba6451;
 }
-
-/* Combination filter options*/
-
-#options .option-combo {
-  display: inline-block;
-  float: left;
-  margin-right: 10px;
-}
-
-#options .option-combo ul {
-  margin-right: 20px;
-  display: inline-block;
-}
-
-#options .option-combo h2,
-#options .option-combo h4 {
-  line-height: 34px;
-  margin-bottom: 0;
-  margin-right: 5px;
-  display: inline-block;
-  vertical-align: top;
-}
-
-
-
 
 
 
@@ -681,17 +657,17 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
 /* START MAIN BODY STYLES */
 
 #content {
-  margin: 0 5%;
+  margin: 0 auto;
   max-width: 1400px;
   padding-top: 160px;
   background: #fff;
+  width: 90%;
 }
 
 header {
 	margin: 0 auto;
 	width: 94%;
 }
-img.main {background: url(../img/ajaxload-15-white.gif) no-repeat #000;}
 video {
     width: 100%;
     max-width: 100%;
@@ -918,7 +894,7 @@ h1.story_title {
 	top: 5px;
 	right: 5px;
 	cursor: pointer;
-	background-image: url('../img/app_sprite2.png');
+	background-image: url('../img/app_sprite3.png');
 	background-position: -2px -280px ;
 	width: 36px;
 	height: 36px;
@@ -1017,72 +993,73 @@ h1.story_title {
 	position: relative;
 } */
 .pb_map a {
-	background: url(../img/app_sprite2.png) no-repeat 0 -2132px;
+	background: url(../img/app_sprite3.png) no-repeat 0 -2132px;
 	width: 270px;
 	height: 135px;
 }
 .pb_map a:hover {
-	background: url(../img/app_sprite2.png) no-repeat 0 -1998px;
+	background: url(../img/app_sprite3.png) no-repeat 0 -1998px;
 }
 .wy_map a {
-	background: url(../img/app_sprite2.png) no-repeat 0 -2424px;
+	background: url(../img/app_sprite3.png) no-repeat 0 -2424px;
 	width: 270px;
 	height: 160px;
 }
 .wy_map a:hover {
-	background: url(../img/app_sprite2.png) no-repeat 0 -2289px;
+	background: url(../img/app_sprite3.png) no-repeat 0 -2289px;
 }
 .co_map a {
-	background: url(../img/app_sprite2.png) no-repeat 0 -1019px;
+	background: url(../img/app_sprite3.png) no-repeat 0 -1019px;
 	width: 270px;
 	height: 160px;
 }
 .co_map a:hover {
-	background: url(../img/app_sprite2.png) no-repeat 0 -884px;
+	background: url(../img/app_sprite3.png) no-repeat 0 -884px;
 }
 .kansas_map a {
-	background: url(../img/app_sprite2.png) no-repeat 0 -740px;
+	background: url(../img/app_sprite3.png) no-repeat 0 -740px;
 	width: 270px;
 	height: 160px;
 }
 .kansas_map a:hover {
-	background: url(../img/app_sprite2.png) no-repeat 0 -606px;
+	background: url(../img/app_sprite3.png) no-repeat 0 -606px;
 }
 .nm_map a {
-	background: url(../img/app_sprite2.png) no-repeat 0 -1558px;
+	background: url(../img/app_sprite3.png) no-repeat 0 -1558px;
 	width: 270px;
 	height: 200px;
 }
 .nm_map a:hover {
-	background: url(../img/app_sprite2.png) no-repeat 0 -1412px;
+	background: url(../img/app_sprite3.png) no-repeat 0 -1412px;
 }
 .tx_map a {
-	background: url(../img/app_sprite2.png) no-repeat 0 -2865px;
+	background: url(../img/app_sprite3.png) no-repeat 0 -2865px;
 	width: 270px;
 	height: 260px;
 }
 .tx_map a:hover {
-	background: url(../img/app_sprite2.png) no-repeat 0 -2720px;
+	background: url(../img/app_sprite3.png) no-repeat 0 -2720px;
 }
 .mo_map a {
-	background: url(../img/app_sprite2.png) no-repeat 0 -1295px;
+	background: url(../img/app_sprite3.png) no-repeat 0 -1295px;
 	width: 270px;
 	height: 200px;
 }
 .mo_map a:hover {
-	background: url(../img/app_sprite2.png) no-repeat 0 -1160px;
+	background: url(../img/app_sprite3.png) no-repeat 0 -1160px;
 }
 .ia_map a {
-	background: url(../img/app_sprite2.png) no-repeat 0 -450px;
+	background: url(../img/app_sprite3.png) no-repeat 0 -465px;
 	width: 270px;
 	height: 170px;
 }
 .ia_map a:hover {
-	background: url(../img/app_sprite2.png) no-repeat 0 -311px;
+	background: url(../img/app_sprite3.png) no-repeat 0 -326px;
 }
 
 .maps_legal {
-	font-size: 11px;
+	font-size: 12px;
+	line-height: 14px;
 	display: none;
 	text-align: center;
 }
@@ -1108,35 +1085,55 @@ li.footer_component {
 /* MEDIA QUERIES START HERE */
 
 @media only screen 
-and (max-width : 1300px) {
+and (max-width : 1555px) {
+
+nav.top_nav {
+	background: #fff;
+	position: absolute;
+	width: 90%; 
+	z-index: 101;
+	padding: 0;
+	max-width: 1400px;
+	margin-left: -45%;
+	left: 50%;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+}
+
+@media screen and (max-width : 1300px) {
 
 
 #content {
-  margin: 0 3%;
-  max-width: 1400px;
-  padding-top: 160px;
-  /* background: #fffcf4; */
+  	margin: 0 3%;
+  	max-width: 1400px;
+  	padding-top: 160px;
 	background: #fff;
+	width: 94%;
+}
+nav.top_nav {
+	width: 94%;
+	margin: 0 3%;
+	left: 0;
 }
 figure.fixed_ratio {
 	width: 700px;
 }
 .charter_logos p {
-font-size: 14px;
-margin: 7px 0;
+	font-size: 14px;
+	margin: 7px 0;
 }
 
 }
 
-@media only screen 
-and (max-width : 1200px) {
+@media screen and (max-width : 1200px) {
 
 
 nav.top_nav {
-	background: #fff;
-	position: absolute;
 	width: 100%;
-	z-index: 101;
 	margin: 0;
 }
 #content {
@@ -1144,12 +1141,12 @@ nav.top_nav {
   max-width: 1400px;
   padding-top: 160px;
   background: #fff;
+  width: 100%;
 }
 
 }
 
-@media only screen 
-and (max-width : 920px) {
+@media screen and (max-width : 920px) {
 
 figure.fixed_ratio {
 width: 500px;
@@ -1200,8 +1197,7 @@ nav.top_nav .main_logo {
 
 }
 
-@media only screen 
-and (max-width : 540px) {
+@media screen and (max-width : 540px) {
 
 .about_link {display: none;}
 .btn-slide .title {display: none;}
