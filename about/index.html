@@ -72,10 +72,12 @@
 		<div class="map_item pb_map">
 			<div class="map_bg"><img src="../img/pb_map.png" /></div>
 			<a href="http://pinnbank.com/"></a>
+			<p class="maps_legal pb">*Visitors living in Western NE (Mitchell, Scottsbluff, Gering) need to click on Wyoming to find their nearest Pinnacle Bank branch. </p>
 		</div>
 		<div class="map_item wy_map">
 			<div class="map_bg"><img src="../img/wy_map.png" /></div>
 			<a href="http://wypinnbank.com/"></a>
+			<p class="maps_legal wy">*Visitors living in Western NE (Mitchell, Scottsbluff, Gering) need to click on Wyoming to find their nearest Pinnacle Bank branch. </p>
 		</div>
 		<div class="map_item co_map">
 			<div class="map_bg"><img src="../img/co_map.png" /></div>
@@ -103,7 +105,6 @@
 		</div>
 	</section>
 	
-	<section class="maps_legal"><p>&nbsp;&nbsp;*Visitors living in Western NE (Mitchell, Scottsbluff, Gering) need to click on Wyoming to find their nearest Pinnacle Bank branch. </p></section>
 	<footer>
 	  	<ul class="footer_interior">
 	  		<li class="footer_component"><img src="../img/EHL-logo.png" /></li>
@@ -161,6 +162,15 @@ $(document).ready( function() {
 	  		$("#filters_panel").slideToggle("fast");
 	  		$(this).toggleClass("arrow_top");
 	  		$(this).toggleClass("active"); return false;
+	  	});
+	  	
+	  	// DISPLAY ASTERIK ON HOVER
+	      
+	     $(".pb_map, .wy_map").hover(function(){
+	  		$(this).children(".maps_legal").show("fast")
+	  		},function() {
+	  		$(this).children(".maps_legal").hide("fast");
+			 return false;
 	  	});
 	  	
 	  	// object that will keep track of options

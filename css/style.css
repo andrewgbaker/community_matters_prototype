@@ -159,6 +159,7 @@ a.main_logo {
 	width: 40px;
 	height: 185px;
 }
+
 #slide_panel{
 	position: relative;
 	top: -1px;
@@ -722,7 +723,6 @@ header img {
 	margin: 15px 0;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #b4b3b3;
 }
 .ie7 .charter_logos p {
 	font-size: 14px;
@@ -897,7 +897,7 @@ h1.story_title {
 	position: absolute;
 	width: 100%;
 	top: 50%;
-	height: 1px;
+	height: 2px;
 	background: #888;
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
@@ -1082,7 +1082,9 @@ h1.story_title {
 }
 
 .maps_legal {
-	font-size: 14px;
+	font-size: 11px;
+	display: none;
+	text-align: center;
 }
 
 /* FOOTER STYLES HERE */
