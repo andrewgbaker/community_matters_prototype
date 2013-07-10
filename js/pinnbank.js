@@ -8,7 +8,7 @@
 			self.init = function(){
 				// SETUP PINNED ELEMENTS
 			      $(".top_nav").pinned({
-			        bounds: 0,
+			        bounds: 1,
 			        scrolling:0,
 			        mobile: false
 			      },function(){
@@ -79,8 +79,10 @@
 					$('.option-set a').click(function(){
 					_.delay(function() {
 						$('html,body').animate({
-							'scrollTop':$('#container').offset().top - 170
+							'scrollTop':$('#container').offset().top - 125
 						});
+						$('#filters_panel').slideToggle("fast");
+						$('.btn-slide').toggleClass("arrow_top");
 					}, 700);
 					$('.active').removeClass('active');
 					      // get href attr, remove leading #
@@ -104,7 +106,7 @@
 					  if(active_nav){
 					  _.delay(function() {
 						  	$('html,body').animate({
-								'scrollTop':$('#container').offset().top - 170
+								'scrollTop':$('#container').offset().top - 125
 							});
 						}, 700);
 					  }

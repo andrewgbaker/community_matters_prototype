@@ -44,11 +44,19 @@
 				slideshow: false
 	      	});
 	      	
+	      	//KILL STORIES ON CLOSE BUTTON CLICK
 	      	
 	      	$('.close_btn').click(function() {
 		        $("iframe").hide();
 		        self.kill();
 		    });
+		    
+		    //KILL STORIES ON WINDOW RESIZE
+		    
+		    $(window).resize(function() {
+		    	self.kill();
+		    });
+		    
 	      	 
 	      	self.options.active = true;
 		}

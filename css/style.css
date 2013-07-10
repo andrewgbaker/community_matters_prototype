@@ -105,11 +105,11 @@ nav.top_nav {
 	max-width: 1400px;
 	margin-left: -700px;
 	left: 50%;
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	-ms-transition: all .5s;
-	-o-transition: all .5s;
-	transition: all .5s;
+	-webkit-transition: height .5s;
+	-moz-transition: height .5s;
+	-ms-transition: height .5s;
+	-o-transition: height .5s;
+	transition: height .5s;
 }
 .nav_shadow {
     -moz-box-shadow: 0 6px 6px -3px rgb(192, 192, 192);
@@ -1111,11 +1111,6 @@ nav.top_nav {
 	max-width: 1400px;
 	margin-left: -45%;
 	left: 50%;
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	-ms-transition: all .5s;
-	-o-transition: all .5s;
-	transition: all .5s;
 }
 }
 
