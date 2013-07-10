@@ -100,7 +100,7 @@ nav.top_nav {
 	background: #fff;
 	position: absolute;
 	width: 90%; 
-	z-index: 101;
+	z-index: 1001;
 	padding: 0;
 	max-width: 1400px;
 	margin-left: -700px;
@@ -165,7 +165,7 @@ a.main_logo {
 	position: relative;
 	top: -1px;
 	width: 100%;
-	z-index: 101;
+	z-index: 1001;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -656,6 +656,21 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
 
 /* START MAIN BODY STYLES */
 
+#loading {
+	width: 90%;
+	height: 100%;
+	background: #fff url(../img/loader.gif) center center no-repeat;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	display: block;
+	left: 5%;
+	right: 5%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
 #content {
   margin: 0 auto;
   max-width: 1400px;
@@ -1091,7 +1106,7 @@ nav.top_nav {
 	background: #fff;
 	position: absolute;
 	width: 90%; 
-	z-index: 101;
+	z-index: 1001;
 	padding: 0;
 	max-width: 1400px;
 	margin-left: -45%;
@@ -1109,10 +1124,14 @@ nav.top_nav {
 
 #content {
   	margin: 0 3%;
-  	max-width: 1400px;
   	padding-top: 160px;
 	background: #fff;
 	width: 94%;
+}
+#loading {
+	width: 94%;
+	left: 3%;
+	right: 3%;
 }
 nav.top_nav {
 	width: 94%;
@@ -1143,8 +1162,25 @@ nav.top_nav {
   background: #fff;
   width: 100%;
 }
+#loading {
+	width: 100%;
+	left: 0;
+	right: 0;
+}
 
 }
+
+@media screen and (max-width : 1200px) {
+
+#header_video {
+	display: none;
+}
+.ie_header {
+	display: block;
+}
+
+}
+
 
 @media screen and (max-width : 920px) {
 
@@ -1162,7 +1198,7 @@ nav.top_nav {
 	position: absolute;
 	width: 100%;
 	height: 100px;
-	z-index: 101;
+	z-index: 1001;
 	margin: 0;
 	-moz-box-shadow: 0 6px 6px -3px rgb(192, 192, 192);
     -webkit-box-shadow: 0 6px 6px -3px rgb(192, 192, 192);
@@ -1217,6 +1253,10 @@ nav.top_nav .main_logo {
 #header_video {
 	display: none;
 }
+.ie_header {
+	display: none;
+}
+
 #filters_panel {border: none;}
 .header_about h1 {
 	font-size: 18px;

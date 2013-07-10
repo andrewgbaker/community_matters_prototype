@@ -20,6 +20,12 @@
 			
 			$('#story' + self.options.id).children('.story-content').hide();
 			
+			$('#loading').show();
+			
+			_.delay(function(){
+				$('#loading').fadeOut();
+			}, 1200);
+			
 			_.delay(function(){
 				_app._container.isotope('reLayout');
 			}, 700);
@@ -30,7 +36,7 @@
 				$('html, body').animate({
 					'scrollTop': (closestTitle.offset().top - 100)
 				});
-			}, 900);
+			}, 1100);
 			
 		
 			$(".flexslider").fitVids().flexslider({
