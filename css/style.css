@@ -1170,7 +1170,7 @@ nav.top_nav {
 
 }
 
-@media screen and (max-width : 1200px) {
+@media screen and (max-width : 1025px) {
 
 #header_video {
 	display: none;
