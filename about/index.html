@@ -1,13 +1,12 @@
 <!doctype html>
 <!--[if lte IE 8]> <html class="ie7"> <![endif]-->
-<!--[if !IE]><!--><html lang="en"> <!--<![endif]-->
+<!--[if !IE]><!--><html lang="en" class="no-js"> <!--<![endif]-->
 <head>
   
   <meta charset="utf-8" />
   <title>Pinnacle Bank Community Matters Prototype | About</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <link rel="stylesheet" href="../css/bootstrap.min.css" />
   <link rel="stylesheet" href="../css/bootstrap-responsive.min.css" />
   <link rel="stylesheet" href="../css/style.css" />
@@ -22,7 +21,7 @@
 <nav class="top_nav nav_tall">
 	<div class="nav_interior">
 		<!-- AddThis Button BEGIN -->
-		<a class="addthis_button add_this" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=ra-4d80efce2fb49656"><span>Share</span></a>
+		<a class="addthis_button_expanded add_this" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=ra-4d80efce2fb49656"><span>Share</span></a>
 		<!-- AddThis Button END -->
 		<a href="../" class="main_logo logo_large"><img src="../img/community_matters_logo.png" /></a>
 		<ul class="main_nav">
@@ -121,81 +120,9 @@
 	<script src="../js/libs/jquery.isotope.min.js"></script>
 	<script src="../js/libs/pinned.jQuery.js"></script>
 	<script src="../js/resources/isotope_setup.js"></script>
+	<script src="../js/about.js"></script>
 
-<script type="text/javascript">
-$(document).ready( function() {
-    // STICKY NAV JAVASCRIPT
-      
-	       // PINNED
-	      $(".top_nav").pinned({
-	        bounds: 0,
-	        scrolling:0,
-	        mobile: true
-	      },function(){
-	        $(".top_nav").removeClass('nav_tall').addClass('nav_shadow small_nav');
-	        $(".top_nav .main_logo").removeClass('logo_large').addClass('logo_small');
-	      },function(){
-	        $(".top_nav").removeClass('nav_shadow small_nav').addClass('nav_tall');
-	        $(".top_nav .main_logo").removeClass('logo_small').addClass('logo_large');
-	      });
-	      
-	      $(".right_cta").pinned({
-	        bounds: 1,
-	        scrolling:0,
-	        mobile: true
-	      });
-         
-         if(window.location.hash) {
-         	setTimeout(function(){ 
-			  $('html, body').animate({
-		           'scrollTop':  $('#about_map').offset().top
-		         }, 300);
-		    }, 300 );
-			} else {
-			  // Fragment doesn't exist
-			}
-	      	      
-	      
-	      // SLIDE DOWN FILTERS FROM NAV
-	      
-	     $(".btn-slide").click(function(){
-	  		$("#filters_panel").slideToggle("fast");
-	  		$(this).toggleClass("arrow_top");
-	  		$(this).toggleClass("active"); return false;
-	  	});
-	  	
-	  	// DISPLAY ASTERIK ON HOVER
-	      
-	     $(".pb_map, .wy_map").hover(function(){
-	  		$(this).children(".maps_legal").show("fast")
-	  		},function() {
-	  		$(this).children(".maps_legal").hide("fast");
-			 return false;
-	  	});
-	  	
-	  	// object that will keep track of options
-          isotopeOptions = {},
-          // defaults, used if not explicitly set in hash
-          defaultOptions = {
-            filter: '*',
-            sortBy: 'original-order',
-            sortAscending: true,
-            layoutMode: 'masonry'
-          };
 
-      var setupOptions = $.extend( {}, defaultOptions, {
-        itemSelector : '.map_item',
-        masonry: {
-		    columnWidth: 300
-		  }
-
-      });	
-
-      // set up Isotope
-      $('#container').isotope( setupOptions );
-});
-
-</script>
    
 
 </body>

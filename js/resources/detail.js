@@ -53,9 +53,13 @@
 		    
 		    //KILL STORIES ON WINDOW RESIZE
 		    
-		    $(window).resize(function() {
-		    	self.kill();
-		    });
+		    var updateLayout = _.debounce(function(e) {
+
+				self.kill();
+				
+			}, 500);
+		    		    
+		    window.addEventListener("resize", updateLayout, false);
 		    
 	      	 
 	      	self.options.active = true;

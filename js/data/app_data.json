@@ -2,99 +2,59 @@ var thumbs = {
     "thumbs": [
         {
             "id": "1",
-            "title": "link 1",
+            "title": "Ogallala: Petrified Wood Gallery ",
             "filters": [
                 "nebraska",
             ],
-            "image": "img/thumb1.jpg"
+            "image": "img/stories/thumbs/NE_Petrified_Thumb.jpg"
         },
         {
             "id": "2",
-            "title": "link 2",
+            "title": "Madison: Pfeifer Auto Body",
             "filters": [
                 "nebraska"
             ],
-            "image": "img/thumb2.jpg"
+            "image": "img/stories/thumbs/NE_PfeiferAutoBody_thumb2.jpg"
         },
         {
             "id": "3",
-            "title": "link 3",
+            "title": "Osceola: Annie Jeffrey Center",
             "filters": [
-                "colorado",
+                "nebraska",
             ],
-            "image": "img/thumb3.jpg"
+            "image": "img/stories/thumbs/NE_AnnieJeffreyHC_thumb.jpg"
         },
         {
             "id": "4",
-            "title": "Petrified Wood Museum",
-            "filters": [
-                "colorado"
-            ],
-            "image": "img/thumb4.jpg"
-        },
-        {
-            "id": "5",
-            "title": "link 5",
-            "filters": [
-                "texas"
-            ],
-            "image": "img/thumb5.jpg"
-        },
-        {
-            "id": "6",
-            "title": "link 6",
-            "filters": [
-                "texas",
-            ],
-            "image": "img/thumb6.jpg"
-        },
-        {
-            "id": "7",
-            "title": "link 1",
-            "filters": [
-                "texas",
-            ],
-            "image": "img/thumb7.jpg"
-        },
-        {
-            "id": "8",
-            "title": "link 2",
-            "filters": [
-                "colorado"
-            ],
-            "image": "img/thumb8.jpg"
-        },
-        {
-            "id": "9",
-            "title": "link 3",
-            "filters": [
-                "nebraska",
-            ],
-            "image": "img/thumb9.jpg"
-        },
-        {
-            "id": "10",
-            "title": "link 4",
+            "title": "Columbus: Behlen Manufacturing",
             "filters": [
                 "nebraska"
             ],
-            "image": "img/thumb10.jpg"
+            "image": "img/stories/thumbs/NE_BehlenManufacturing_thumb2.jpg"
         },
         {
-            "id": "11",
-            "title": "link 5",
+            "id": "5",
+            "title": "Fremont: The Family YMCA",
             "filters": [
-                "colorado"
+                "nebraska"
             ],
-            "image": "img/thumb11.jpg"
+            "image": "img/stories/thumbs/NE_YMCA_thumb.jpg"
         },
         {
-            "id": "12",
-            "title": "link 6",
+            "id": "6",
+            "title": "Omaha: Fat Brain Toys",
             "filters": [
                 "nebraska",
             ],
-            "image": "img/thumb12.jpg"
+            "image": "img/stories/thumbs/NE_FatBrainToys_Thumb.jpg"
+        },
+        {
+            "id": "7",
+            "title": "Ogallala: Livestock Market",
+            "filters": [
+                "nebraska",
+            ],
+            "image": "img/stories/thumbs/NE_OgallalaAuction_thumb.jpg"
         }
         
     ]
@@ -104,146 +64,95 @@ var details = {
     "details": [
         {
             "id": "1",
-            "title": "OGALLALA LIVESTOCK AUCTION",
-            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
-            "video": "Qc75tXGQB_0",
+            "title": "Ogallala: Petrified Wood Gallery",
+            "copy": "Twin brothers have quietly built a collection of petrified wood and art that rivals some of the country’s top museums, all on public view for their community to enjoy. Their story illustrates not just the power of art, but of family itself.",
+            "video": "y01iNzhmh5I",
             "images": [
-                "img/ogallala1.jpg",
-                "img/ogallala3.jpg",
-                "img/ogallala2.jpg",
-                "img/ogallala4.jpg"
+                "img/stories/stills/NE_Petrified_1.jpg",
+                "img/stories/stills/NE_Petrified_2.jpg",
+                "img/stories/stills/NE_Petrified_3.jpg",
+                "img/stories/stills/NE_Petrified_4.jpg",
+                "img/stories/stills/NE_Petrified_5.jpg"
             ]
         },
         {
             "id": "2",
-            "title": "OGALLALA LIVESTOCK AUCTION",
-            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
-            "video": "Qc75tXGQB_0",
+            "title": "Madison: Pfeifer Auto Body",
+            "copy": "In a town like Madison, auto body shops don’t just fix automobiles. They fix whatever needs fixing, whether it belongs on a farm or under the bright lights of Hollywood.",
+            "video": "TWtBT-yAgKc",
             "images": [
-                "img/ogallala1.jpg",
-                "img/ogallala3.jpg",
-                "img/ogallala2.jpg",
-                "img/ogallala4.jpg"
+                "img/stories/stills/NE_PfeiferAutoBody_1.jpg",
+                "img/stories/stills/NE_PfeiferAutoBody_2.jpg",
+                "img/stories/stills/NE_PfeiferAutoBody_3.jpg",
+                "img/stories/stills/NE_PfeiferAutoBody_4.jpg",
+                "img/stories/stills/NE_PfeiferAutoBody_5.jpg"
             ]
         },
         {
             "id": "3",
-            "title": "OGALLALA LIVESTOCK AUCTION",
-            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
-            "video": "Qc75tXGQB_0",
+            "title": "Osceola: Annie Jeffrey Center",
+            "copy": "In Polk County, tending to patients also means taking care of your family and neighbors. Annie Jeffery Heath Center brings world-class doctors, technology and medical care to this tight-knit community.",
+            "video": "zTJPX9rxTac",
             "images": [
-                "img/ogallala1.jpg",
-                "img/ogallala3.jpg",
-                "img/ogallala2.jpg",
-                "img/ogallala4.jpg"
+                "img/stories/stills/NE_AnnieJeffreyHC_1.jpg",
+                "img/stories/stills/NE_AnnieJeffreyHC_2.jpg",
+                "img/stories/stills/NE_AnnieJeffreyHC_3.jpg",
+                "img/stories/stills/NE_AnnieJeffreyHC_4.jpg",
+                "img/stories/stills/NE_AnnieJeffreyHC_5.jpg"
             ]
         },
         {
             "id": "4",
-            "title": "OGALLALA LIVESTOCK AUCTION",
-            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
-            "video": "Qc75tXGQB_0",
+            "title": "Columbus: Behlen Manufacturing",
+            "copy": "When businesses work together, the entire community prospers. Behlen Manufacturing is an example of how a company can take the lead in bringing good jobs to towns in America’s heartland.",
+            "video": "5XXChQMw-c0",
             "images": [
-                "img/ogallala1.jpg",
-                "img/ogallala3.jpg",
-                "img/ogallala2.jpg",
-                "img/ogallala4.jpg"
+                "img/stories/stills/NE_BehlenManufacturing_1.jpg",
+                "img/stories/stills/NE_BehlenManufacturing_2.jpg",
+                "img/stories/stills/NE_BehlenManufacturing_3.jpg",
+                "img/stories/stills/NE_BehlenManufacturing_4.jpg",
+                "img/stories/stills/NE_BehlenManufacturing_5.jpg",
+                "img/stories/stills/NE_BehlenManufacturing_6.jpg"
             ]
         },
         {
             "id": "5",
-            "title": "OGALLALA LIVESTOCK AUCTION",
-            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
-            "video": "Qc75tXGQB_0",
+            "title": "Fremont: The Family YMCA",
+            "copy": "The doors on the Fremont Family YMCA are rarely locked. The parking lot is seldom empty. Its 200,000 square feet of pools, rinks, gyms and studios are almost never quiet.  And that’s just how this enormous family likes it.",
+            "video": "rmplxCFu3do",
             "images": [
-                "img/ogallala1.jpg",
-                "img/ogallala3.jpg",
-                "img/ogallala2.jpg",
-                "img/ogallala4.jpg"
+                "img/stories/stills/NE_YMCA_1.jpg",
+                "img/stories/stills/NE_YMCA_2.jpg",
+                "img/stories/stills/NE_YMCA_3.jpg",
+                "img/stories/stills/NE_YMCA_4.jpg",
+                "img/stories/stills/NE_YMCA_5.jpg",
+                "img/stories/stills/NE_YMCA_6.jpg"
             ]
         },
         {
             "id": "6",
-            "title": "OGALLALA LIVESTOCK AUCTION",
-            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
-            "video": "Qc75tXGQB_0",
+            "title": "Omaha: Fat Brain Toys",
+            "copy": "How did Mark and Karen Carson take an award-winning toy company from their basement to a busy and bustling warehouse? Making educational toys and customer service that big box stores couldn’t match.",
+            "video": "UQ-wx2FklVc",
             "images": [
-                "img/ogallala1.jpg",
-                "img/ogallala3.jpg",
-                "img/ogallala2.jpg",
-                "img/ogallala4.jpg"
+                "img/stories/stills/NE_FatBrainToys_1.jpg",
+                "img/stories/stills/NE_FatBrainToys_2.jpg",
+                "img/stories/stills/NE_FatBrainToys_3.jpg",
+                "img/stories/stills/NE_FatBrainToys_4.jpg",
+                "img/stories/stills/NE_FatBrainToys_5.jpg"
             ]
         },
         {
             "id": "7",
-            "title": "OGALLALA LIVESTOCK AUCTION",
-            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
-            "video": "Qc75tXGQB_0",
+            "title": "Ogallala: Livestock Market",
+            "copy": "There’s a place where business is done with a handshake. Where thousands of cattle go up for auction every night. And where a community of ranchers have gathered together for decades.",
+            "video": "REysZTWJlDc",
             "images": [
-                "img/ogallala1.jpg",
-                "img/ogallala3.jpg",
-                "img/ogallala2.jpg",
-                "img/ogallala4.jpg"
-            ]
-        },
-        {
-            "id": "8",
-            "title": "OGALLALA LIVESTOCK AUCTION",
-            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
-            "video": "Qc75tXGQB_0",
-            "images": [
-                "img/ogallala1.jpg",
-                "img/ogallala3.jpg",
-                "img/ogallala2.jpg",
-                "img/ogallala4.jpg"
-            ]
-        },
-        {
-            "id": "9",
-            "title": "OGALLALA LIVESTOCK AUCTION",
-            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
-            "video": "Qc75tXGQB_0",
-            "images": [
-                "img/ogallala1.jpg",
-                "img/ogallala3.jpg",
-                "img/ogallala2.jpg",
-                "img/ogallala4.jpg"
-            ]
-        },
-        {
-            "id": "10",
-            "title": "OGALLALA LIVESTOCK AUCTION",
-            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
-            "video": "Qc75tXGQB_0",
-            "images": [
-                "img/ogallala1.jpg",
-                "img/ogallala3.jpg",
-                "img/ogallala2.jpg",
-                "img/ogallala4.jpg"
-            ]
-        },
-        {
-            "id": "11",
-            "title": "OGALLALA LIVESTOCK AUCTION",
-            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
-            "video": "Qc75tXGQB_0",
-            "images": [
-                "img/ogallala1.jpg",
-                "img/ogallala3.jpg",
-                "img/ogallala2.jpg",
-                "img/ogallala4.jpg"
-            ]
-        },
-        {
-            "id": "12",
-            "title": "OGALLALA LIVESTOCK AUCTION",
-            "copy": "Gendigni simus, inullaut fuga. Illabor roreic tet et quam ullaccu ptamus, comnis intur ullam re ped que moloressinis nos exereped maio. Et fugit eatur mi, ut quaeceperum inita arum aut eium fugit pariti aut omniet re etus. Ga. Et aut as dolorum eatur.",
-            "video": "Qc75tXGQB_0",
-            "images": [
-                "img/ogallala1.jpg",
-                "img/ogallala3.jpg",
-                "img/ogallala2.jpg",
-                "img/ogallala4.jpg"
+                "img/stories/stills/NE_OgallalaAuction_1.jpg",
+                "img/stories/stills/NE_OgallalaAuction_2.jpg",
+                "img/stories/stills/NE_OgallalaAuction_3.jpg",
+                "img/stories/stills/NE_OgallalaAuction_4.jpg",
+                "img/stories/stills/NE_OgallalaAuction_5.jpg"
             ]
         }
     ]

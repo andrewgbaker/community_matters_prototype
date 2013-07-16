@@ -69,6 +69,11 @@
 					
 					});
 					self.init_display();
+					
+					  // FADE THUMBS IN ON LOAD 
+					    
+					    $(".thumb_content img").hide();
+					    $(".thumb_content img").bind("load", function () { $(this).fadeIn(); });
 				}
 				
 				// INIT NAV 

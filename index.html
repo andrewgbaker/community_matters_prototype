@@ -1,13 +1,12 @@
 <!doctype html>
 <!--[if lte IE 8]> <html class="ie7"> <![endif]-->
-<!--[if !IE]><!--><html lang="en"> <!--<![endif]-->
+<!--[if !IE]><!--><html lang="en" class="no-js"> <!--<![endif]-->
 <head>
   
   <meta charset="utf-8" />
   <title>Pinnacle Bank Community Matters Prototype</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/libs/modernizr.custom.57275.js"></script>
   <script src="js/libs/respond.min.js"></script>
@@ -20,9 +19,9 @@
 <nav class="top_nav nav_tall">
 	<div class="nav_interior">
 		<!-- AddThis Button BEGIN -->
-		<a class="addthis_button add_this" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=ra-4d80efce2fb49656"><span>Share</span></a>
+		<a class="addthis_button_expanded add_this" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=ra-4d80efce2fb49656"><span>Share</span></a>
 		<!-- AddThis Button END -->
-		<a href="#" class="main_logo logo_large"><img src="img/community_matters_logo.png" /></a>
+		<a href="#" class="main_logo logo_large"></a>
 		<ul class="main_nav">
 			<li><a href="about/index.html" class="about_link nav_link">About</a></li>
 			<li><a href="#" class="btn-slide nav_link"><span class="title">Stories near you</span><span class="arrow"></span></a></li>
@@ -56,7 +55,7 @@
 
 <section id="content">
 	<header>
-		<video id="header_video" class="video-js" poster="img/header_poster.jpg" preload="auto" autoplay >
+		<video id="header_video" class="video-js" poster="img/header_poster.jpg" data-setup='{ "controls": false, "autoplay": true, "preload": "none", "loop": false }' >
 		  <source type="video/mp4" src="http://karshhagan.com/demos/pinnbank/community_matters_prototype/video/PnBnkHdrVideo_v2.mp4">
 		  <source type="video/ogv" src="http://karshhagan.com/demos/pinnbank/community_matters_prototype/video/PnBnkHdrVideo_v2.ogv">
 		  <source type="video/webm" src="http://karshhagan.com/demos/pinnbank/community_matters_prototype/video/PnBnkHdrVideo_v2.webm">
