@@ -38,11 +38,32 @@
 				});
 			}, 1100);
 			
-		
-			$(".flexslider").fitVids().flexslider({
-		      	animation: 'slide',
-				slideshow: false
-	      	});
+			
+			// FLEXSLIDER INIT WITH YOUTUBE API CALL FOR VIDEO CONTROL
+				
+				var tag = document.createElement('script');
+				tag.src = "http://www.youtube.com/player_api";
+				var firstScriptTag = document.getElementsByTagName('script')[0];
+				firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+				
+				function pauseStory(frame) {
+					$('iframe.youtube').each(function(i) {
+						var func = this === frame ? 'stopVideo' : 'stopVideo';
+						this.contentWindow.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+					});
+				}
+		      	
+		      	$(".flexslider").fitVids().flexslider({
+			      	animation: 'slide',
+					slideshow: false,
+					before: function(slider){
+						
+						// Stop all youtube videos in this slideshow
+						if (slider.slides.eq(slider.currentSlide).find('iframe').length !== 0)
+							pauseStory($('iframe.youtube')[0]);
+			
+					}
+		      	});
 	      	
 	      	//KILL STORIES ON CLOSE BUTTON CLICK
 	      	
