@@ -36,7 +36,7 @@
 				$('html, body').animate({
 					'scrollTop': (closestTitle.offset().top - 100)
 				});
-			}, 1100);
+			}, 1300);
 			
 			
 			// FLEXSLIDER INIT WITH YOUTUBE API CALL FOR VIDEO CONTROL
@@ -46,24 +46,34 @@
 				var firstScriptTag = document.getElementsByTagName('script')[0];
 				firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 				
-				function pauseStory(frame) {
-					$('iframe.youtube').each(function(i) {
-						var func = this === frame ? 'stopVideo' : 'stopVideo';
-						this.contentWindow.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
-					});
-				}
-		      	
-		      	$(".flexslider").fitVids().flexslider({
-			      	animation: 'slide',
-					slideshow: false,
-					before: function(slider){
-						
-						// Stop all youtube videos in this slideshow
-						if (slider.slides.eq(slider.currentSlide).find('iframe').length !== 0)
-							pauseStory($('iframe.youtube')[0]);
-			
+				if (Modernizr.postmessage) {
+				
+					function pauseStory(frame) {
+						$('iframe.youtube').each(function(i) {
+							var func = this === frame ? 'pauseVideo' : 'pauseVideo';
+							this.contentWindow.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+						});
 					}
-		      	});
+		      	
+			      	$(".flexslider").fitVids().flexslider({
+				      	animation: 'slide',
+						slideshow: false,
+						before: function(slider){
+							
+							// Stop all youtube videos in this slideshow
+							if (slider.slides.eq(slider.currentSlide).find('iframe').length !== 0)
+								pauseStory($('iframe.youtube')[0]);
+				
+						}
+			      	});
+		      	}
+		      	
+		      	if (!Modernizr.postmessage) {
+		      		$(".flexslider").fitVids().flexslider({
+				      	animation: 'slide',
+						slideshow: false
+			      	});
+		      	}
 	      	
 	      	//KILL STORIES ON CLOSE BUTTON CLICK
 	      	
@@ -74,13 +84,17 @@
 		    
 		    //KILL STORIES ON WINDOW RESIZE
 		    
-		    var updateLayout = _.debounce(function(e) {
-
-				self.kill();
-				
-			}, 500);
-		    		    
-		    window.addEventListener("resize", updateLayout, false);
+		    if (Modernizr.ie7) {
+		    
+			    var updateLayout = _.debounce(function(e) {
+	
+					self.kill();
+					
+				}, 500);
+			    		    
+			    window.addEventListener("resize", updateLayout, false);
+			    
+			}
 		    
 	      	 
 	      	self.options.active = true;

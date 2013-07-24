@@ -65,7 +65,7 @@ ul, ol {
   margin-left: 1.5em;
 }
 
-a {text-decoration: none; color: #767676;}
+a {text-decoration: none; color: #767676; outline: none;}
 
 a img { border: none; }
 
