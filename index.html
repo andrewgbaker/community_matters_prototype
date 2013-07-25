@@ -47,7 +47,12 @@
 	 </div>
 </nav>
 
-<div id="loading"></div>
+<div id="loading">
+	<div class="load_wrap">
+		<div class="loader_out"></div>
+		<div class="loader_in"></div>
+	</div>
+</div>
 
 <div class="right_cta">
 	<a name="about_map" href="about/#about_map"></a>
@@ -95,16 +100,6 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
 	
-<!-- PAGE LOAD ANIMATION -->	
-	<script type="text/javascript">
-		function showContent() {
-		    $('#loading').fadeOut();
-		};
-		
-		$(function(){
-		    showContent();
-		});
-	</script>
 
 <!-- LIBS JS -->  	
 	<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4d80efce2fb49656"></script>

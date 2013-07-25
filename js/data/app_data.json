@@ -55,6 +55,14 @@ var thumbs = {
                 "nebraska",
             ],
             "image": "img/stories/thumbs/NE_OgallalaAuction_thumb.jpg"
+        },
+        {
+            "id": "Youtube_Coming_Soon",
+            "title": "YOUTUBE: Coming soon",
+            "filters": [
+                "nebraska",
+            ],
+            "image": "img/stories/thumbs/NE_OgallalaAuction_thumb.jpg"
         }
         
     ]
@@ -145,6 +153,19 @@ var details = {
         {
             "id": "7",
             "title": "Ogallala: Livestock Market",
+            "copy": "There’s a place where business is done with a handshake. Where thousands of cattle go up for auction every night. And where a community of ranchers have gathered together for decades.",
+            "video": "REysZTWJlDc",
+            "images": [
+                "img/stories/stills/NE_OgallalaAuction_1.jpg",
+                "img/stories/stills/NE_OgallalaAuction_2.jpg",
+                "img/stories/stills/NE_OgallalaAuction_3.jpg",
+                "img/stories/stills/NE_OgallalaAuction_4.jpg",
+                "img/stories/stills/NE_OgallalaAuction_5.jpg"
+            ]
+        },
+        {
+            "id": "Youtube_Coming_Soon",
+            "title": "Youtube Coming Soon",
             "copy": "There’s a place where business is done with a handshake. Where thousands of cattle go up for auction every night. And where a community of ranchers have gathered together for decades.",
             "video": "REysZTWJlDc",
             "images": [

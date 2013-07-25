@@ -19,6 +19,16 @@ $(document).ready( function() {
 	        scrolling:0,
 	        mobile: true
 	      });
+	      
+	       // PAGE LOADING ANIMATION
+				  
+		  function showContent() {
+			    $('#loading').fadeOut();
+			};
+			
+			$(function(){
+			    showContent();
+			});	
          
          if(window.location.hash) {
          	setTimeout(function(){ 

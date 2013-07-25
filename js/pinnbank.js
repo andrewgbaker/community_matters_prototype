@@ -34,6 +34,16 @@
 				  		return false;
 				  	});
 				  	
+				  // PAGE LOADING ANIMATION
+				  
+				  function showContent() {
+					    $('#loading').fadeOut();
+					};
+					
+					$(function(){
+					    showContent();
+					});	
+				  	
 				  // HTML5 HEADER VIDEO
 							
 					videojs("header_video", {"height":"auto", "width":"auto"}).ready(function(){

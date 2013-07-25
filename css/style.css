@@ -45,7 +45,7 @@ body {
   font-size: 13px;
   line-height: 1.7em;
   color: #767676;
-  background: #767676;
+  background: #fff;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
 }
@@ -661,6 +661,21 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
 #loading {
 	width: 90%;
 	height: 100%;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	display: block;
+	left: 5%;
+	right: 5%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.no-cssanimations #loading {
+	width: 90%;
+	height: 100%;
 	background: #fff url(../img/loader.gif) center center no-repeat;
 	position: fixed;
 	top: 0;
@@ -673,16 +688,77 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
 	margin: 0 auto;
 }
 
+.no-cssanimations .load_wrap {
+	display: none;
+}
+
+@-moz-keyframes spin {
+	0% { -moz-transform:rotate(0deg); }
+	100% { -moz-transform:rotate(360deg); }
+}
+@-moz-keyframes spinoff {
+	0% { -moz-transform:rotate(0deg); }
+	100% { -moz-transform:rotate(-360deg); }
+}
+@-webkit-keyframes spin {
+	0% { -webkit-transform:rotate(0deg); }
+	100% { -webkit-transform:rotate(360deg); }
+}
+@-webkit-keyframes spinoff {
+	0% { -webkit-transform:rotate(0deg); }
+	100% { -webkit-transform:rotate(-360deg); }
+}
+
+.load_wrap {
+	position: relative;
+	margin: 0 auto;
+	width: 100px;
+	top: 45%;
+}
+
+.loader_in {
+	background-color: rgba(0,0,0,0);
+	border: 5px solid #ba6451;
+	opacity: .9;
+	border-top: 5px solid rgba(0,0,0,0);
+	border-left: 5px solid rgba(0,0,0,0);
+	border-radius: 50px;
+	width: 30px;
+	height: 30px;
+	margin: 0 auto;
+	position: relative;
+	top: -50px;
+	-moz-animation: spinoff .5s infinite linear;
+	-webkit-animation: spinoff .5s infinite linear;
+}
+
+.loader_out {
+	background-color: rgba(0,0,0,0);
+	border: 5px solid #ba6451;
+	opacity: .9;
+	border-top: 5px solid rgba(0,0,0,0);
+	border-left: 5px solid rgba(0,0,0,0);
+	border-radius: 50px;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	-moz-animation: spin .5s infinite linear;
+	-webkit-animation: spin .5s infinite linear;
+}
+
 .no-js #loading {
 	display: none;
 }
 
 #content {
-  margin: 0 auto;
-  max-width: 1400px;
-  padding-top: 160px;
-  background: #fff;
-  width: 90%;
+	margin: 0 auto;
+	max-width: 1400px;
+	padding-top: 160px;
+	background: #fff;
+	width: 90%;
+	-moz-box-shadow: 0 6px 6px -3px rgb(192, 192, 192);
+	-webkit-box-shadow: -1 6px 6px -3px rgb(192, 192, 192);
+	box-shadow: 0 0px 48px -14px rgb(136, 136, 136);
 }
 
 header {
@@ -951,7 +1027,7 @@ h1.story_title {
 .header_about p {
 	font-size: 18px;
 	width: 80%;
-	margin: 15px auto;
+	margin: 15px auto 35px;
 }
 
 .header_about img {
@@ -1089,11 +1165,12 @@ h1.story_title {
 
 footer {
 	background: #767676;
-	padding: 40px 0 10px;
+	padding: 10px 0;
 }
 ul.footer_interior {
-	margin: 0 auto;
-	text-align: center;
+	margin: 0;
+	margin-right: 20px;
+	text-align: right;
 }
 li.footer_component {
 	list-style: none;
@@ -1102,6 +1179,7 @@ li.footer_component {
 	color: #fff;
 	display: inline;
 }
+
 
 /* MEDIA QUERIES START HERE */
 
@@ -1209,6 +1287,7 @@ nav.top_nav {
 nav.top_nav .main_logo {
 	width: 140px;
 	height: 80px;
+	background-size: 140px 80px;
 }
 .brought {
 	float: none;
