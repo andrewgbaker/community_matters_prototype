@@ -24,7 +24,7 @@
 			
 			_.delay(function(){
 				$('#loading').fadeOut();
-			}, 1200);
+			}, 1300);
 			
 			_.delay(function(){
 				_app._container.isotope('reLayout');
@@ -36,7 +36,7 @@
 				$('html, body').animate({
 					'scrollTop': (closestTitle.offset().top - 100)
 				});
-			}, 1300);
+			}, 1400);
 			
 			
 			// FLEXSLIDER INIT WITH YOUTUBE API CALL FOR VIDEO CONTROL

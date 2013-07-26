@@ -674,7 +674,7 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
 }
 
 .no-cssanimations #loading {
-	width: 90%;
+	width: 100%;
 	height: 100%;
 	background: #fff url(../img/loader.gif) center center no-repeat;
 	position: fixed;
@@ -682,8 +682,6 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
 	left: 0;
 	z-index: 999;
 	display: block;
-	left: 5%;
-	right: 5%;
 	max-width: 1400px;
 	margin: 0 auto;
 }
@@ -718,7 +716,7 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
 
 .loader_in {
 	background-color: rgba(0,0,0,0);
-	border: 5px solid #ba6451;
+	border: 5px solid #b29b72;
 	opacity: .9;
 	border-top: 5px solid rgba(0,0,0,0);
 	border-left: 5px solid rgba(0,0,0,0);
