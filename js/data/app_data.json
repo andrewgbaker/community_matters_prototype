@@ -17,12 +17,12 @@ var thumbs = {
             "image": "img/stories/thumbs/CO_GS_WorldThinkingDay_thumb.jpg"
         },
         {
-            "id": "Cody_Nite_Rodeo",
-            "title": "Cody: Nite Rodeo",
+            "id": "Veteran_Booths_Ranch",
+            "title": "Veteran: Booth's Ranch",
             "filters": [
                 "wyoming",
             ],
-            "image": "img/stories/thumbs/WY_CodyNiteRodeo_thumb.jpg"
+            "image": "img/stories/thumbs/WY_Booths_thumb.jpg"
         },
         {
             "id": "Fort_Worth_Downtown",
@@ -176,16 +176,16 @@ var details = {
             ]
         },
         {
-            "id": "Cody_Nite_Rodeo",
-            "title": "Cody: Nite Rodeo",
-            "copy": "The spirit of the American West is alive and on display every night, for 92 straight nights.",
+            "id": "Veteran_Booths_Ranch",
+            "title": "Veteran: Booth's Cherry Creek Ranch",
+            "copy": "Changing with the times is important no matter what business you're in. But when you own and run a ranch, it's essential.",
             "video": "DPEKm5QaHm4",
             "images": [
-                "img/stories/stills/WY_CodyNiteRodeo_1.jpg",
-                "img/stories/stills/WY_CodyNiteRodeo_2.jpg",
-                "img/stories/stills/WY_CodyNiteRodeo_3.jpg",
-                "img/stories/stills/WY_CodyNiteRodeo_4.jpg",
-                "img/stories/stills/WY_CodyNiteRodeo_5.jpg"
+                "img/stories/stills/WY_Booths_1.jpg",
+                "img/stories/stills/WY_Booths_2.jpg",
+                "img/stories/stills/WY_Booths_3.jpg",
+                "img/stories/stills/WY_Booths_4.jpg",
+                "img/stories/stills/WY_Booths_5.jpg"
             ]
         },
         {
