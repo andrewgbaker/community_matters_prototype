@@ -90,7 +90,7 @@
 				
 				self.init_nav = function(){
 				
-				// LISTEN TO NAV
+					// LISTEN TO NAV
 					$('.option-set a').click(function(){
 					_.delay(function() {
 						$('html,body').animate({
@@ -107,11 +107,14 @@
 					      option = $.deparam( href, true );
 					  // set hash, triggers hashchange on window
 					  $.bbq.pushState( option );
+					  
+					  _gaq.push(['_trackPageview', option ]);
+						
 					  return false;
 					});
 				      
 				
-				// LISTEN TO HASHCHANGE	
+					// LISTEN TO HASHCHANGE	
 					$(window).bind( 'hashchange', function( event ){
 					  // get options object from hash
 					  var hashOptions = $.deparam.fragment();
@@ -124,6 +127,7 @@
 								'scrollTop':$('#container').offset().top - 125
 							});
 						}, 700);
+						
 					  }
 					  
 					  $('.option-set a[href="#filter='+active_nav+'"]').addClass('active')
@@ -133,7 +137,7 @@
 					  
 					  if(url){
 					  	if(self.active_detail){
-					  		self.active_detail.kill(function(){
+					  		self.active_detail.swap(function(){
 					  			_.find(self._details, function(list, iterator){
 								  	if(list.id == url){
 								  		var _id = list.id,
@@ -146,8 +150,10 @@
 								  		new_detail.init();
 								  		
 								  		self.active_detail = new_detail;
+								  		
 								  	}
 								});
+								console.log('tester')
 					  		});
 					  	}
 					  	else{
@@ -175,14 +181,17 @@
 					  // apply options from hash
 					  self._container.isotope( hashOptions );
 					}).trigger('hashchange');
+
 					  
-				// LISTEN TO THUMB LINKS
+					// LISTEN TO THUMB LINKS
 					$('.vid_link').click(function(){
 						var state = {},
 						url = $(this).attr('data-href');
 						
 						state['story'] = url;
-						$.bbq.pushState(state);
+						$.bbq.pushState( state );
+						
+						 _gaq.push(['_trackPageview', window.location.pathname + url ]);
 						
 						return false;
 					});

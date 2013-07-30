@@ -23,10 +23,6 @@
 			$('#loading').show();
 			
 			_.delay(function(){
-				$('#loading').fadeOut();
-			}, 1300);
-			
-			_.delay(function(){
 				_app._container.isotope('reLayout');
 			}, 700);
 			
@@ -36,6 +32,10 @@
 				$('html, body').animate({
 					'scrollTop': (closestTitle.offset().top - 100)
 				});
+			}, 1400);
+			
+			_.delay(function(){
+				$('#loading').fadeOut();
 			}, 1400);
 			
 			
@@ -112,6 +112,32 @@
 			state['filter'] = $.deparam.fragment().filter;
 			$.bbq.removeState('story');
 			$.bbq.pushState(state);
+			
+			$(window).scrollTop(_pos);
+			
+			_app.active_detail = null;
+			
+			_.delay(function(){
+				if(typeof(callback) == 'function'){
+					callback();
+					_app._container.isotope('reLayout');
+				}
+				else{
+					_app._container.isotope('reLayout');
+				}
+			},1100);
+		}
+	
+		self.swap = function(callback){
+		
+			var _pos = $(window).scrollTop();
+		
+			$('#story' + self.options.id).children('.story_wrapper').remove();
+			$('#story' + self.options.id).children('.story-content').show();
+			$('#story' + self.options.id).removeClass('story_width');
+						
+			var state = {};
+			state['filter'] = $.deparam.fragment().filter;
 			
 			$(window).scrollTop(_pos);
 			
