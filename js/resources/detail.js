@@ -86,7 +86,9 @@
 		    
 		    //KILL STORIES ON WINDOW RESIZE
 		    
-		    if (!Modernizr.ie7) {
+		    var $html = $("html");
+		    
+		    if (!$html.hasClass("ie7")) {
 		    
 			    var updateLayout = _.debounce(function(e) {
 	
@@ -97,8 +99,7 @@
 			    window.addEventListener("resize", updateLayout, false);
 			    window.addEventListener("orientationchange", updateLayout, false);
 			    
-			}
-		    
+			} 		    
 	      	 
 	      	self.options.active = true;
 		}

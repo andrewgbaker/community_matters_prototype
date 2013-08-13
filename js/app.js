@@ -1422,7 +1422,9 @@ j.start&&j.start(a)):void 0==a.data("flexslider")&&new d.flexslider(this,j)});va
 		    
 		    //KILL STORIES ON WINDOW RESIZE
 		    
-		    if (!Modernizr.ie7) {
+		    var $html = $("html");
+		    
+		    if (!$html.hasClass("ie7")) {
 		    
 			    var updateLayout = _.debounce(function(e) {
 	
@@ -1433,8 +1435,7 @@ j.start&&j.start(a)):void 0==a.data("flexslider")&&new d.flexslider(this,j)});va
 			    window.addEventListener("resize", updateLayout, false);
 			    window.addEventListener("orientationchange", updateLayout, false);
 			    
-			}
-		    
+			} 		    
 	      	 
 	      	self.options.active = true;
 		}
