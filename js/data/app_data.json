@@ -143,6 +143,78 @@ var thumbs = {
                 "texas"
             ],
             "image": "img/stories/thumbs/TX_OpenDoorChurch_thumb.jpg"
+        },
+        {
+            "id": "Bills_Volume_Sales",
+            "title": "Omaha: Bill’s Volume Sales",
+            "filters": [
+                "nebraska",
+            ],
+            "image": "img/stories/thumbs/NE_BillsVolume_thumb.jpg"
+        },
+        {
+            "id": "South_Platte_Historical_Society",
+            "title": "Ft. Lupton: South Platte Valley Historical Society",
+            "filters": [
+                "colorado"
+            ],
+            "image": "img/stories/thumbs/CO_FtLupton_thumb3.jpg"
+        },
+        {
+            "id": "Gary_Monter",
+            "title": "Palmer: Gary Monter",
+            "filters": [
+                "nebraska",
+            ],
+            "image": "img/stories/thumbs/NE_PalmerSchools_thumb2.jpg"
+        },
+        {
+            "id": "The_Backpack_Program",
+            "title": "Lincoln: The Backpack Program",
+            "filters": [
+                "nebraska",
+            ],
+            "image": "img/stories/thumbs/NE_BackPackProgram_thumb.jpg"
+        },
+        {
+            "id": "Howard_Dudley",
+            "title": "Cleburne: Howard Dudley",
+            "filters": [
+                "texas",
+            ],
+            "image": "img/stories/thumbs/TX_HowardDudleyHotel_thumb.jpg"
+        },
+        {
+            "id": "Franks_Food_Mart",
+            "title": "Verdigre: Frank’s Food Mart",
+            "filters": [
+                "nebraska"
+            ],
+            "image": "img/stories/thumbs/NE_FranksFoodMart_thumb.jpg"
+        },
+        {
+            "id": "Big_Brothers_Big_Sisters",
+            "title": "Omaha: Big Brothers Big Sisters",
+            "filters": [
+                "nebraska",
+            ],
+            "image": "img/stories/thumbs/NE_BigBrothersBigSisters_thumb.jpg"
+        },
+        {
+            "id": "TCU_Ranch_Management",
+            "title": "Ft. Worth: TCU Ranch Management",
+            "filters": [
+                "texas",
+            ],
+            "image": "img/stories/thumbs/TX_TCU_Ranch_thumb.jpg"
+        },
+        {
+            "id": "Customer_Appreciation_Dinner",
+            "title": "Greeley: Customer Appreciation Dinner",
+            "filters": [
+                "colorado"
+            ],
+            "image": "img/stories/thumbs/CO_GreeleyStampede_thumb.jpg"
         }
     ]
 }
@@ -383,6 +455,128 @@ var details = {
                 "img/stories/stills/TX_OpenDoorChurch_3.jpg",
                 "img/stories/stills/TX_OpenDoorChurch_4.jpg",
                 "img/stories/stills/TX_OpenDoorChurch_5.jpg"
+            ]
+        },
+        {
+            "id": "Bills_Volume_Sales",
+            "title": "Omaha: Bill’s Volume Sales",
+            "copy": "Decades ago, a businessman named Bill Pullen chose to bank with Roy Dinsdale. Over the years, the two men have developed an easy friendship and a mutual respect that will be an inspiration long after they retire.",
+            "video": "REysZTWJlDc",
+            "images": [
+                "img/stories/stills/NE_BillsVolume_1.jpg",
+                "img/stories/stills/NE_BillsVolume_2.jpg",
+                "img/stories/stills/NE_BillsVolume_3.jpg",
+                "img/stories/stills/NE_BillsVolume_4.jpg",
+                "img/stories/stills/NE_BillsVolume_5.jpg"
+            ]
+        },
+        {
+            "id": "South_Platte_Historical_Society",
+            "title": "Ft. Lupton: South Platte Valley Historical Society",
+            "copy": "Fort Lupton, Colorado is home to the first Bank of Colorado, and to a dedicated community of volunteers who recognized that sometimes making history means stepping back into it.",
+            "video": "qGf__PwMarY",
+            "images": [
+                "img/stories/stills/CO_FtLupton_1.jpg",
+                "img/stories/stills/CO_FtLupton_2.jpg",
+                "img/stories/stills/CO_FtLupton_3.jpg",
+                "img/stories/stills/CO_FtLupton_4.jpg",
+                "img/stories/stills/CO_FtLupton_5.jpg",
+                "img/stories/stills/CO_FtLupton_6.jpg"
+            ]
+        },
+        {
+            "id": "Gary_Monter",
+            "title": "Palmer: Gary Monter",
+            "copy": "Palmer Public Schools are the heart and soul of the community. And Gary Monter was the heart and soul of Palmer Public Schools. This video captures the spirit of the people of Palmer. And it is dedicated to Monter’s memory.",
+            "video": "wb7RZFfccmU",
+            "images": [
+                "img/stories/stills/NE_PalmerSchools_1.jpg",
+                "img/stories/stills/NE_PalmerSchools_2.jpg",
+                "img/stories/stills/NE_PalmerSchools_3.jpg",
+                "img/stories/stills/NE_PalmerSchools_4.jpg",
+                "img/stories/stills/NE_PalmerSchools_5.jpg",
+                "img/stories/stills/NE_PalmerSchools_6.jpg"
+            ]
+        },
+        {
+            "id": "The_Backpack_Program",
+            "title": "Lincoln: The Backpack Program",
+            "copy": "Every weekend, thousands of kids rely on The Lincoln Backpack program to give them the food, encouragement, and community spirit they need for the weekend. This is its story.",
+            "video": "sXNgit-S-3Q",
+            "images": [
+                "img/stories/stills/NE_BackPackProgram_1.jpg",
+                "img/stories/stills/NE_BackPackProgram_2.jpg",
+                "img/stories/stills/NE_BackPackProgram_3.jpg",
+                "img/stories/stills/NE_BackPackProgram_4.jpg",
+                "img/stories/stills/NE_BackPackProgram_5.jpg",
+                "img/stories/stills/NE_BackPackProgram_6.jpg"
+            ]
+        },
+        {
+            "id": "Howard_Dudley",
+            "title": "Cleburne: Howard Dudley",
+            "copy": "When you want something done right, you take your time. And that is just what Howard Dudley did when he revitalized the heart of Cleburne, Texas, one historical structure at a time.",
+            "video": "Rjrn0aVFGvI",
+            "images": [
+                "img/stories/stills/TX_HowardDudleyHotel_1.jpg",
+                "img/stories/stills/TX_HowardDudleyHotel_2.jpg",
+                "img/stories/stills/TX_HowardDudleyHotel_3.jpg",
+                "img/stories/stills/TX_HowardDudleyHotel_4.jpg",
+                "img/stories/stills/TX_HowardDudleyHotel_5.jpg",
+                "img/stories/stills/TX_HowardDudleyHotel_6.jpg"
+            ]
+        },
+        {
+            "id": "Franks_Food_Mart",
+            "title": "Verdigre: Frank’s Food Mart",
+            "copy": "In the Northeast corner of Nebraska, just 12 miles from the Missouri River, stands a grocery store. The couple that runs it knows better than anyone why people choose to live in their hometown. And why Verdigre has thrived through the generations.",
+            "video": "rmplxCFu3do",
+            "images": [
+                "img/stories/stills/NE_FranksFoodMart_1.jpg",
+                "img/stories/stills/NE_FranksFoodMart_2.jpg",
+                "img/stories/stills/NE_FranksFoodMart_3.jpg",
+                "img/stories/stills/NE_FranksFoodMart_4.jpg",
+                "img/stories/stills/NE_FranksFoodMart_5.jpg"
+            ]
+        },
+        {
+            "id": "Big_Brothers_Big_Sisters",
+            "title": "Omaha: Big Brothers Big Sisters",
+            "copy": "Being a kid is hard enough. Having someone to look up to makes it easier. In Omaha, Big Brothers, Big Sisters steps up to take responsibility for finding kids mentors who become lifelong friends.",
+            "video": "hv70bFdyuS8",
+            "images": [
+                "img/stories/stills/NE_BigBrothersBigSisters_1.jpg",
+                "img/stories/stills/NE_BigBrothersBigSisters_2.jpg",
+                "img/stories/stills/NE_BigBrothersBigSisters_3.jpg",
+                "img/stories/stills/NE_BigBrothersBigSisters_4.jpg",
+                "img/stories/stills/NE_BigBrothersBigSisters_5.jpg",
+                "img/stories/stills/NE_BigBrothersBigSisters_6.jpg"
+            ]
+        },
+        {
+            "id": "TCU_Ranch_Management",
+            "title": "Ft. Worth: TCU Ranch Management",
+            "copy": "The TCU’s Ranch Management program is one of the most unique agriculture programs in the world. It equips tomorrow’s ranchers and farmers with real world experience, so graduates have a better understanding of suitability in a growing world, and how to run a ranch or farm as a business.",
+            "video": "pb6fm15T2ew",
+            "images": [
+                "img/stories/stills/TX_TCU_Ranch_1.jpg",
+                "img/stories/stills/TX_TCU_Ranch_2.jpg",
+                "img/stories/stills/TX_TCU_Ranch_3.jpg",
+                "img/stories/stills/TX_TCU_Ranch_4.jpg",
+                "img/stories/stills/TX_TCU_Ranch_5.jpg"
+            ]
+        },
+        {
+            "id": "Customer_Appreciation_Dinner",
+            "title": "Greeley: Customer Appreciation Dinner",
+            "copy": "The Greeley Stampede has been a community tradition for more than 100 years. Almost half a million people enjoy bull riding, music, food, art, a demolition derby and more. It’s also a chance for 775 of our customers to celebrate a community of their own.",
+            "video": "a075AepUeP4",
+            "images": [
+                "img/stories/stills/CO_GreeleyStampede_1.jpg",
+                "img/stories/stills/CO_GreeleyStampede_2.jpg",
+                "img/stories/stills/CO_GreeleyStampede_3.jpg",
+                "img/stories/stills/CO_GreeleyStampede_4.jpg",
+                "img/stories/stills/CO_GreeleyStampede_5.jpg"
             ]
         }
     ]

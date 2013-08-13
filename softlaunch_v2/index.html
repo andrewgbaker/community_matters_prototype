@@ -1,0 +1,146 @@
+<!doctype html>
+<!--[if lte IE 8]> <html class="ie7"> <![endif]-->
+<!--[if !IE]><!--><html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  
+  <meta charset="utf-8" />
+  <title>Pinnacle Bank Community Matters Prototype</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/libs/modernizr.custom.57275.js"></script>
+  <script src="js/libs/respond.min.js"></script>
+  
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-27770791-1']);
+	  _gaq.push(['_setDomainName', 'clients.karshhagan.com']);
+	  if(location.hash == '') _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
+     
+  <!-- scripts at bottom of page -->
+
+</head>
+<body>
+
+<nav class="top_nav nav_tall">
+	<div class="nav_interior">
+		<!-- AddThis Button BEGIN -->
+		<a class="addthis_button_expanded add_this" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=ra-4d80efce2fb49656"><span>Share</span></a>
+		<!-- AddThis Button END -->
+		<a href="#" class="main_logo logo_large"></a>
+		<ul class="main_nav">
+			<li><a href="about/index.html" class="about_link nav_link">About</a></li>
+			<li><a href="#" class="btn-slide nav_link"><span class="title">Stories near you</span><span class="arrow"></span></a></li>
+		</ul>
+	</div>
+	<div id="slide_panel">
+	  <div id="filters_panel">
+	  	<a href="about/index.html" class="about_link_mobile">About</a>
+		<section id="options" class="clearfix">
+			<ul class="option-set clearfix">
+		      <li><a href="#filter=*" class="active">view all</a></li>
+		      <li><a href="#filter=.nebraska">Nebraska</a></li>
+		      <li><a href="#filter=.colorado">Colorado</a></li>
+		      <li><a href="#filter=.texas">Texas</a></li>
+		      <li><a href="#filter=.wyoming">Wyoming</a></li>
+		      <li><a href="#filter=.missouri">Missouri</a></li>
+		      <li><a href="#filter=.new_mexico">New Mexico</a></li>
+		      <li><a href="#filter=.iowa">Iowa</a></li>
+		      <li><a href="#filter=.kansas">Kansas</a></li>
+		    </ul>
+  		</section> <!-- #options -->
+	  </div>
+	 </div>
+</nav>
+
+<div id="loading">
+	<div class="load_wrap">
+		<div class="loader_out"></div>
+		<div class="loader_in"></div>
+	</div>
+</div>
+
+<div class="right_cta">
+	<a name="about_map" href="about/#about_map"></a>
+</div>
+
+<section id="content">
+	<header>
+		<video id="header_video" class="video-js" poster="img/header_poster.jpg" data-setup='{ "controls": false, "autoplay": true, "preload": "none", "loop": false }' >
+		  <source type="video/mp4" src="http://karshhagan.com/demos/pinnbank/community_matters_prototype/video/community_matters_720p.mp4">
+		  <source type="video/ogv" src="http://karshhagan.com/demos/pinnbank/community_matters_prototype/video/community_matters_720p.ogv">
+		  <source type="video/webm" src="http://karshhagan.com/demos/pinnbank/community_matters_prototype/video/community_matters_720p.webm">
+		</video>
+		<img class="ie_header" src="img/header_poster.jpg" alt="community matters series" />
+		<img class="mobile_header" src="img/mobile_banner.jpg" />
+	</header>
+	<section class="charter_logos">
+		<div class="logo_wrap clearfix">
+			<div class="brought">
+				<p>Brought to you by:</p>
+			</div>
+			<div class="logos"><img src="img/pinnacle_logos_small.png" /></div>
+		</div>
+	</section>
+	<section class="mobile_cta">
+		<a href="about/#about_map"></a>
+	</section>
+  
+	  
+	  <div id="container" class="clickable clearfix">
+	    
+	      	    
+	  </div> <!-- #container -->
+	  
+	  <footer>
+	  	<ul class="footer_interior">
+	  		<li class="footer_component"><img src="img/EHL-logo.png" /></li>
+	  		<li class="footer_component"><img src="img/FDIC-logo.png" /></li>
+	  		<li class="footer_component">&copy; 2013 Pinnacle Bancorp</li>
+	  	</ul>
+	  </footer>
+	
+</section><!-- END CONTENT -->
+  
+<!-- JQUERY -->  
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
+	
+
+<!-- LIBS JS -->  	
+	<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4d80efce2fb49656"></script>
+	<script src="js/libs/jquery.isotope.min.js"></script>
+	<script src="js/libs/jquery.ba-bbq.js"></script>
+	<script src="js/libs/pinned.jQuery.js"></script>
+	<script src="js/libs/jquery.fitvids.min.js"></script>
+	<script src="js/libs/video.js"></script>
+	<script>
+	  videojs.options.flash.swf = "js/libs/video-js.swf"
+	</script>
+	<script src="js/libs/jquery.flexslider-min.js"></script>
+	<script src="js/libs/underscore.js"></script>
+
+<!-- DATA -->
+  	<script src="js/data/app_data.json"></script>
+  		
+<!-- RESOURCES -->
+  	<script src="js/resources/thumb.js"></script>
+  	<script src="js/resources/isotope_setup.js"></script>
+  	<script src="js/resources/detail.js"></script>
+
+<!-- APP JS -->
+	<script src="js/pinnbank.js"></script>
+	<script src="js/main.js"></script>
+	
+	
+</body>
+</html>

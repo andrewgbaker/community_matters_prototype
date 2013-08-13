@@ -49,15 +49,17 @@
 				if (Modernizr.postmessage) {
 				
 					function pauseStory(frame) {
-						$('iframe.youtube').each(function(i) {
+						$('iframe.youtube').each(function() {
 							var func = this === frame ? 'pauseVideo' : 'pauseVideo';
 							this.contentWindow.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
 						});
 					}
-		      	
+		      
 			      	$(".flexslider").fitVids().flexslider({
 				      	animation: 'slide',
 						slideshow: false,
+						useCSS: false,
+						video: true,
 						before: function(slider){
 							
 							// Stop all youtube videos in this slideshow
@@ -84,7 +86,7 @@
 		    
 		    //KILL STORIES ON WINDOW RESIZE
 		    
-		    if (Modernizr.ie7) {
+		    if (!Modernizr.ie7) {
 		    
 			    var updateLayout = _.debounce(function(e) {
 	
@@ -93,6 +95,7 @@
 				}, 500);
 			    		    
 			    window.addEventListener("resize", updateLayout, false);
+			    window.addEventListener("orientationchange", updateLayout, false);
 			    
 			}
 		    
