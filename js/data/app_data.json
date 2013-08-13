@@ -154,7 +154,7 @@ var thumbs = {
         },
         {
             "id": "South_Platte_Historical_Society",
-            "title": "Ft. Lupton: South Platte Valley Historical Society",
+            "title": "Ft. Lupton: The Fort",
             "filters": [
                 "colorado"
             ],
@@ -202,7 +202,7 @@ var thumbs = {
         },
         {
             "id": "TCU_Ranch_Management",
-            "title": "Ft. Worth: TCU Ranch Management",
+            "title": "Ft. Worth: TCU Ranch Mgmt",
             "filters": [
                 "texas",
             ],
@@ -210,7 +210,7 @@ var thumbs = {
         },
         {
             "id": "Customer_Appreciation_Dinner",
-            "title": "Greeley: Customer Appreciation Dinner",
+            "title": "Greeley: Appreciation Dinner",
             "filters": [
                 "colorado"
             ],
@@ -461,7 +461,7 @@ var details = {
             "id": "Bills_Volume_Sales",
             "title": "Omaha: Bill’s Volume Sales",
             "copy": "Decades ago, a businessman named Bill Pullen chose to bank with Roy Dinsdale. Over the years, the two men have developed an easy friendship and a mutual respect that will be an inspiration long after they retire.",
-            "video": "REysZTWJlDc",
+            "video": "BAESMS26BrM",
             "images": [
                 "img/stories/stills/NE_BillsVolume_1.jpg",
                 "img/stories/stills/NE_BillsVolume_2.jpg",

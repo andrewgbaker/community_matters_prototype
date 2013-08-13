@@ -202,6 +202,9 @@ ul.main_nav {
 	font-weight: 700;
 	text-decoration: none;
 }
+.main_nav li a.active {
+	color: #ba6451;
+}
 .main_nav li a:hover {
 	color: #ba6451;
 }
@@ -416,7 +419,6 @@ ul.main_nav {
 #options li a.selected {
   color: #ba6451;
 }
-
 
 /* The Magnificent Clearfix: nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before, .clearfix:after { content: ""; display: table; }

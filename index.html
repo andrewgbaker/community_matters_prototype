@@ -11,6 +11,19 @@
   <script src="js/libs/modernizr.custom.57275.js"></script>
   <script src="js/libs/respond.min.js"></script>
   
+  <!-- Favicons
+	================================================== -->
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	
+	<!-- For third-generation iPad with high-resolution Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+	<!-- For iPhone with high-resolution Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+	<!-- For first- and second-generation iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+  
 	<script type="text/javascript">
 
 	  var _gaq = _gaq || [];
@@ -38,13 +51,13 @@
 		<!-- AddThis Button END -->
 		<a href="#" class="main_logo logo_large"></a>
 		<ul class="main_nav">
-			<li><a href="about/index.html" class="about_link nav_link">About</a></li>
+			<li><a href="about/" class="about_link nav_link">About</a></li>
 			<li><a href="#" class="btn-slide nav_link"><span class="title">Stories near you</span><span class="arrow"></span></a></li>
 		</ul>
 	</div>
 	<div id="slide_panel">
 	  <div id="filters_panel">
-	  	<a href="about/index.html" class="about_link_mobile">About</a>
+	  	<a href="about/" class="about_link_mobile">About</a>
 		<section id="options" class="clearfix">
 			<ul class="option-set clearfix">
 		      <li><a href="#filter=*" class="active">view all</a></li>
@@ -115,31 +128,19 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
 	
-
+<!-- DATA -->
+  	<script src="js/data/app_data.json"></script>
+	
 <!-- LIBS JS -->  	
 	<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4d80efce2fb49656"></script>
-	<script src="js/libs/jquery.isotope.min.js"></script>
-	<script src="js/libs/jquery.ba-bbq.js"></script>
-	<script src="js/libs/pinned.jQuery.js"></script>
-	<script src="js/libs/jquery.fitvids.min.js"></script>
-	<script src="js/libs/video.js"></script>
+
+<!-- VIDEO.JS FLASH FALLBACK -->  
 	<script>
 	  videojs.options.flash.swf = "js/libs/video-js.swf"
 	</script>
-	<script src="js/libs/jquery.flexslider-min.js"></script>
-	<script src="js/libs/underscore.js"></script>
-
-<!-- DATA -->
-  	<script src="js/data/app_data.json"></script>
-  		
-<!-- RESOURCES -->
-  	<script src="js/resources/thumb.js"></script>
-  	<script src="js/resources/isotope_setup.js"></script>
-  	<script src="js/resources/detail.js"></script>
-
+	
 <!-- APP JS -->
-	<script src="js/pinnbank.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/app.min.js"></script>
 	
 	
 </body>
