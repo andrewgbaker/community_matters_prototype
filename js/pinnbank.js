@@ -208,7 +208,9 @@
 			            filter: '*',
 			            sortBy: 'original-order',
 			            sortAscending: true,
-			            layoutMode: 'masonry'
+			            layoutMode: 'masonry',
+			            transformsEnabled: false,
+			            animationEngine : 'jquery'
 			          };
 		
 			      var setupOptions = $.extend( {}, defaultOptions, {

@@ -1422,9 +1422,8 @@ j.start&&j.start(a)):void 0==a.data("flexslider")&&new d.flexslider(this,j)});va
 		    
 		    //KILL STORIES ON WINDOW RESIZE
 		    
-		    var $html = $("html");
 		    
-		    if (!$html.hasClass("ie7")) {
+		    if (Modernizr.csstransforms) {
 		    
 			    var updateLayout = _.debounce(function(e) {
 	
@@ -1786,7 +1785,9 @@ j.start&&j.start(a)):void 0==a.data("flexslider")&&new d.flexslider(this,j)});va
 			            filter: '*',
 			            sortBy: 'original-order',
 			            sortAscending: true,
-			            layoutMode: 'masonry'
+			            layoutMode: 'masonry',
+			            transformsEnabled: false,
+			            animationEngine : 'jquery'
 			          };
 		
 			      var setupOptions = $.extend( {}, defaultOptions, {

@@ -121,6 +121,14 @@ var thumbs = {
             "image": "img/stories/thumbs/NE_YMCA_thumb.jpg"
         },
         {
+            "id": "Cody_Night_Rodeo",
+            "title": "Cody: Night Rodeo",
+            "filters": [
+                "wyoming",
+            ],
+            "image": "img/stories/thumbs/WY_CodyNiteRodeo_thumb.jpg"
+        },
+        {
             "id": "Annie_Jeffrey_Center",
             "title": "Osceola: Annie Jeffrey Center",
             "filters": [
@@ -215,6 +223,14 @@ var thumbs = {
                 "colorado"
             ],
             "image": "img/stories/thumbs/CO_GreeleyStampede_thumb.jpg"
+        },
+        {
+            "id": "Cody_Field_of_Honor",
+            "title": "Cody: Field of Honor",
+            "filters": [
+                "wyoming"
+            ],
+            "image": "img/stories/thumbs/WY_FieldofHonor_thumb.jpg"
         }
     ]
 }
@@ -419,6 +435,19 @@ var details = {
             ]
         },
         {
+            "id": "Cody_Night_Rodeo",
+            "title": "Cody: Night Rodeo",
+            "copy": "The spirit of the American West is alive and on display every night, for 92 straight nights.",
+            "video": "yXtCOFysAkU",
+            "images": [
+                "img/stories/stills/WY_CodyNiteRodeo_1.jpg",
+                "img/stories/stills/WY_CodyNiteRodeo_2.jpg",
+                "img/stories/stills/WY_CodyNiteRodeo_3.jpg",
+                "img/stories/stills/WY_CodyNiteRodeo_4.jpg",
+                "img/stories/stills/WY_CodyNiteRodeo_5.jpg"
+            ]
+        },
+        {
             "id": "Annie_Jeffrey_Center",
             "title": "Osceola: Annie Jeffrey Center",
             "copy": "In Polk County, tending to patients also means taking care of your family and neighbors. Annie Jeffery Heath Center brings world-class doctors, technology and medical care to this tight-knit community.",
@@ -577,6 +606,19 @@ var details = {
                 "img/stories/stills/CO_GreeleyStampede_3.jpg",
                 "img/stories/stills/CO_GreeleyStampede_4.jpg",
                 "img/stories/stills/CO_GreeleyStampede_5.jpg"
+            ]
+        },
+        {
+            "id": "Cody_Field_of_Honor",
+            "title": "Cody: Field of Honor",
+            "copy": "Patriotism in our country can be shown in a lot of ways. And for the second straight year the people of Cody, Wyoming showcase theirs by the thousands.",
+            "video": "Stc16cfRnyw",
+            "images": [
+                "img/stories/stills/WY_FieldofHonor_1.jpg",
+                "img/stories/stills/WY_FieldofHonor_2.jpg",
+                "img/stories/stills/WY_FieldofHonor_3.jpg",
+                "img/stories/stills/WY_FieldofHonor_4.jpg",
+                "img/stories/stills/WY_FieldofHonor_5.jpg"
             ]
         }
     ]

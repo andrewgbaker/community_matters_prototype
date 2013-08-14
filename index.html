@@ -88,7 +88,7 @@
 
 <section id="content">
 	<header>
-		<video id="header_video" class="video-js" poster="img/header_poster.jpg" data-setup='{ "controls": false, "autoplay": true, "preload": "none", "loop": false }' >
+		<video id="header_video" class="video-js" poster="img/header_poster.jpg" autoplay >
 		  <source type="video/mp4" src="video/community_matters_720p.mp4">
 		  <source type="video/ogv" src="video/community_matters_720p.ogv">
 		  <source type="video/webm" src="video/community_matters_720p.webm">
@@ -133,14 +133,14 @@
 	
 <!-- LIBS JS -->  	
 	<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4d80efce2fb49656"></script>
-
+	
+<!-- APP JS -->
+	<script src="js/app.min.js"></script>
+	
 <!-- VIDEO.JS FLASH FALLBACK -->  
 	<script>
 	  videojs.options.flash.swf = "js/libs/video-js.swf"
 	</script>
-	
-<!-- APP JS -->
-	<script src="js/app.min.js"></script>
 	
 	
 </body>

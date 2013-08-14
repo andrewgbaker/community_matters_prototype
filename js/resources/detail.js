@@ -86,9 +86,8 @@
 		    
 		    //KILL STORIES ON WINDOW RESIZE
 		    
-		    var $html = $("html");
 		    
-		    if (!$html.hasClass("ie7")) {
+		    if (Modernizr.csstransforms) {
 		    
 			    var updateLayout = _.debounce(function(e) {
 	
