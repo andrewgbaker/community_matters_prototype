@@ -1360,7 +1360,7 @@ j.start&&j.start(a)):void 0==a.data("flexslider")&&new d.flexslider(this,j)});va
 			
 			_.delay(function(){
 				_app._container.isotope('reLayout');
-			}, 700);
+			}, 1000);
 			
 			_.delay(function(){
 				var closestTitle = $('#story' + self.options.id).find('.story_title')
