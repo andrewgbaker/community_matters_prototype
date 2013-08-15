@@ -478,7 +478,7 @@ REQUIRED STYLES (be careful overriding)
    Otherwise you risk messing up control positioning and full window mode. **
 */
 .video-js {
-  background-color: transparent; position: relative; padding: 0; background: url(../img/header_poster.jpg) no-repeat center center; background-size: cover;
+  background-color: transparent; position: relative; padding: 0; background: url(../img/video_bg.jpg) no-repeat center center; background-size: cover;
 
   /* Start with 10px for base font size so other dimensions can be em based and easily calculable. */
   font-size: 10px;

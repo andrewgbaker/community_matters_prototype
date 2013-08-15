@@ -122,7 +122,7 @@ var thumbs = {
         },
         {
             "id": "Cody_Night_Rodeo",
-            "title": "Cody: Night Rodeo",
+            "title": "Cody: Nite Rodeo",
             "filters": [
                 "wyoming",
             ],
@@ -280,7 +280,7 @@ var details = {
             "id": "Fort_Worth_Downtown",
             "title": "Fort Worth: Downtown",
             "copy": "Urban renewal of a city can’t happen alone. It takes leaders from all over the community to have a vision and a shared voice. And that’s exactly what happened in the city of Fort Worth, Texas. Today it’s a thriving metro area that’s a shining example of how a city can change when community works together.",
-            "video": "3FQ0X1rSJuY",
+            "video": "ItgXQ8oDUFs",
             "images": [
                 "img/stories/stills/TX_FtWorth_1.jpg",
                 "img/stories/stills/TX_FtWorth_2.jpg",
@@ -436,7 +436,7 @@ var details = {
         },
         {
             "id": "Cody_Night_Rodeo",
-            "title": "Cody: Night Rodeo",
+            "title": "Cody: Nite Rodeo",
             "copy": "The spirit of the American West is alive and on display every night, for 92 straight nights.",
             "video": "yXtCOFysAkU",
             "images": [
@@ -450,7 +450,7 @@ var details = {
         {
             "id": "Annie_Jeffrey_Center",
             "title": "Osceola: Annie Jeffrey Center",
-            "copy": "In Polk County, tending to patients also means taking care of your family and neighbors. Annie Jeffery Heath Center brings world-class doctors, technology and medical care to this tight-knit community.",
+            "copy": "In Polk County, tending to patients also means taking care of your family and neighbors. Annie Jeffrey Health Center brings world-class doctors, technology and medical care to this tight-knit community.",
             "video": "zTJPX9rxTac",
             "images": [
                 "img/stories/stills/NE_AnnieJeffreyHC_1.jpg",
@@ -559,7 +559,7 @@ var details = {
             "id": "Franks_Food_Mart",
             "title": "Verdigre: Frank’s Food Mart",
             "copy": "In the Northeast corner of Nebraska, just 12 miles from the Missouri River, stands a grocery store. The couple that runs it knows better than anyone why people choose to live in their hometown. And why Verdigre has thrived through the generations.",
-            "video": "rmplxCFu3do",
+            "video": "Z5prMklvo_U",
             "images": [
                 "img/stories/stills/NE_FranksFoodMart_1.jpg",
                 "img/stories/stills/NE_FranksFoodMart_2.jpg",
