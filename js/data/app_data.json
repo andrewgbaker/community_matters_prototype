@@ -231,6 +231,22 @@ var thumbs = {
                 "wyoming"
             ],
             "image": "img/stories/thumbs/WY_FieldofHonor_thumb.jpg"
+        },
+        {
+            "id": "Pinnacle_Bank_Arena",
+            "title": "Lincoln: Pinnacle Bank Arena",
+            "filters": [
+                "nebraska"
+            ],
+            "image": "img/stories/thumbs/Lincoln_arena_Thumb.jpg"
+        },
+        {
+            "id": "Community_Places",
+            "title": "Community: Places",
+            "filters": [
+                "wyoming", "nebraska", "colorado", "missouri", "iowa", "new_mexico", "texas", "kansas"
+            ],
+            "image": "img/stories/thumbs/Universal_Places_thumb.jpg"
         }
     ]
 }
@@ -619,6 +635,29 @@ var details = {
                 "img/stories/stills/WY_FieldofHonor_3.jpg",
                 "img/stories/stills/WY_FieldofHonor_4.jpg",
                 "img/stories/stills/WY_FieldofHonor_5.jpg"
+            ]
+        },
+        {
+            "id": "Pinnacle_Bank_Arena",
+            "title": "Lincoln: Pinnacle Bank Arena",
+            "copy": "Get a sneak peek at a state-of-of-the-art facility and community marvel, the new Pinnacle Bank Arena in Lincoln's West Haymarket District.",
+            "video": "kCh-DzOuas8",
+            "images": [
+                "img/stories/stills/Lincoln_arena_1.jpg",
+                "img/stories/stills/Lincoln_arena_2.jpg"
+            ]
+        },
+        {
+            "id": "Community_Places",
+            "title": "Community: Places",
+            "copy": "Community is more than where you're from—it's all the things that make a place feel like home.",
+            "video": "I-VLImOvydI",
+            "images": [
+                "img/stories/stills/Universal_Places_1.jpg",
+                "img/stories/stills/Universal_Places_2.jpg",
+                "img/stories/stills/Universal_Places_3.jpg",
+                "img/stories/stills/Universal_Places_4.jpg",
+                "img/stories/stills/Universal_Places_5.jpg"
             ]
         }
     ]
