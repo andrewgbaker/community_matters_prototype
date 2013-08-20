@@ -233,6 +233,11 @@ ul.main_nav {
 }
 .add_this span {vertical-align: middle; display: inline-block; line-height: 30px;}
 
+.ie_addthis {display: none;}
+
+.ie7 .ie_addthis {display: block;}
+
+.ie7 .addthis_button_expanded {display: none;}
 
 .btn-slide .arrow {
 	background: url(../img/sprite.svg) no-repeat;

@@ -1620,6 +1620,15 @@ j.start&&j.start(a)):void 0==a.data("flexslider")&&new d.flexslider(this,j)});va
 					$(function(){
 					    showContent();
 					});	
+					
+				  // ADD THIS RE-POSITION FOR IE
+				  
+				  $('.addthis_button').mousemove(function(e){
+					    $('#at15s').css({
+					        'top': e.pageY + 20 ,
+					        'left': e.pageX - 20
+					    });
+					});
 				  	
 				  // HTML5 HEADER VIDEO
 							
@@ -1684,9 +1693,7 @@ j.start&&j.start(a)):void 0==a.data("flexslider")&&new d.flexslider(this,j)});va
 					      option = $.deparam( href, true );
 					  // set hash, triggers hashchange on window
 					  $.bbq.pushState( option );
-					  
-					  _gaq.push(['_trackPageview', option ]);
-						
+					  						
 					  return false;
 					});
 				      
@@ -1767,9 +1774,7 @@ j.start&&j.start(a)):void 0==a.data("flexslider")&&new d.flexslider(this,j)});va
 						
 						state['story'] = url;
 						$.bbq.pushState( state );
-						
-						 _gaq.push(['_trackPageview', window.location.pathname + url ]);
-						
+												
 						return false;
 					});
 				}

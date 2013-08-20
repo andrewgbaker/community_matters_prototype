@@ -137,13 +137,20 @@
 	
 <!-- APP JS -->
 	<script src="js/app.min.js"></script>
-
+	
 <!-- LIBS JS -->  	
-	<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4d80efce2fb49656"></script>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-52139f040bdada1d"></script>
 	
 <!-- VIDEO.JS FLASH FALLBACK -->  
 	<script>
 	  videojs.options.flash.swf = "js/libs/video-js.swf"
+	  
+	  $('.addthis_button').mousemove(function(e){
+		    $('#at15s').css({
+		        'top': e.pageY + 20 ,
+		        'left': e.pageX - 20
+		    });
+		});
 	</script>
 	
 	
