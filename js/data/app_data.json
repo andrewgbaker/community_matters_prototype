@@ -1,0 +1,664 @@
+var thumbs = {
+    "thumbs": [
+        {
+            "id": "Petrified_Wood_Gallery",
+            "title": "Ogallala: Petrified Wood Gallery ",
+            "filters": [
+                "nebraska",
+            ],
+            "image": "img/stories/thumbs/NE_Petrified_Thumb.jpg"
+        },
+        {
+            "id": "World_Thinking_Day",
+            "title": "Woodland Park: World Thinking",
+            "filters": [
+                "colorado",
+            ],
+            "image": "img/stories/thumbs/CO_GS_WorldThinkingDay_thumb.jpg"
+        },
+        {
+            "id": "Veteran_Booths_Ranch",
+            "title": "Veteran: Booth's Ranch",
+            "filters": [
+                "wyoming",
+            ],
+            "image": "img/stories/thumbs/WY_Booths_thumb.jpg"
+        },
+        {
+            "id": "Fort_Worth_Downtown",
+            "title": "Fort Worth: Downtown",
+            "filters": [
+                "texas"
+            ],
+            "image": "img/stories/thumbs/TX_FtWorth_thumb1.jpg"
+        },
+        {
+            "id": "Pfeifer_Auto_Body",
+            "title": "Madison: Pfeifer Auto Body",
+            "filters": [
+                "nebraska"
+            ],
+            "image": "img/stories/thumbs/NE_PfeiferAutoBody_thumb2.jpg"
+        },
+        {
+            "id": "Whitewater_Rafting",
+            "title": "Glenwood Springs: Rafting",
+            "filters": [
+                "colorado",
+            ],
+            "image": "img/stories/thumbs/CO_WhiteWaterRafting_thumb.jpg"
+        },
+        {
+            "id": "Leitheads_Appliance_Center",
+            "title": "Torrington: Leithead’s",
+            "filters": [
+                "wyoming",
+            ],
+            "image": "img/stories/thumbs/WY_Leitheads_thumb.jpg"
+        },
+        {
+            "id": "Behlen_Manufacturing",
+            "title": "Columbus: Behlen Manufacturing",
+            "filters": [
+                "nebraska"
+            ],
+            "image": "img/stories/thumbs/NE_BehlenManufacturing_thumb2.jpg"
+        },
+        {
+            "id": "Hope_West_Hospice",
+            "title": "Grand Junction: Hospice",
+            "filters": [
+                "colorado",
+            ],
+            "image": "img/stories/thumbs/CO_Hospice_thumb.jpg"
+        },
+        {
+            "id": "Livestock_Market",
+            "title": "Ogallala: Livestock Market",
+            "filters": [
+                "nebraska",
+            ],
+            "image": "img/stories/thumbs/NE_OgallalaAuction_thumb.jpg"
+        },
+        {
+            "id": "Community_In_a_Word",
+            "title": "Community: In a Word",
+            "filters": [
+                "wyoming", "nebraska", "colorado", "missouri", "iowa", "new_mexico", "texas", "kansas"
+            ],
+            "image": "img/stories/thumbs/Universal_Oneword_thumb1.jpg"
+        },
+        {
+            "id": "Holt_Co_Economic_Development",
+            "title": "Holt Co. Economic Development",
+            "filters": [
+                "nebraska",
+            ],
+            "image": "img/stories/thumbs/NE_HoltCoEcoDev_thumb.jpg"
+        },
+        {
+            "id": "Girl_Scout_Troop",
+            "title": "Colorado Springs: Troop&nbsp;2295",
+            "filters": [
+                "colorado",
+            ],
+            "image": "img/stories/thumbs/CO_GS_Tyra_Thumb.jpg"
+        },
+        {
+            "id": "Open_Range_Grill",
+            "title": "Ogallala: Open Range Grill",
+            "filters": [
+                "nebraska",
+            ],
+            "image": "img/stories/thumbs/NE_OpenRangeGrill_Thumb.jpg"
+        },
+        {
+            "id": "Family_YMCA",
+            "title": "Fremont: The Family YMCA",
+            "filters": [
+                "nebraska"
+            ],
+            "image": "img/stories/thumbs/NE_YMCA_thumb.jpg"
+        },
+        {
+            "id": "Cody_Night_Rodeo",
+            "title": "Cody: Nite Rodeo",
+            "filters": [
+                "wyoming",
+            ],
+            "image": "img/stories/thumbs/WY_CodyNiteRodeo_thumb.jpg"
+        },
+        {
+            "id": "Annie_Jeffrey_Center",
+            "title": "Osceola: Annie Jeffrey Center",
+            "filters": [
+                "nebraska",
+            ],
+            "image": "img/stories/thumbs/NE_AnnieJeffreyHC_thumb.jpg"
+        },
+        {
+            "id": "Fat_Brain_Toys",
+            "title": "Omaha: Fat Brain Toys",
+            "filters": [
+                "nebraska",
+            ],
+            "image": "img/stories/thumbs/NE_FatBrainToys_Thumb.jpg"
+        },
+        {
+            "id": "Open_Door_Church",
+            "title": "Joshua: Open Door Church",
+            "filters": [
+                "texas"
+            ],
+            "image": "img/stories/thumbs/TX_OpenDoorChurch_thumb.jpg"
+        },
+        {
+            "id": "Bills_Volume_Sales",
+            "title": "Omaha: Bill’s Volume Sales",
+            "filters": [
+                "nebraska",
+            ],
+            "image": "img/stories/thumbs/NE_BillsVolume_thumb.jpg"
+        },
+        {
+            "id": "South_Platte_Historical_Society",
+            "title": "Ft. Lupton: The Fort",
+            "filters": [
+                "colorado"
+            ],
+            "image": "img/stories/thumbs/CO_FtLupton_thumb3.jpg"
+        },
+        {
+            "id": "Gary_Monter",
+            "title": "Palmer: Gary Monter",
+            "filters": [
+                "nebraska",
+            ],
+            "image": "img/stories/thumbs/NE_PalmerSchools_thumb2.jpg"
+        },
+        {
+            "id": "The_Backpack_Program",
+            "title": "Lincoln: The Backpack Program",
+            "filters": [
+                "nebraska",
+            ],
+            "image": "img/stories/thumbs/NE_BackPackProgram_thumb.jpg"
+        },
+        {
+            "id": "Howard_Dudley",
+            "title": "Cleburne: Howard Dudley",
+            "filters": [
+                "texas",
+            ],
+            "image": "img/stories/thumbs/TX_HowardDudleyHotel_thumb.jpg"
+        },
+        {
+            "id": "Franks_Food_Mart",
+            "title": "Verdigre: Frank’s Food Mart",
+            "filters": [
+                "nebraska"
+            ],
+            "image": "img/stories/thumbs/NE_FranksFoodMart_thumb.jpg"
+        },
+        {
+            "id": "Big_Brothers_Big_Sisters",
+            "title": "Omaha: Big Brothers Big Sisters",
+            "filters": [
+                "nebraska",
+            ],
+            "image": "img/stories/thumbs/NE_BigBrothersBigSisters_thumb.jpg"
+        },
+        {
+            "id": "TCU_Ranch_Management",
+            "title": "Ft. Worth: TCU Ranch Mgmt",
+            "filters": [
+                "texas",
+            ],
+            "image": "img/stories/thumbs/TX_TCU_Ranch_thumb.jpg"
+        },
+        {
+            "id": "Customer_Appreciation_Dinner",
+            "title": "Greeley: Appreciation Dinner",
+            "filters": [
+                "colorado"
+            ],
+            "image": "img/stories/thumbs/CO_GreeleyStampede_thumb.jpg"
+        },
+        {
+            "id": "Cody_Field_of_Honor",
+            "title": "Cody: Field of Honor",
+            "filters": [
+                "wyoming"
+            ],
+            "image": "img/stories/thumbs/WY_FieldofHonor_thumb.jpg"
+        },
+        {
+            "id": "Pinnacle_Bank_Arena",
+            "title": "Lincoln: Pinnacle Bank Arena",
+            "filters": [
+                "nebraska"
+            ],
+            "image": "img/stories/thumbs/Lincoln_arena_Thumb.jpg"
+        },
+        {
+            "id": "Community_Places",
+            "title": "Community: Places",
+            "filters": [
+                "wyoming", "nebraska", "colorado", "missouri", "iowa", "new_mexico", "texas", "kansas"
+            ],
+            "image": "img/stories/thumbs/Universal_Places_thumb.jpg"
+        }
+    ]
+}
+
+var details = {
+    "details": [
+        {
+            "id": "Petrified_Wood_Gallery",
+            "title": "Ogallala: Petrified Wood Gallery",
+            "copy": "Twin brothers have quietly built a collection of petrified wood and art that rivals some of the country’s top museums, all on public view for their community to enjoy. Their story illustrates not just the power of art, but of family itself.",
+            "video": "y01iNzhmh5I",
+            "images": [
+                "img/stories/stills/NE_Petrified_1.jpg",
+                "img/stories/stills/NE_Petrified_2.jpg",
+                "img/stories/stills/NE_Petrified_3.jpg",
+                "img/stories/stills/NE_Petrified_4.jpg",
+                "img/stories/stills/NE_Petrified_5.jpg"
+            ]
+        },
+        {
+            "id": "World_Thinking_Day",
+            "title": "Woodland Park: World Thinking Day",
+            "copy": "Each year at World Thinking Day, Girl Scouts take time to give thanks for their international friendships and remember that Girl Scouts of the USA is part of a global community—one of nearly 150 countries.",
+            "video": "HiIV7lD5pz0",
+            "images": [
+                "img/stories/stills/CO_GS_WorldThinkingDay_1.jpg",
+                "img/stories/stills/CO_GS_WorldThinkingDay_2.jpg",
+                "img/stories/stills/CO_GS_WorldThinkingDay_3.jpg",
+                "img/stories/stills/CO_GS_WorldThinkingDay_4.jpg",
+                "img/stories/stills/CO_GS_WorldThinkingDay_5.jpg"
+            ]
+        },
+        {
+            "id": "Veteran_Booths_Ranch",
+            "title": "Veteran: Booth's Cherry Creek Ranch",
+            "copy": "Changing with the times is important no matter what business you're in. But when you own and run a ranch, it's essential.",
+            "video": "DPEKm5QaHm4",
+            "images": [
+                "img/stories/stills/WY_Booths_1.jpg",
+                "img/stories/stills/WY_Booths_2.jpg",
+                "img/stories/stills/WY_Booths_3.jpg",
+                "img/stories/stills/WY_Booths_4.jpg",
+                "img/stories/stills/WY_Booths_5.jpg"
+            ]
+        },
+        {
+            "id": "Fort_Worth_Downtown",
+            "title": "Fort Worth: Downtown",
+            "copy": "Urban renewal of a city can’t happen alone. It takes leaders from all over the community to have a vision and a shared voice. And that’s exactly what happened in the city of Fort Worth, Texas. Today it’s a thriving metro area that’s a shining example of how a city can change when community works together.",
+            "video": "ItgXQ8oDUFs",
+            "images": [
+                "img/stories/stills/TX_FtWorth_1.jpg",
+                "img/stories/stills/TX_FtWorth_2.jpg",
+                "img/stories/stills/TX_FtWorth_3.jpg",
+                "img/stories/stills/TX_FtWorth_4.jpg",
+                "img/stories/stills/TX_FtWorth_5.jpg"
+            ]
+        },
+        {
+            "id": "Pfeifer_Auto_Body",
+            "title": "Madison: Pfeifer Auto Body",
+            "copy": "In a town like Madison, auto body shops don’t just fix automobiles. They fix whatever needs fixing, whether it belongs on a farm or under the bright lights of Hollywood.",
+            "video": "TWtBT-yAgKc",
+            "images": [
+                "img/stories/stills/NE_PfeiferAutoBody_1.jpg",
+                "img/stories/stills/NE_PfeiferAutoBody_2.jpg",
+                "img/stories/stills/NE_PfeiferAutoBody_3.jpg",
+                "img/stories/stills/NE_PfeiferAutoBody_4.jpg",
+                "img/stories/stills/NE_PfeiferAutoBody_5.jpg"
+            ]
+        },
+        {
+            "id": "Whitewater_Rafting",
+            "title": "Glenwood Springs: Whitewater Rafting",
+            "copy": "If you’re going to survive in the ever-competitive rafting business in the small tourist town of Glenwood Springs, there are three keys to success. Locals. Locals. Locals.",
+            "video": "aD-q67nVvgw",
+            "images": [
+                "img/stories/stills/CO_WhiteWaterRafting_1.jpg",
+                "img/stories/stills/CO_WhiteWaterRafting_2.jpg",
+                "img/stories/stills/CO_WhiteWaterRafting_3.jpg",
+                "img/stories/stills/CO_WhiteWaterRafting_4.jpg",
+                "img/stories/stills/CO_WhiteWaterRafting_5.jpg"
+            ]
+        },
+        {
+            "id": "Leitheads_Appliance_Center",
+            "title": "Torrington: Leithead’s Appliance Center",
+            "copy": "If you’re going to survive in business these days you need to provide great service after the sale and it doesn’t hurt to have memorable spokes people in your ad campaign.",
+            "video": "1KUa4vhbQjM",
+            "images": [
+                "img/stories/stills/WY_Leitheads_1.jpg",
+                "img/stories/stills/WY_Leitheads_2.jpg",
+                "img/stories/stills/WY_Leitheads_3.jpg",
+                "img/stories/stills/WY_Leitheads_4.jpg",
+                "img/stories/stills/WY_Leitheads_5.jpg"
+            ]
+        },
+        {
+            "id": "Behlen_Manufacturing",
+            "title": "Columbus: Behlen Manufacturing",
+            "copy": "When businesses work together, the entire community prospers. Behlen Manufacturing is an example of how a company can take the lead in bringing good jobs to towns in America’s heartland.",
+            "video": "5XXChQMw-c0",
+            "images": [
+                "img/stories/stills/NE_BehlenManufacturing_1.jpg",
+                "img/stories/stills/NE_BehlenManufacturing_2.jpg",
+                "img/stories/stills/NE_BehlenManufacturing_3.jpg",
+                "img/stories/stills/NE_BehlenManufacturing_4.jpg",
+                "img/stories/stills/NE_BehlenManufacturing_5.jpg",
+                "img/stories/stills/NE_BehlenManufacturing_6.jpg"
+            ]
+        },
+        {
+            "id": "Hope_West_Hospice",
+            "title": "The Hope West Hospice",
+            "copy": "How did the community of Grand Junction build a successful hospice? A great cup of coffee, and a store full of treasures.",
+            "video": "B9oVTnUeJY8",
+            "images": [
+                "img/stories/stills/CO_Hospice_1.jpg",
+                "img/stories/stills/CO_Hospice_2.jpg",
+                "img/stories/stills/CO_Hospice_3.jpg",
+                "img/stories/stills/CO_Hospice_4.jpg",
+                "img/stories/stills/CO_Hospice_5.jpg"
+            ]
+        },
+        {
+            "id": "Livestock_Market",
+            "title": "Ogallala: Livestock Market",
+            "copy": "There’s a place where business is done with a handshake. Where thousands of cattle go up for auction every night. And where a community of ranchers have gathered together for decades.",
+            "video": "REysZTWJlDc",
+            "images": [
+                "img/stories/stills/NE_OgallalaAuction_1.jpg",
+                "img/stories/stills/NE_OgallalaAuction_2.jpg",
+                "img/stories/stills/NE_OgallalaAuction_3.jpg",
+                "img/stories/stills/NE_OgallalaAuction_4.jpg",
+                "img/stories/stills/NE_OgallalaAuction_5.jpg"
+            ]
+        },
+        {
+            "id": "Community_In_a_Word",
+            "title": "Community: In a Word",
+            "copy": "We set out to uncover the true meaning of community, asking neighbors from all of the places we call home to define it in only one word. In the end we found community is much more than any one word could describe.",
+            "video": "k0Yl7Xhpg88",
+            "images": [
+                "img/stories/stills/Universal_Oneword_1.jpg",
+                "img/stories/stills/Universal_Oneword_2.jpg",
+                "img/stories/stills/Universal_Oneword_3.jpg",
+                "img/stories/stills/Universal_Oneword_4.jpg",
+                "img/stories/stills/Universal_Oneword_5.jpg"
+            ]
+        },
+        {
+            "id": "Holt_Co_Economic_Development",
+            "title": "Holt Co. Economic Development",
+            "copy": "The mailboxes that line the streets of Holt County hold more than cards and bills; they carry an invitation to put down roots. That’s just one of the innovative ways the Holt County Economic Development office is creating growth in this Nebraska community.",
+            "video": "TG83t0-Wn9I",
+            "images": [
+                "img/stories/stills/NE_HoltCoEcoDev_1.jpg",
+                "img/stories/stills/NE_HoltCoEcoDev_2.jpg",
+                "img/stories/stills/NE_HoltCoEcoDev_3.jpg",
+                "img/stories/stills/NE_HoltCoEcoDev_4.jpg",
+                "img/stories/stills/NE_HoltCoEcoDev_5.jpg"
+            ]
+        },
+        {
+            "id": "Girl_Scout_Troop",
+            "title": "Colorado Springs: Girl Scout Troop 2295",
+            "copy": "The proceeds from a box of Girl Scout cookies can make a huge impact on the community. And when you meet one of the state’s top sellers, she’ll leave an impact on you.",
+            "video": "Ka0jrcGrhLw",
+            "images": [
+                "img/stories/stills/CO_GS_Tyra_1.jpg",
+                "img/stories/stills/CO_GS_Tyra_2.jpg",
+                "img/stories/stills/CO_GS_Tyra_3.jpg",
+                "img/stories/stills/CO_GS_Tyra_4.jpg",
+                "img/stories/stills/CO_GS_Tyra_5.jpg"
+            ]
+        },
+        {
+            "id": "Open_Range_Grill",
+            "title": "Ogallala: Open Range Grill",
+            "copy": "How do you build a thriving business? You focus on giving your community a place to come together. The Open Range Grill is a business success story and a testament to the American work ethic.",
+            "video": "2Ls_PWbZgnU",
+            "images": [
+                "img/stories/stills/NE_OpenRangeGrill_001.jpg",
+                "img/stories/stills/NE_OpenRangeGrill_002.jpg",
+                "img/stories/stills/NE_OpenRangeGrill_003.jpg",
+                "img/stories/stills/NE_OpenRangeGrill_004.jpg",
+                "img/stories/stills/NE_OpenRangeGrill_005.jpg"
+            ]
+        },
+        {
+            "id": "Family_YMCA",
+            "title": "Fremont: The Family YMCA",
+            "copy": "The doors on the Fremont Family YMCA are rarely locked. The parking lot is seldom empty. Its 200,000 square feet of pools, rinks, gyms and studios are almost never quiet.  And that’s just how this enormous family likes it.",
+            "video": "rmplxCFu3do",
+            "images": [
+                "img/stories/stills/NE_YMCA_1.jpg",
+                "img/stories/stills/NE_YMCA_2.jpg",
+                "img/stories/stills/NE_YMCA_3.jpg",
+                "img/stories/stills/NE_YMCA_4.jpg",
+                "img/stories/stills/NE_YMCA_5.jpg",
+                "img/stories/stills/NE_YMCA_6.jpg"
+            ]
+        },
+        {
+            "id": "Cody_Night_Rodeo",
+            "title": "Cody: Nite Rodeo",
+            "copy": "The spirit of the American West is alive and on display every night, for 92 straight nights.",
+            "video": "yXtCOFysAkU",
+            "images": [
+                "img/stories/stills/WY_CodyNiteRodeo_1.jpg",
+                "img/stories/stills/WY_CodyNiteRodeo_2.jpg",
+                "img/stories/stills/WY_CodyNiteRodeo_3.jpg",
+                "img/stories/stills/WY_CodyNiteRodeo_4.jpg",
+                "img/stories/stills/WY_CodyNiteRodeo_5.jpg"
+            ]
+        },
+        {
+            "id": "Annie_Jeffrey_Center",
+            "title": "Osceola: Annie Jeffrey Center",
+            "copy": "In Polk County, tending to patients also means taking care of your family and neighbors. Annie Jeffrey Health Center brings world-class doctors, technology and medical care to this tight-knit community.",
+            "video": "zTJPX9rxTac",
+            "images": [
+                "img/stories/stills/NE_AnnieJeffreyHC_1.jpg",
+                "img/stories/stills/NE_AnnieJeffreyHC_2.jpg",
+                "img/stories/stills/NE_AnnieJeffreyHC_3.jpg",
+                "img/stories/stills/NE_AnnieJeffreyHC_4.jpg",
+                "img/stories/stills/NE_AnnieJeffreyHC_5.jpg"
+            ]
+        },
+        {
+            "id": "Fat_Brain_Toys",
+            "title": "Omaha: Fat Brain Toys",
+            "copy": "How did Mark and Karen Carson take an award-winning toy company from their basement to a busy and bustling warehouse? Making educational toys and customer service that big box stores couldn’t match.",
+            "video": "UQ-wx2FklVc",
+            "images": [
+                "img/stories/stills/NE_FatBrainToys_1.jpg",
+                "img/stories/stills/NE_FatBrainToys_2.jpg",
+                "img/stories/stills/NE_FatBrainToys_3.jpg",
+                "img/stories/stills/NE_FatBrainToys_4.jpg",
+                "img/stories/stills/NE_FatBrainToys_5.jpg"
+            ]
+        },
+        {
+            "id": "Open_Door_Church",
+            "title": "Joshua: Open Door Church and Food Bank",
+            "copy": "See how one kind act of service in Joshua Texas led to thousands of full pantries and even fuller hearts.",
+            "video": "4RtHgHeB67w",
+            "images": [
+                "img/stories/stills/TX_OpenDoorChurch_1.jpg",
+                "img/stories/stills/TX_OpenDoorChurch_2.jpg",
+                "img/stories/stills/TX_OpenDoorChurch_3.jpg",
+                "img/stories/stills/TX_OpenDoorChurch_4.jpg",
+                "img/stories/stills/TX_OpenDoorChurch_5.jpg"
+            ]
+        },
+        {
+            "id": "Bills_Volume_Sales",
+            "title": "Omaha: Bill’s Volume Sales",
+            "copy": "Decades ago, a businessman named Bill Pullen chose to bank with Roy Dinsdale. Over the years, the two men have developed an easy friendship and a mutual respect that will be an inspiration long after they retire.",
+            "video": "BAESMS26BrM",
+            "images": [
+                "img/stories/stills/NE_BillsVolume_1.jpg",
+                "img/stories/stills/NE_BillsVolume_2.jpg",
+                "img/stories/stills/NE_BillsVolume_3.jpg",
+                "img/stories/stills/NE_BillsVolume_4.jpg",
+                "img/stories/stills/NE_BillsVolume_5.jpg"
+            ]
+        },
+        {
+            "id": "South_Platte_Historical_Society",
+            "title": "Ft. Lupton: South Platte Valley Historical Society",
+            "copy": "Fort Lupton, Colorado is home to the first Bank of Colorado, and to a dedicated community of volunteers who recognized that sometimes making history means stepping back into it.",
+            "video": "qGf__PwMarY",
+            "images": [
+                "img/stories/stills/CO_FtLupton_1.jpg",
+                "img/stories/stills/CO_FtLupton_2.jpg",
+                "img/stories/stills/CO_FtLupton_3.jpg",
+                "img/stories/stills/CO_FtLupton_4.jpg",
+                "img/stories/stills/CO_FtLupton_5.jpg",
+                "img/stories/stills/CO_FtLupton_6.jpg"
+            ]
+        },
+        {
+            "id": "Gary_Monter",
+            "title": "Palmer: Gary Monter",
+            "copy": "Palmer Public Schools are the heart and soul of the community. And Gary Monter was the heart and soul of Palmer Public Schools. This video captures the spirit of the people of Palmer. And it is dedicated to Monter’s memory.",
+            "video": "wb7RZFfccmU",
+            "images": [
+                "img/stories/stills/NE_PalmerSchools_1.jpg",
+                "img/stories/stills/NE_PalmerSchools_2.jpg",
+                "img/stories/stills/NE_PalmerSchools_3.jpg",
+                "img/stories/stills/NE_PalmerSchools_4.jpg",
+                "img/stories/stills/NE_PalmerSchools_5.jpg",
+                "img/stories/stills/NE_PalmerSchools_6.jpg"
+            ]
+        },
+        {
+            "id": "The_Backpack_Program",
+            "title": "Lincoln: The Backpack Program",
+            "copy": "Every weekend, thousands of kids rely on The Lincoln Backpack program to give them the food, encouragement, and community spirit they need for the weekend. This is its story.",
+            "video": "sXNgit-S-3Q",
+            "images": [
+                "img/stories/stills/NE_BackPackProgram_1.jpg",
+                "img/stories/stills/NE_BackPackProgram_2.jpg",
+                "img/stories/stills/NE_BackPackProgram_3.jpg",
+                "img/stories/stills/NE_BackPackProgram_4.jpg",
+                "img/stories/stills/NE_BackPackProgram_5.jpg",
+                "img/stories/stills/NE_BackPackProgram_6.jpg"
+            ]
+        },
+        {
+            "id": "Howard_Dudley",
+            "title": "Cleburne: Howard Dudley",
+            "copy": "When you want something done right, you take your time. And that is just what Howard Dudley did when he revitalized the heart of Cleburne, Texas, one historical structure at a time.",
+            "video": "Rjrn0aVFGvI",
+            "images": [
+                "img/stories/stills/TX_HowardDudleyHotel_1.jpg",
+                "img/stories/stills/TX_HowardDudleyHotel_2.jpg",
+                "img/stories/stills/TX_HowardDudleyHotel_3.jpg",
+                "img/stories/stills/TX_HowardDudleyHotel_4.jpg",
+                "img/stories/stills/TX_HowardDudleyHotel_5.jpg",
+                "img/stories/stills/TX_HowardDudleyHotel_6.jpg"
+            ]
+        },
+        {
+            "id": "Franks_Food_Mart",
+            "title": "Verdigre: Frank’s Food Mart",
+            "copy": "In the Northeast corner of Nebraska, just 12 miles from the Missouri River, stands a grocery store. The couple that runs it knows better than anyone why people choose to live in their hometown. And why Verdigre has thrived through the generations.",
+            "video": "Z5prMklvo_U",
+            "images": [
+                "img/stories/stills/NE_FranksFoodMart_1.jpg",
+                "img/stories/stills/NE_FranksFoodMart_2.jpg",
+                "img/stories/stills/NE_FranksFoodMart_3.jpg",
+                "img/stories/stills/NE_FranksFoodMart_4.jpg",
+                "img/stories/stills/NE_FranksFoodMart_5.jpg"
+            ]
+        },
+        {
+            "id": "Big_Brothers_Big_Sisters",
+            "title": "Omaha: Big Brothers Big Sisters",
+            "copy": "Being a kid is hard enough. Having someone to look up to makes it easier. In Omaha, Big Brothers, Big Sisters steps up to take responsibility for finding kids mentors who become lifelong friends.",
+            "video": "hv70bFdyuS8",
+            "images": [
+                "img/stories/stills/NE_BigBrothersBigSisters_1.jpg",
+                "img/stories/stills/NE_BigBrothersBigSisters_2.jpg",
+                "img/stories/stills/NE_BigBrothersBigSisters_3.jpg",
+                "img/stories/stills/NE_BigBrothersBigSisters_4.jpg",
+                "img/stories/stills/NE_BigBrothersBigSisters_5.jpg",
+                "img/stories/stills/NE_BigBrothersBigSisters_6.jpg"
+            ]
+        },
+        {
+            "id": "TCU_Ranch_Management",
+            "title": "Ft. Worth: TCU Ranch Management",
+            "copy": "The TCU’s Ranch Management program is one of the most unique agriculture programs in the world. It equips tomorrow’s ranchers and farmers with real world experience, so graduates have a better understanding of suitability in a growing world, and how to run a ranch or farm as a business.",
+            "video": "pb6fm15T2ew",
+            "images": [
+                "img/stories/stills/TX_TCU_Ranch_1.jpg",
+                "img/stories/stills/TX_TCU_Ranch_2.jpg",
+                "img/stories/stills/TX_TCU_Ranch_3.jpg",
+                "img/stories/stills/TX_TCU_Ranch_4.jpg",
+                "img/stories/stills/TX_TCU_Ranch_5.jpg"
+            ]
+        },
+        {
+            "id": "Customer_Appreciation_Dinner",
+            "title": "Greeley: Customer Appreciation Dinner",
+            "copy": "The Greeley Stampede has been a community tradition for more than 100 years. Almost half a million people enjoy bull riding, music, food, art, a demolition derby and more. It’s also a chance for 775 of our customers to celebrate a community of their own.",
+            "video": "a075AepUeP4",
+            "images": [
+                "img/stories/stills/CO_GreeleyStampede_1.jpg",
+                "img/stories/stills/CO_GreeleyStampede_2.jpg",
+                "img/stories/stills/CO_GreeleyStampede_3.jpg",
+                "img/stories/stills/CO_GreeleyStampede_4.jpg",
+                "img/stories/stills/CO_GreeleyStampede_5.jpg"
+            ]
+        },
+        {
+            "id": "Cody_Field_of_Honor",
+            "title": "Cody: Field of Honor",
+            "copy": "Patriotism in our country can be shown in a lot of ways. And for the second straight year the people of Cody, Wyoming showcase theirs by the thousands.",
+            "video": "Stc16cfRnyw",
+            "images": [
+                "img/stories/stills/WY_FieldofHonor_1.jpg",
+                "img/stories/stills/WY_FieldofHonor_2.jpg",
+                "img/stories/stills/WY_FieldofHonor_3.jpg",
+                "img/stories/stills/WY_FieldofHonor_4.jpg",
+                "img/stories/stills/WY_FieldofHonor_5.jpg"
+            ]
+        },
+        {
+            "id": "Pinnacle_Bank_Arena",
+            "title": "Lincoln: Pinnacle Bank Arena",
+            "copy": "Get a behind the scenes look at the construction of the recently opened Pinnacle Bank Arena in Lincoln's Haymarket District. It's a whole new community. One that's 15,000 seats strong.",
+            "video": "kCh-DzOuas8",
+            "images": [
+                "img/stories/stills/Lincoln_arena_1.jpg",
+                "img/stories/stills/Lincoln_arena_2.jpg"
+            ]
+        },
+        {
+            "id": "Community_Places",
+            "title": "Community: Places",
+            "copy": "The towns we call home are more than just places on a map; they're places in our hearts. Watch as our neighbors explain what makes the communities we're a part of so remarkable.",
+            "video": "I-VLImOvydI",
+            "images": [
+                "img/stories/stills/Universal_Places_1.jpg",
+                "img/stories/stills/Universal_Places_2.jpg",
+                "img/stories/stills/Universal_Places_3.jpg",
+                "img/stories/stills/Universal_Places_4.jpg",
+                "img/stories/stills/Universal_Places_5.jpg"
+            ]
+        }
+    ]
+}

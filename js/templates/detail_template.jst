@@ -1,0 +1,23 @@
+<section class="story_wrapper">
+	<section class="story_copy">
+		<div class="title_and_close clearfix">
+			<h1 class="story_title"><%= title %></h1>
+			<div class="close_btn"></div>
+		</div>
+		<p class="clearfix"><%= copy %></p>
+	</section>
+	<section class="story_vid_wrap">  
+		<div class="flexslider">
+			<ul class="slides">
+				<li>
+					<iframe class="youtube" src="http://www.youtube.com/embed/<%= video %>?rel=0&loop=0&wmode=opaque" width="1280" height="720" frameborder="0" allowfullscreen></iframe>
+				</li>
+				<% _.each(images, function(image){ %> 
+				<li>
+					<img src="<%= image %>" />
+				</li>
+				<% }) %>
+			</ul>
+		</div>
+	</section>
+</section>
