@@ -211,7 +211,7 @@
 			          // defaults, used if not explicitly set in hash
 			          defaultOptions = {
 			            filter: '*',
-			            sortBy: 'original-order',
+			            sortBy: 'random',
 			            sortAscending: true,
 			            layoutMode: 'masonry',
 			            transformsEnabled: false,

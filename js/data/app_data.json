@@ -640,7 +640,7 @@ var details = {
         {
             "id": "Pinnacle_Bank_Arena",
             "title": "Lincoln: Pinnacle Bank Arena",
-            "copy": "Get a sneak peek at a state-of-of-the-art facility and community marvel, the new Pinnacle Bank Arena in Lincoln's West Haymarket District.",
+            "copy": "Get a behind the scenes look at the construction of the recently opened Pinnacle Bank Arena in Lincoln's Haymarket District. It's a whole new community. One that's 15,000 seats strong.",
             "video": "kCh-DzOuas8",
             "images": [
                 "img/stories/stills/Lincoln_arena_1.jpg",
@@ -650,7 +650,7 @@ var details = {
         {
             "id": "Community_Places",
             "title": "Community: Places",
-            "copy": "Community is more than where you're from—it's all the things that make a place feel like home.",
+            "copy": "The towns we call home are more than just places on a map; they're places in our hearts. Watch as our neighbors explain what makes the communities we're a part of so remarkable.",
             "video": "I-VLImOvydI",
             "images": [
                 "img/stories/stills/Universal_Places_1.jpg",
