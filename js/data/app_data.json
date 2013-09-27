@@ -154,7 +154,7 @@ var thumbs = {
         },
         {
             "id": "Bills_Volume_Sales",
-            "title": "Omaha: Bill’s Volume Sales",
+            "title": "Nebraska: Bill’s Volume Sales",
             "filters": [
                 "nebraska",
             ],
@@ -247,6 +247,38 @@ var thumbs = {
                 "wyoming", "nebraska", "colorado", "missouri", "iowa", "new_mexico", "texas", "kansas"
             ],
             "image": "img/stories/thumbs/Universal_Places_thumb.jpg"
+        },
+        {
+            "id": "Gallup_Trading_Post",
+            "title": "Gallup: Richardson's Trading Post",
+            "filters": [
+                "new_mexico"
+            ],
+            "image": "img/stories/thumbs/NM_Gallup_Richardsons_thumb.jpg"
+        },
+        {
+            "id": "Gallup_The_Ceremonial",
+            "title": "Gallup: The Ceremonial",
+            "filters": [
+                "new_mexico"
+            ],
+            "image": "img/stories/thumbs/NM_InterTribalCeremony_thumb.jpg"
+        },
+        {
+            "id": "Durango_Mountain_Bike_Specialists",
+            "title": "Durango: Mountain Bike Specialists",
+            "filters": [
+                "colorado"
+            ],
+            "image": "img/stories/thumbs/CO_Durango_MountainBike_thumb.jpg"
+        },
+        {
+            "id": "Durango_Home_Slice_Pizza",
+            "title": "Durango: Home Slice Pizza",
+            "filters": [
+                "colorado"
+            ],
+            "image": "img/stories/thumbs/CO_Durango_HomeSlice_thumb.jpg"
         }
     ]
 }
@@ -504,7 +536,7 @@ var details = {
         },
         {
             "id": "Bills_Volume_Sales",
-            "title": "Omaha: Bill’s Volume Sales",
+            "title": "Nebraska: Bill’s Volume Sales",
             "copy": "Decades ago, a businessman named Bill Pullen chose to bank with Roy Dinsdale. Over the years, the two men have developed an easy friendship and a mutual respect that will be an inspiration long after they retire.",
             "video": "BAESMS26BrM",
             "images": [
@@ -658,6 +690,58 @@ var details = {
                 "img/stories/stills/Universal_Places_3.jpg",
                 "img/stories/stills/Universal_Places_4.jpg",
                 "img/stories/stills/Universal_Places_5.jpg"
+            ]
+        },
+        {
+            "id": "Gallup_Trading_Post",
+            "title": "Gallup: Richardson's Trading Post",
+            "copy": "Stocked to the rafters with everything from Navajo rugs and saddles to buckskins and precious stones, you won’t find more authentic taste of the Southwest than at this treasured town landmark.",
+            "video": "S4-aVRLeIVA",
+            "images": [
+                "img/stories/stills/NM_Gallup_Richardsons_1.jpg",
+                "img/stories/stills/NM_Gallup_Richardsons_2.jpg",
+                "img/stories/stills/NM_Gallup_Richardsons_3.jpg",
+                "img/stories/stills/NM_Gallup_Richardsons_4.jpg",
+                "img/stories/stills/NM_Gallup_Richardsons_5.jpg"
+            ]
+        },
+        {
+            "id": "Gallup_The_Ceremonial",
+            "title": "Gallup: The Ceremonial",
+            "copy": "For nearly a century this gathering has been a way for Gallup to share and celebrating native American traditions, handing them down from generation to generation.",
+            "video": "2zUEeqcjDDg",
+            "images": [
+                "img/stories/stills/NM_InterTribalCeremony_1.jpg",
+                "img/stories/stills/NM_InterTribalCeremony_2.jpg",
+                "img/stories/stills/NM_InterTribalCeremony_3.jpg",
+                "img/stories/stills/NM_InterTribalCeremony_4.jpg",
+                "img/stories/stills/NM_InterTribalCeremony_5.jpg"
+            ]
+        },
+        {
+            "id": "Durango_Mountain_Bike_Specialists",
+            "title": "Durango: Mountain Bike Specialists",
+            "copy": "Bicycle magazines dub Durango as a cycling mecca. And there is one bike shop that is truly at its heart. From hosting benefit races, to sponsoring teams, to outfitting a legion of riders and enthusiasts this retailer truly puts the “special” in specialists.",
+            "video": "P3stqR5TBIM",
+            "images": [
+                "img/stories/stills/CO_Durango_MountainBike_1.jpg",
+                "img/stories/stills/CO_Durango_MountainBike_2.jpg",
+                "img/stories/stills/CO_Durango_MountainBike_3.jpg",
+                "img/stories/stills/CO_Durango_MountainBike_4.jpg",
+                "img/stories/stills/CO_Durango_MountainBike_5.jpg"
+            ]
+        },
+        {
+            "id": "Durango_Home_Slice_Pizza",
+            "title": "Durango: Home Slice Pizza",
+            "copy": "Some prefer sausage. Others pepperoni. But for those from the Southwestern town of Durango, Colorado there is truly no better taste of home than a pie from their hometown pizzeria, Home Slice Pizza.",
+            "video": "38757okrhLc",
+            "images": [
+                "img/stories/stills/CO_Durango_HomeSlice_1.jpg",
+                "img/stories/stills/CO_Durango_HomeSlice_2.jpg",
+                "img/stories/stills/CO_Durango_HomeSlice_3.jpg",
+                "img/stories/stills/CO_Durango_HomeSlice_4.jpg",
+                "img/stories/stills/CO_Durango_HomeSlice_5.jpg"
             ]
         }
     ]
