@@ -238,7 +238,7 @@ var thumbs = {
             "filters": [
                 "nebraska"
             ],
-            "image": "img/stories/thumbs/Lincoln_arena_Thumb.jpg"
+            "image": "img/stories/thumbs/NE_Arena_thumb.jpg"
         },
         {
             "id": "Community_Places",
@@ -279,6 +279,118 @@ var thumbs = {
                 "colorado"
             ],
             "image": "img/stories/thumbs/CO_Durango_HomeSlice_thumb.jpg"
+        },
+        {
+            "id": "Joplin_Good_News",
+            "title": "Joplin: Good News",
+            "filters": [
+                "missouri"
+            ],
+            "image": "img/stories/thumbs/MO_Joplin_News_thumb.jpg"
+        },
+        {
+            "id": "Joplin_Snyder_Construction",
+            "title": "Joplin: Snyder Construction",
+            "filters": [
+                "missouri"
+            ],
+            "image": "img/stories/thumbs/MO_Joplin_Snyder_thumb.jpg"
+        },
+        {
+            "id": "Brush_Beetdiggers",
+            "title": "Brush: Beetdigger Football",
+            "filters": [
+                "colorado"
+            ],
+            "image": "img/stories/thumbs/CO_Brush_BeetDiggers_thumb.jpg"
+        },
+        {
+            "id": "Gretna_Pumpkin_Patch",
+            "title": "Gretna: Vala’s Pumpkin Patch",
+            "filters": [
+                "nebraska"
+            ],
+            "image": "img/stories/thumbs/NE_Valas_thumb.jpg"
+        },
+        {
+            "id": "Omaha_Elman_Printing",
+            "title": "Omaha: Elman Printing",
+            "filters": [
+                "nebraska"
+            ],
+            "image": "img/stories/thumbs/NE_ElmanPrinters_thumb.jpg"
+        },
+        {
+            "id": "Schuyler_Colfax_Theater",
+            "title": "Schuyler: Colfax Theater",
+            "filters": [
+                "nebraska"
+            ],
+            "image": "img/stories/thumbs/NE_ColfaxTheatersthumb.jpg"
+        },
+        {
+            "id": "Yuma_JT_Farms",
+            "title": "Yuma: JT Farms",
+            "filters": [
+                "colorado"
+            ],
+            "image": "img/stories/thumbs/CO_Yuma_JTFarms_thumb.jpg"
+        },
+        {
+            "id": "Omaha_Avant_Architects",
+            "title": "Omaha: Avant Architects",
+            "filters": [
+                "nebraska"
+            ],
+            "image": "img/stories/thumbs/NE_AvantArchitects_thumb.jpg"
+        },
+        {
+            "id": "Lexington_Bryan_Elementary",
+            "title": "Lexington: Bryan Elementary",
+            "filters": [
+                "nebraska"
+            ],
+            "image": "img/stories/thumbs/NE_BryanElementary_thumb.jpg"
+        },
+        {
+            "id": "Hastings_The_Lark",
+            "title": "Hastings: The Lark",
+            "filters": [
+                "nebraska"
+            ],
+            "image": "img/stories/thumbs/NE_TheLark_thumb.jpg"
+        },
+        {
+            "id": "Aurora_Grain_Place_Foods",
+            "title": "Aurora: Grain Place Foods",
+            "filters": [
+                "nebraska"
+            ],
+            "image": "img/stories/thumbs/NE_GrainPlaceFoods_thumb.jpg"
+        },
+        {
+            "id": "Lincoln_Speedway_Motors",
+            "title": "Lincoln: Speedway Motors",
+            "filters": [
+                "nebraska"
+            ],
+            "image": "img/stories/thumbs/NE_Speedway_thumb.jpg"
+        },
+        {
+            "id": "Sterling_NJC",
+            "title": "Sterling: NJC/BOC Event Center",
+            "filters": [
+                "colorado"
+            ],
+            "image": "img/stories/thumbs/Sterling_NJC_thumb.jpg"
+        },
+        {
+            "id": "Sterling_UFL",
+            "title": "Fort Collins: Unite for Literacy",
+            "filters": [
+                "colorado"
+            ],
+            "image": "img/stories/thumbs/Sterling_UFL_thumb.jpg"
         }
     ]
 }
@@ -672,11 +784,15 @@ var details = {
         {
             "id": "Pinnacle_Bank_Arena",
             "title": "Lincoln: Pinnacle Bank Arena",
-            "copy": "Get a behind the scenes look at the construction of the recently opened Pinnacle Bank Arena in Lincoln's Haymarket District. It's a whole new community. One that's 15,000 seats strong.",
-            "video": "kCh-DzOuas8",
+            "copy": "The new arena has been a spark for the Haymarket District, giving businesses, locals and tourists a new reason to get excited about Lincoln. Hear its story from people who helped make it a reality.",
+            "video": "9VOdZl4rZtA",
             "images": [
-                "img/stories/stills/Lincoln_arena_1.jpg",
-                "img/stories/stills/Lincoln_arena_2.jpg"
+                "img/stories/stills/NE_Arena_1.jpg",
+                "img/stories/stills/NE_Arena_2.jpg",
+                "img/stories/stills/NE_Arena_3.jpg",
+                "img/stories/stills/NE_Arena_4.jpg",
+                "img/stories/stills/NE_Arena_5.jpg",
+                "img/stories/stills/NE_Arena_6.jpg"
             ]
         },
         {
@@ -742,6 +858,196 @@ var details = {
                 "img/stories/stills/CO_Durango_HomeSlice_3.jpg",
                 "img/stories/stills/CO_Durango_HomeSlice_4.jpg",
                 "img/stories/stills/CO_Durango_HomeSlice_5.jpg"
+            ]
+        },
+        {
+            "id": "Joplin_Good_News",
+            "title": "Joplin: Good News Productions Int.",
+            "copy": "How do you share the gospel with the world? One local production company uses social media and technological innovation to break new ground and bring their mission to every corner of the globe.",
+            "video": "TO88YJDQEu8",
+            "images": [
+                "img/stories/stills/MO_Joplin_News_1.jpg",
+                "img/stories/stills/MO_Joplin_News_2.jpg",
+                "img/stories/stills/MO_Joplin_News_3.jpg",
+                "img/stories/stills/MO_Joplin_News_4.jpg",
+                "img/stories/stills/MO_Joplin_News_5.jpg"
+            ]
+        },
+        {
+            "id": "Joplin_Snyder_Construction",
+            "title": "Joplin: Snyder Construction",
+            "copy": "For four generations Snyder Construction has been building a better community for the people of Joplin, Missouri. But when an EF5 tornado ripped through town destroying their office, the community returned the favor to help them restore and rebuild.",
+            "video": "LxbXTBPM0L4",
+            "images": [
+                "img/stories/stills/MO_Joplin_Snyder_1.jpg",
+                "img/stories/stills/MO_Joplin_Snyder_2.jpg",
+                "img/stories/stills/MO_Joplin_Snyder_3.jpg",
+                "img/stories/stills/MO_Joplin_Snyder_4.jpg",
+                "img/stories/stills/MO_Joplin_Snyder_5.jpg"
+            ]
+        },
+        {
+            "id": "Brush_Beetdiggers",
+            "title": "Brush: Beetdigger Football.",
+            "copy": "When you play sports for Brush High School, you carry the hopes of the community on your shoulders. Fortunately, that same community takes responsibility for making sure you stay on the right path.",
+            "video": "o8cEBXjAerk",
+            "images": [
+                "img/stories/stills/CO_Brush_BeetDiggers_1.jpg",
+                "img/stories/stills/CO_Brush_BeetDiggers_2.jpg",
+                "img/stories/stills/CO_Brush_BeetDiggers_3.jpg",
+                "img/stories/stills/CO_Brush_BeetDiggers_4.jpg",
+                "img/stories/stills/CO_Brush_BeetDiggers_5.jpg",
+                "img/stories/stills/CO_Brush_BeetDiggers_6.jpg"
+            ]
+        },
+        {
+            "id": "Gretna_Pumpkin_Patch",
+            "title": "Gretna: Vala’s Pumpkin Patch",
+            "copy": "It’s a pumpkin patch. It’s a pig race. And a dragon. And a squash launcher. And a community tradition for than a quarter million Nebraskans.",
+            "video": "8dajYtXPIFQ",
+            "images": [
+                "img/stories/stills/NE_Valas_1.jpg",
+                "img/stories/stills/NE_Valas_2.jpg",
+                "img/stories/stills/NE_Valas_3.jpg",
+                "img/stories/stills/NE_Valas_4.jpg",
+                "img/stories/stills/NE_Valas_5.jpg"
+            ]
+        },
+        {
+            "id": "Omaha_Elman_Printing",
+            "title": "Omaha: Elman & Co. Printing",
+            "copy": "It doesn’t matter what line of business you’re in. There’s a common work ethic that binds the people of a community together. This video is about how a dedication to perfection fuels a modern business.",
+            "video": "7wZYLruCc5g",
+            "images": [
+                "img/stories/stills/NE_ElmanPrinters_1.jpg",
+                "img/stories/stills/NE_ElmanPrinters_2.jpg",
+                "img/stories/stills/NE_ElmanPrinters_3.jpg",
+                "img/stories/stills/NE_ElmanPrinters_4.jpg",
+                "img/stories/stills/NE_ElmanPrinters_5.jpg",
+                "img/stories/stills/NE_ElmanPrinters_6.jpg",
+                "img/stories/stills/NE_ElmanPrinters_7.jpg"
+            ]
+        },
+        {
+            "id": "Schuyler_Colfax_Theater",
+            "title": "Schuyler: The Colfax Theater",
+            "copy": "This theater is so important to Schuyler, Nebraska that it’s run almost entirely by volunteers. They saved it, refurbished it, and soon they’ll host live stage performances there. Watch their story.",
+            "video": "o8ND1p9q-I0",
+            "images": [
+                "img/stories/stills/NE_ColfaxTheater1.jpg",
+                "img/stories/stills/NE_ColfaxTheater2.jpg",
+                "img/stories/stills/NE_ColfaxTheater3.jpg",
+                "img/stories/stills/NE_ColfaxTheater4.jpg",
+                "img/stories/stills/NE_ColfaxTheater5.jpg",
+                "img/stories/stills/NE_ColfaxTheater6.jpg"
+            ]
+        },
+        {
+            "id": "Yuma_JT_Farms",
+            "title": "Yuma:  The Harvest at JT Farms",
+            "copy": "All the corn grown in Yuma, Colorado stays in the community. Watch this video to experience the harvest from the cockpit of a giant combine.",
+            "video": "dXnwrem7zfU",
+            "images": [
+                "img/stories/stills/CO_Yuma_JTFarms_1.jpg",
+                "img/stories/stills/CO_Yuma_JTFarms_2.jpg",
+                "img/stories/stills/CO_Yuma_JTFarms_3.jpg",
+                "img/stories/stills/CO_Yuma_JTFarms_4.jpg",
+                "img/stories/stills/CO_Yuma_JTFarms_5.jpg",
+                "img/stories/stills/CO_Yuma_JTFarms_6.jpg"
+            ]
+        },
+        {
+            "id": "Omaha_Avant_Architects",
+            "title": "Omaha: Avant Architects",
+            "copy": "Architects don’t just live in a community. They actually create it. Watch to see how one firm takes on the responsibility of designing the spaces where we live, work and play.",
+            "video": "8ysbhc5Fe-A",
+            "images": [
+                "img/stories/stills/NE_AvantArchitects_1.jpg",
+                "img/stories/stills/NE_AvantArchitects_2.jpg",
+                "img/stories/stills/NE_AvantArchitects_3.jpg",
+                "img/stories/stills/NE_AvantArchitects_4.jpg",
+                "img/stories/stills/NE_AvantArchitects_5.jpg",
+                "img/stories/stills/NE_AvantArchitects_6.jpg"
+            ]
+        },
+        {
+            "id": "Lexington_Bryan_Elementary",
+            "title": "Lexington: Bryan Elementary",
+            "copy": "Teaching young kids English and Spanish is good for their education, good for the economy, and good for our culture. Here is how one Greater Nebraska school is making it happen.",
+            "video": "fOWky8RHOZ0",
+            "images": [
+                "img/stories/stills/NE_BryanElementary_1.jpg",
+                "img/stories/stills/NE_BryanElementary_2.jpg",
+                "img/stories/stills/NE_BryanElementary_3.jpg",
+                "img/stories/stills/NE_BryanElementary_4.jpg",
+                "img/stories/stills/NE_BryanElementary_5.jpg"
+            ]
+        },
+        {
+            "id": "Hastings_The_Lark",
+            "title": "Hastings: The Lark",
+            "copy": "Greater Nebraska is home to a vibrant underground music scene. And soon The Lark will give audiences a new place to connect with artists. This video gathers them all together to talk about the value of live music in a community.",
+            "video": "YuJTcDyz4Ug",
+            "images": [
+                "img/stories/stills/NE_TheLark_1.jpg",
+                "img/stories/stills/NE_TheLark_2.jpg",
+                "img/stories/stills/NE_TheLark_3.jpg",
+                "img/stories/stills/NE_TheLark_4.jpg",
+                "img/stories/stills/NE_TheLark_5.jpg",
+                "img/stories/stills/NE_TheLark_6.jpg"
+            ]
+        },
+        {
+            "id": "Aurora_Grain_Place_Foods",
+            "title": "Aurora: Grain Place Foods",
+            "copy": "This local business was one of the first to embrace organic practices. It’s not a trend or a business strategy. It’s a calling that helps the people there work in harmony with their crops and their community.",
+            "video": "dOIEFhWV7j0",
+            "images": [
+                "img/stories/stills/NE_GrainPlaceFoods_1.jpg",
+                "img/stories/stills/NE_GrainPlaceFoods_2.jpg",
+                "img/stories/stills/NE_GrainPlaceFoods_3.jpg",
+                "img/stories/stills/NE_GrainPlaceFoods_4.jpg",
+                "img/stories/stills/NE_GrainPlaceFoods_5.jpg",
+                "img/stories/stills/NE_GrainPlaceFoods_6.jpg"
+            ]
+        },
+        {
+            "id": "Lincoln_Speedway_Motors",
+            "title": "Lincoln: Speedway Motors",
+            "copy": "Speedy Bill Smith spent 84 years doing what he loved. And his passion paid off in the form of a thriving business, an awe-inspiring museum, and a family that has stayed devoted to his legacy through the generations.",
+            "video": "JuV4N6W_lZo",
+            "images": [
+                "img/stories/stills/NE_Speedway_1.jpg",
+                "img/stories/stills/NE_Speedway_2.jpg",
+                "img/stories/stills/NE_Speedway_3.jpg",
+                "img/stories/stills/NE_Speedway_4.jpg",
+                "img/stories/stills/NE_Speedway_5.jpg",
+                "img/stories/stills/NE_Speedway_6.jpg"
+            ]
+        },
+        {
+            "id": "Sterling_NJC",
+            "title": "Sterling: Northeastern Junior College/BOC Event Center",
+            "copy": "The event center in Sterling is a great venue for basketball, volleyball, concerts and unique events. But more importantly, it's home to a special community.",
+            "video": "Qz8MAbmDzYw",
+            "images": [
+                "img/stories/stills/Sterling_NJC_1.jpg",
+                "img/stories/stills/Sterling_NJC_2.jpg",
+                "img/stories/stills/Sterling_NJC_3.jpg",
+                "img/stories/stills/Sterling_NJC_4.jpg"
+            ]
+        },
+        {
+            "id": "Sterling_UFL",
+            "title": "Ft. Collins: Unite for Literacy",
+            "copy": "Too many kids don't have 100 books in their home. But they have smartphones. One organization sees the solution to a problem.",
+            "video": "pNoHNCpNIV8",
+            "images": [
+                "img/stories/stills/Sterling_UFL_1.jpg",
+                "img/stories/stills/Sterling_UFL_2.jpg",
+                "img/stories/stills/Sterling_UFL_3.jpg",
+                "img/stories/stills/Sterling_UFL_4.jpg",
+                "img/stories/stills/Sterling_UFL_5.jpg"
             ]
         }
     ]
